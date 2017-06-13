@@ -1,0 +1,95 @@
+/* Buttons */
+
+@mixin btn {
+  width: 200px;
+  height: 50px;
+  padding-left: 20px;
+  text-align: $text-left;
+  border-width: 0;
+  font-size: $Text-xsmall;
+}
+
+@mixin button-off {
+  width: 200px;
+  height: 40px;
+  padding: 0;
+  border-width: 0;
+  font-size: $Text-xsmall;
+}
+
+@mixin button-user {
+  width: 200px;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.btn-off{
+  @include button-off;
+  background-color: $grey-secondary;
+  text-align: $text-center;
+}
+
+.btn-off:hover{
+  @include button-off;
+  background-color: $bg-grey;
+  text-align: $text-center;
+}
+
+.btn-select-gestion {
+  width: 200px;
+  height: 50px;
+  background-color: #f2f2f2;
+}
+
+.btn-select-gestion:hover {
+  width: 200px;
+  height: 50px;
+  background-color: #f2f2f2;
+}
+
+.btn-select-gestion:active{
+  width: 200px;
+  height: 50px;
+  background-color: #f2f2f2;
+}
+
+.btn-select-product {
+  @include btn;
+  color: $grey-primary;
+  background-color: $bg-grey;
+}
+
+.btn-select-product:hover {
+  @include btn;
+  color: $pink-primary;
+  background-color: $color-ligth;
+}
+
+.btn-select-product:active {
+  @include btn;
+  color: $pink-primary;
+  background-color: $color-ligth;
+  border-left: $border-left $pink-primary;
+}
+
+.btn-select-traduction {
+  @include btn;
+  background-color: $color-ligth;
+  border-left: $border-left $purple-primary;
+}
+
+.btn-user {
+  @include button-user;
+  color: $orange-primary;
+  background-color: $color-ligth;
+  border: $border $orange-primary;
+}
+
+.btn-user:hover {
+  @include button-user;
+  color: $orange-primary;
+  background-color: $color-ligth;
+  border: $border $orange-primary;
+}
