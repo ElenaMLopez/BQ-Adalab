@@ -16,10 +16,17 @@
   border: solid 1px #4d4d4f;
   border: solid 1px #4d4d4f; }
 
+.modal-div {
+  width: 800px;
+  height: 450px;
+  border-radius: 15px;
+  background-color: #ffffff;
+  border: solid 1px #cdcdc9; }
+
 .modal-title {
   width: 720px;
   height: 29px;
-  font-family: "roboto";
+  font-family: "Roboto", sans-serif;
   font-size: 24px;
   line-height: 1.21;
   text-align: center;
@@ -28,7 +35,7 @@
 .modal-secondary-tittle {
   width: 720px;
   height: 24px;
-  font-family: "roboto";
+  font-family: "Roboto", sans-serif;
   font-size: 18px;
   font-weight: 300;
   line-height: 1.33;
