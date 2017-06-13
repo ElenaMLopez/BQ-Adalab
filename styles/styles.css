@@ -1,183 +1,63 @@
-/* Colours */
-/* Tipografia */
-/* Font-size */
-/* Text align  */
-/* border */
-body {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
+/*
+Error: Invalid CSS after "}": expected "}", was ""
+        on line 113 of /Users/Nata/Documents/repos/BQ-Adalab/styles/components/_buttons.scss
+        from line 3 of /Users/Nata/Documents/repos/BQ-Adalab/styles/styles.scss
 
-/* Buttons */
-.btn-off {
-  width: 200px;
-  height: 40px;
-  padding: 0;
-  border-width: 0;
-  font-size: 16px;
-  background-color: #d4d4d4;
-  text-align: center; }
+108:   height: 40px;
+109:   background-color: #ffffff;
+110:   border: solid 1px #4d4d4f;
+111:   border: solid 1px $grey-primary;
+112: }
 
-.btn-off:hover {
-  width: 200px;
-  height: 40px;
-  padding: 0;
-  border-width: 0;
-  font-size: 16px;
-  background-color: #f2f2f2;
-  text-align: center; }
-
-.btn-select-gestion {
-  width: 200px;
-  height: 50px;
-  background-color: #f2f2f2; }
-
-.btn-select-gestion:hover {
-  width: 200px;
-  height: 50px;
-  background-color: #f2f2f2; }
-
-.btn-select-gestion:active {
-  width: 200px;
-  height: 50px;
-  background-color: #f2f2f2; }
-
-.btn-select-product {
-  width: 200px;
-  height: 50px;
-  padding-left: 20px;
-  text-align: left;
-  border-width: 0;
-  font-size: 16px;
-  color: #4d4d4f;
-  background-color: #f2f2f2; }
-
-.btn-select-product:hover {
-  width: 200px;
-  height: 50px;
-  padding-left: 20px;
-  text-align: left;
-  border-width: 0;
-  font-size: 16px;
-  color: #d60056;
-  background-color: white; }
-
-.btn-select-product:active {
-  width: 200px;
-  height: 50px;
-  padding-left: 20px;
-  text-align: left;
-  border-width: 0;
-  font-size: 16px;
-  color: #d60056;
-  background-color: white;
-  border-left: solid 2px #d60056; }
-
-.btn-select-traduction {
-  width: 200px;
-  height: 50px;
-  padding-left: 20px;
-  text-align: left;
-  border-width: 0;
-  font-size: 16px;
-  background-color: white;
-  border-left: solid 2px #892d87; }
-
-.btn-user {
-  width: 200px;
-  height: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: #ff5000;
-  background-color: white;
-  border: solid 1.5px #ff5000; }
-
-.btn-user:hover {
-  width: 200px;
-  height: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: #ff5000;
-  background-color: white;
-  border: solid 1.5px #ff5000; }
-
-body {
-  font-size: 16px; }
-
-h1 {
-  font-size: 48px; }
-
-h2 {
-  font-size: 28px; }
-
-h3 {
-  font-size: 24px; }
-
-h4 {
-  font-size: 20px;
-  margin: 0;
-  padding: 15px; }
-
-h5 {
-  font-size: 16px; }
-
-.box-aside {
-  width: 200px;
-  height: 100vh;
-  background-color: #f2f2f2; }
-
-.box-dashboard {
-  width: 200px;
-  height: 50px;
-  color: #d60056;
-  text-align: center;
-  background-color: #f1a6c4; }
-
-.column {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start; }
-
-.row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row; }
-
-.footer {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1; }
-
-.box-header {
-  width: 100%; }
-
-.icon-btn {
-  margin: 0 15px; }
-
-/*# sourceMappingURL=styles.css.map */
+Backtrace:
+/Users/Nata/Documents/repos/BQ-Adalab/styles/components/_buttons.scss:113
+/Users/Nata/Documents/repos/BQ-Adalab/styles/styles.scss:3
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:1207:in `expected'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:1137:in `expected'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:1132:in `tok!'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:667:in `block'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:658:in `ruleset'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:684:in `block_child'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:677:in `block_contents'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:125:in `stylesheet'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:41:in `parse'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/engine.rb:406:in `_to_tree'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/engine.rb:312:in `to_tree'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:326:in `block in visit_import'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:88:in `block in with_import'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:88:in `with_import'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:325:in `visit_import'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:79:in `with_base'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `visit'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `map'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:159:in `visit'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/engine.rb:381:in `_render_with_sourcemap'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/engine.rb:298:in `render_with_sourcemap'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/exec/sass_scss.rb:391:in `run'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/exec/sass_scss.rb:63:in `process_result'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/exec/base.rb:52:in `parse'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/exec/base.rb:19:in `parse!'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/bin/sass:13:in `<top (required)>'
+/Applications/Koala.app/Contents/Resources/app.nw/bin/sass:18:in `load'
+/Applications/Koala.app/Contents/Resources/app.nw/bin/sass:18:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"}\": expected \"}\", was \"\"\A         on line 113 of /Users/Nata/Documents/repos/BQ-Adalab/styles/components/_buttons.scss\A         from line 3 of /Users/Nata/Documents/repos/BQ-Adalab/styles/styles.scss\A \A 108:   height: 40px;\A 109:   background-color: #ffffff;\A 110:   border: solid 1px #4d4d4f;\A 111:   border: solid 1px $grey-primary;\A 112: }"; }

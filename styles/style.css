@@ -1,0 +1,45 @@
+/* Colours */
+/* Tipografia */
+/* Font-size */
+/* Text align  */
+.modal-btn-cancel {
+  width: 162px;
+  height: 40px;
+  background-color: #ffffff;
+  border: solid 1px #4d4d4f;
+  border: solid 1px #4d4d4f; }
+
+.modal-btn-accept {
+  width: 162px;
+  height: 40px;
+  background-color: #ffffff;
+  border: solid 1px #4d4d4f;
+  border: solid 1px #4d4d4f; }
+
+.modal-div {
+  width: 800px;
+  height: 450px;
+  border-radius: 15px;
+  background-color: #ffffff;
+  border: solid 1px #cdcdc9; }
+
+.modal-title {
+  width: 720px;
+  height: 29px;
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  line-height: 1.21;
+  text-align: center;
+  color: #4d4d4f; }
+
+.modal-secondary-tittle {
+  width: 720px;
+  height: 24px;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.33;
+  text-align: center;
+  color: #4d4d4f; }
+
+/*# sourceMappingURL=style.css.map */
