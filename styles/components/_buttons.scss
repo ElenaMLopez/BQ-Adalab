@@ -276,3 +276,64 @@
   border: solid 1px $orange-primary;
   background-image: url(../images/check-icon-orange-m.png);
 }
+
+// Botones de la Apps
+@mixin btn-app {
+  width: 130px;
+  height: 130px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $color-ligth;
+  background-repeat: no-repeat;
+  background-position-y: 20px;
+  background-position-x: center;
+  padding-top: 60px;
+  font-family: $font;
+}
+
+.btn-productapp {
+  @include btn-app;
+  border: 3px solid $pink-primary;
+  background-image: url(../images/appleIconPink.png);
+  color: $pink-primary;
+}
+
+.btn-productapp:hover {
+  border: 3px solid $pink-primary;
+  background-image: url(../images/appleIcon.png);
+  background-color: $pink-primary;
+  color: $color-ligth;
+}
+
+.btn-userapp {
+  @include btn-app;
+  border: 3px solid $orange-primary;
+  background-image: url(../images/userOrange.png);
+  background-size: 50px;
+  color: $orange-primary;
+}
+
+.btn-userapp:hover {
+  border: 3px solid $orange-primary;
+  background-image: url(../images/user.png);
+  background-color: $orange-primary;
+  color: $color-ligth;
+}
+
+.btn-traductorapp {
+  @include btn-app;
+  border: 3px solid $purple-primary;
+  background-image: url(../images/internetPurple.png);
+  background-size: 50px;
+  color: $purple-primary;
+}
+
+.btn-traductorapp:hover {
+  border: 3px solid $purple-primary;
+  background-image: url(../images/internet.png);
+  background-color: $purple-primary;
+  color: $color-ligth;
+}
