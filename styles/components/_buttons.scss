@@ -1,6 +1,6 @@
 /* Buttons */
 
-@mixin btn {
+@mixin button-options {
   width: 200px;
   height: 50px;
   padding-left: 20px;
@@ -15,14 +15,14 @@
   padding: 0;
   border-width: 0;
   font-size: $Text-xsmall;
+  background-image: url(../images/power-off.png);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-@mixin button-user {
+@mixin button-img {
   width: 200px;
   height: 40px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
 }
 
 .btn-off{
@@ -56,57 +56,60 @@
 }
 
 .btn-select-product {
-  @include btn;
+  @include button-options;
   color: $grey-primary;
   background-color: $bg-grey;
 }
 
 .btn-select-product:hover {
-  @include btn;
+  @include button-options;
   color: $pink-primary;
   background-color: $color-ligth;
 }
 
 .btn-select-product:active {
-  @include btn;
+  @include button-options;
   color: $pink-primary;
   background-color: $color-ligth;
   border-left: $border-left $pink-primary;
 }
 
 .btn-select-traduction {
-  @include btn;
+  @include button-options;
   background-color: $color-ligth;
   border-left: $border-left $purple-primary;
 }
 
-.btn-user {
-  @include button-user;
+.btn-product {
+  @include button-img;
   color: $orange-primary;
+  background-image: url(../images/user-orange.png);
+  background-repeat: no-repeat;
   background-color: $color-ligth;
+  background-position-x: 15px;
+  background-position-y: 4px;
   border: $border $orange-primary;
 }
 
-.btn-user:hover {
-  @include button-user;
-  color: $orange-primary;
-  background-color: $color-ligth;
-  border: $border $orange-primary;
-
-  /* Botones Modal */
-
-.modal-btn-cancel{
- width: 162px;
- height: 40px;
- background-color: #ffffff;
- border: solid 1px #4d4d4f;
- border: solid 1px $grey-primary;
+.btn-product:hover {
+  @include button-img;
+  background-color: $orange-terciary;
 }
 
-.modal-btn-accept{
+/* Botones Modal */
+
+@mixin button-modal {
   width: 162px;
   height: 40px;
   background-color: #ffffff;
-  border: solid 1px #4d4d4f;
+}
+
+.btn-modal {
+  @include button-modal;
   border: solid 1px $grey-primary;
+}
+
+.btn-modal:hover {
+  @include button-modal;
+  border: solid 1px $orange-primary;
 }
