@@ -174,17 +174,6 @@
   border: $border $orange-primary;
 }
 
-
-.btn-user:hover {
-  @include button-options;
-  color: $orange-primary;
-  background-color: $color-ligth;
-  border: $border $orange-primary;
-}
-
-.btn-product:hover {
-  @include button-img;
-
 .btn-create-orange:hover {
   background-color: $orange-terciary;
 }
@@ -235,7 +224,6 @@
   background-position-y: 9px;
 }
 
-
 @mixin modal-btn-accept-active {
   width: 162px;
   height: 40px;
@@ -250,6 +238,7 @@
   background-position-x: 17px;
   background-position-y: 9px;
 }
+
 @mixin modal-btn-accept {
   width: 162px;
   height: 40px;
@@ -266,23 +255,22 @@
   padding-left: 35px;
 }
 
-
-.modal-btn-cancel-client{
+.modal-btn-cancel-client {
   @include modal-btn-cancel;
 }
 
-.modal-btn-cancel-client:hover{
+.modal-btn-cancel-client:hover {
   @include modal-btn-cancel-active;
   color: $orange-primary;
   border: solid 1px $orange-primary;
   background-image: url(../images/cancel-icon-orange-m.png);
 }
 
-.modal-btn-accept-client{
+.modal-btn-accept-client {
   @include modal-btn-accept;
 }
 
-.modal-btn-accept-client:hover{
+.modal-btn-accept-client:hover {
   @include modal-btn-accept-active;
   color: $orange-primary;
   border: solid 1px $orange-primary;

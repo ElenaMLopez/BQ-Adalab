@@ -1,4 +1,4 @@
-@mixin column{
+@mixin column {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -15,22 +15,6 @@
   height: 100vh;
 }
 
-.box-aside {
-  @include column;
-  width: 200px;
-  position: relative;
-  background-color: $bg-grey;
-}
-
-.box-dashboard {
-  @include row;
-  width: 200px;
-  height: 50px;
-  color: $pink-primary;
-  text-align: $text-center;
-  background-color: $pink-secondary;
-}
-
 .down {
   position: absolute;
   bottom: 0px;
@@ -39,12 +23,6 @@
 .content {
   margin-left: 35px;
   width: 100%;
-}
-
-.box-header {
-  @include row;
-  justify-content: space-between;
-  padding: 10px 35px 10px 0;
 }
 
 .box-table {
