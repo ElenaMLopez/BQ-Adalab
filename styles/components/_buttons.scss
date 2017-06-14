@@ -12,9 +12,9 @@
 @mixin button-off {
   width: 200px;
   height: 40px;
+  font-size: $Text-xsmall;
   padding: 0;
   border-width: 0;
-  font-size: $Text-xsmall;
   background-image: url(../images/power-off.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -23,7 +23,24 @@
 @mixin button-img {
   width: 200px;
   height: 40px;
+  font-size: $Text-xsmall;
+  background-repeat: no-repeat;
+  background-color: $color-ligth;
+  background-position-x: 10px;
+  background-position-y: 4px;
 }
+
+@mixin button-action{
+  width: 150px;
+  height: 40px;
+  font-size: $Text-xsmall;
+  background-repeat: no-repeat;
+  background-color: $color-ligth;
+  background-position-x: 15px;
+  background-position-y: 4px;
+}
+
+/* Botones power */
 
 .btn-off{
   @include button-off;
@@ -32,28 +49,57 @@
 }
 
 .btn-off:hover{
-  @include button-off;
   background-color: $bg-grey;
   text-align: $text-center;
 }
 
+/* Botones Gestión */
+
 .btn-select-gestion {
-  width: 200px;
-  height: 50px;
-  background-color: #f2f2f2;
+  @include button-options;
+  color: $grey-primary;
+  background-color: $bg-grey;
 }
 
 .btn-select-gestion:hover {
-  width: 200px;
-  height: 50px;
-  background-color: #f2f2f2;
+  color: $orange-primary;
+  background-color: $color-ligth;
 }
 
-.btn-select-gestion:active{
-  width: 200px;
-  height: 50px;
-  background-color: #f2f2f2;
+.btn-select-gestion:active {
+  color: $orange-primary;
+  background-color: $color-ligth;
+  border-left: $border-left $orange-primary;
 }
+
+/* Botones Usuario */
+
+.btn-user {
+  @include button-img;
+  color: $orange-primary;
+  background-image: url(../images/user-orange.png);
+  border: $border $orange-primary;
+}
+
+.btn-user:hover {
+  background-color: $orange-terciary;
+}
+
+/* Botones roles */
+
+.btn-rol {
+  @include button-img;
+  color: $orange-primary;
+  background-image: url(../images/rol-orange.png);
+  border: $border $orange-primary;
+  background-size: 25px;
+}
+
+.btn-rol:hover {
+  background-color: $orange-terciary;
+}
+
+/* Botones producto */
 
 .btn-select-product {
   @include button-options;
@@ -62,17 +108,30 @@
 }
 
 .btn-select-product:hover {
-  @include button-options;
   color: $pink-primary;
   background-color: $color-ligth;
 }
 
 .btn-select-product:active {
-  @include button-options;
   color: $pink-primary;
   background-color: $color-ligth;
   border-left: $border-left $pink-primary;
 }
+
+/* Botones nuevo producto */
+
+.btn-product {
+  @include button-img;
+  color: $pink-primary;
+  background-image: url(../images/user-pink.png);
+  border: $border $pink-primary;
+}
+
+.btn-product:hover {
+  background-color: $pink-terciary;
+}
+
+/* Botones traduccion */
 
 .btn-select-traduction {
   @include button-options;
@@ -80,16 +139,41 @@
   border-left: $border-left $purple-primary;
 }
 
-.btn-product {
-  @include button-img;
+/* Botones Salir */
+
+.btn-exit {
+  @include button-action;
+  color: $grey-primary;
+  background-image: url(../images/exit.png);
+  background-size: 30px;
+  border: $border $grey-primary;
+}
+
+.btn-exit:hover {
+  background-color: $grey-secondary;
+}
+
+/* Botones Crear */
+/* Pink */
+.btn-create-pink {
+  @include button-action;
+  color: $pink-primary;
+  background-image: url(../images/create-pink.png);
+  border: $border $pink-primary;
+}
+
+.btn-create-pink:hover {
+  background-color: $orange-terciary;
+}
+
+/* orange */
+.btn-create-orange {
+  @include button-action;
   color: $orange-primary;
-  background-image: url(../images/user-orange.png);
-  background-repeat: no-repeat;
-  background-color: $color-ligth;
-  background-position-x: 15px;
-  background-position-y: 4px;
+  background-image: url(../images/create-orange.png);
   border: $border $orange-primary;
 }
+
 
 .btn-user:hover {
   @include button-options;
@@ -100,7 +184,21 @@
 
 .btn-product:hover {
   @include button-img;
+
+.btn-create-orange:hover {
   background-color: $orange-terciary;
+}
+
+/* Botón Guardar Purple */
+.btn-save {
+  @include button-action;
+  color: $purple-primary;
+  background-image: url(../images/save-purple.png);
+  border: $border $purple-primary;
+}
+
+.btn-save:hover {
+  background-color: $purple-terciary;
 }
 
 /* Botones Modal */
@@ -136,6 +234,7 @@
   background-position-x:17px;
   background-position-y: 9px;
 }
+
 
 @mixin modal-btn-accept-active {
   width: 162px;
