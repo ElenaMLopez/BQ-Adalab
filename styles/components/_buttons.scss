@@ -282,6 +282,7 @@
   @include modal-btn-accept;
 }
 
+
 .modal-btn-accept-client:hover{
   @include modal-btn-accept-active;
   color: $orange-primary;
