@@ -10,6 +10,9 @@
   padding: 0;
   border-width: 0;
   font-size: 16px;
+  background-image: url(../images/power-off.png);
+  background-repeat: no-repeat;
+  background-position: center;
   background-color: #d4d4d4;
   text-align: center; }
 
@@ -19,6 +22,9 @@
   padding: 0;
   border-width: 0;
   font-size: 16px;
+  background-image: url(../images/power-off.png);
+  background-repeat: no-repeat;
+  background-position: center;
   background-color: #f2f2f2;
   text-align: center; }
 
@@ -78,39 +84,32 @@
   background-color: white;
   border-left: solid 2px #892d87; }
 
-.btn-user {
+.btn-product {
   width: 200px;
   height: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   color: #ff5000;
+  background-image: url(../images/user-orange.png);
+  background-repeat: no-repeat;
   background-color: white;
+  background-position-x: 15px;
+  background-position-y: 4px;
   border: solid 1.5px #ff5000; }
 
 .btn-user:hover {
   width: 200px;
-  height: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  height: 50px;
+  padding-left: 20px;
+  text-align: left;
+  border-width: 0;
+  font-size: 16px;
   color: #ff5000;
   background-color: white;
   border: solid 1.5px #ff5000; }
+
+.btn-product:hover {
+  width: 200px;
+  height: 40px;
+  background-color: #ffe5d9; }
 
 /* Botones Modal */
 .modal-btn-cancel-client {
@@ -180,7 +179,9 @@
 
 body {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
 
 * {
   -webkit-box-sizing: border-box;
@@ -268,13 +269,15 @@ p {
           justify-content: space-between; }
 
 body {
-  font-size: 16px; }
+  font-size: 16px;
+  font-family: "Roboto", sans-serif; }
 
 h1 {
   font-size: 48px; }
 
 h2 {
-  font-size: 28px; }
+  font-size: 28px;
+  margin: 5px; }
 
 h3 {
   font-size: 24px; }
