@@ -400,6 +400,107 @@ p {
   border: solid 1px #ff5000;
   background-image: url(../images/check-icon-orange-m.png); }
 
+.btn-productapp {
+  width: 130px;
+  height: 130px;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position-y: 20px;
+  background-position-x: center;
+  padding-top: 60px;
+  font-family: "Roboto", sans-serif;
+  border: 3px solid #d60056;
+  background-image: url(../images/appleIconPink.png);
+  color: #d60056; }
+
+.btn-productapp:hover {
+  border: 3px solid #d60056;
+  background-image: url(../images/appleIcon.png);
+  background-color: #d60056;
+  color: white; }
+
+.btn-userapp {
+  width: 130px;
+  height: 130px;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position-y: 20px;
+  background-position-x: center;
+  padding-top: 60px;
+  font-family: "Roboto", sans-serif;
+  border: 3px solid #ff5000;
+  background-image: url(../images/userOrange.png);
+  background-size: 50px;
+  color: #ff5000; }
+
+.btn-userapp:hover {
+  border: 3px solid #ff5000;
+  background-image: url(../images/user.png);
+  background-color: #ff5000;
+  color: white; }
+
+.btn-traductorapp {
+  width: 130px;
+  height: 130px;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position-y: 20px;
+  background-position-x: center;
+  padding-top: 60px;
+  font-family: "Roboto", sans-serif;
+  border: 3px solid #892d87;
+  background-image: url(../images/internetPurple.png);
+  background-size: 50px;
+  color: #892d87; }
+
+.btn-traductorapp:hover {
+  border: 3px solid #892d87;
+  background-image: url(../images/internet.png);
+  background-color: #892d87;
+  color: white; }
+
 .box-aside {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -435,5 +536,4 @@ p {
   width: 100%;
   overflow: scroll;
   border-top: 1px solid #ff5000; }
-
 /*# sourceMappingURL=styles.css.map */
