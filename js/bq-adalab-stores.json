@@ -1,0 +1,214 @@
+{
+  "stores": [
+    {
+      "city": "Madrid",
+      "latitude": "40.42608500",
+      "longitude": "-3.67577200",
+      "name": "Phone House - Madrid centro/este",
+      "street": "Conde de Peñalver, 13",
+      "web": "http://reparaciones.phonehouse.es/servicio-tecnico/phone-house-madrid-centroeste-madrid-2",
+      "telephone": null,
+      "zipCode": "28006"
+    },
+    {
+      "city": "Alcalá de Henares",
+      "latitude": "40.48319100",
+      "longitude": "-3.36514200",
+      "name": "Phone House - Alcalá de Henares",
+      "street": "C/ Mayor, 1/esq. Pza. Cervantes",
+      "web": "http://reparaciones.phonehouse.es/servicio-tecnico/phone-house-alcala-de-henares-alcala-de-henares-32",
+      "telephone": null,
+      "zipCode": "28801"
+    },
+    {
+      "city": "Bilbao",
+      "latitude": "43.26083900",
+      "longitude": "-2.93928700",
+      "name": "Phone House - Bilbao",
+      "street": "Ercilla, 43",
+      "web": "http://reparaciones.phonehouse.es/servicio-tecnico/phone-house-bilbao-bilbao-34",
+      "telephone": null,
+      "zipCode": "48011"
+    },
+    {
+      "city": "Barcelona",
+      "latitude": "41.39960900",
+      "longitude": "2.15545100",
+      "name": "Phone House - Barcelona",
+      "street": "Travessera de Gracia, 116",
+      "web": "http://reparaciones.phonehouse.es/servicio-tecnico/phone-house-barcelona-barcelona-42",
+      "telephone": null,
+      "zipCode": "8012"
+    },
+    {
+      "city": "Gijón",
+      "latitude": "43.53974900",
+      "longitude": "-5.66356000",
+      "name": "Phone House - Gijón",
+      "street": "Plaza Seis de Agosto, 11",
+      "web": "http://reparaciones.phonehouse.es/servicio-tecnico/phone-house-gijon-gijon-91",
+      "telephone": null,
+      "zipCode": "33206"
+    },
+    {
+      "city": "San Fernando",
+      "latitude": "36.47186500",
+      "longitude": "-6.19659500",
+      "name": "Phone House - C.C. Bahía Sur",
+      "street": "Caño Herrera s/n",
+      "web": "http://reparaciones.phonehouse.es/servicio-tecnico/c-c-bahia-sur-san-fernando-139",
+      "telephone": "99999999",
+      "zipCode": "11100"
+    },
+    {
+      "city": "Aldaia",
+      "latitude": "39.47195900",
+      "longitude": "-0.48725500",
+      "name": "Phone House - C.C. Bonaire",
+      "street": "Carretera A-3, Km 345, salida Aldaia-Torrente, Local 396",
+      "web": "http://reparaciones.phonehouse.es/servicio-tecnico/c-c-bonaire-aldaia-149",
+      "telephone": "999999999",
+      "zipCode": "46960"
+    },
+    {
+      "city": "Getafe",
+      "latitude": "40.27229500",
+      "longitude": "-3.69700400",
+      "name": "Phone House - C.C. Nassica",
+      "street": "Av. Río Guadalquivir, Local R24-25",
+      "web": "http://reparaciones.phonehouse.es/servicio-tecnico/tienda-outlet-cc-nassica-getafe-159",
+      "telephone": "999999999",
+      "zipCode": "28906"
+    },
+    {
+      "city": "Alcorcón",
+      "latitude": "40.35752000",
+      "longitude": "-3.83227100",
+      "name": "Phone House - C.C. Tres Aguas",
+      "street": "Ctra. M-501 Km 0,8 / Avda. San Martin de Valdeiglesias, 22, Lc-159 D3 Pl.Baja",
+      "web": "http://reparaciones.phonehouse.es/servicio-tecnico/c-c-tres-aguas-alcorcon-163",
+      "telephone": "999999999",
+      "zipCode": "28922"
+    },
+    {
+      "city": "San Vicente de Raspeig",
+      "latitude": "38.38243400",
+      "longitude": "-0.50678800",
+      "name": "Phone House - C.C. San Vicente De Raspeig",
+      "street": "Calle Alicante, 94, Local 16 Planta Baja",
+      "web": "http://reparaciones.phonehouse.es/servicio-tecnico/c-c-san-vicente-de-raspeig-san-vicente-de-raspeig-182",
+      "telephone": "999999999",
+      "zipCode": "3690"
+    },
+    {
+      "city": "Marratxi",
+      "latitude": "39.63154000",
+      "longitude": "2.73302400",
+      "name": "Phone House - C.C. Festival Park",
+      "street": "Autopista Palma-Inca, Km 7.1",
+      "web": "http://reparaciones.phonehouse.es/servicio-tecnico/c-c-festival-park-marratxi-199",
+      "telephone": "999999999",
+      "zipCode": "7141"
+    },
+    {
+      "city": "A Coruña",
+      "latitude": "43.35509700",
+      "longitude": "-8.40277600",
+      "name": "Phone House - C.C. Cuatro Caminos",
+      "street": "Rúa Ramón y Cajal, 53, Local A-20",
+      "web": "http://reparaciones.phonehouse.es/servicio-tecnico/c-c-cuatro-caminos-a-coruna-258",
+      "telephone": "999999999",
+      "zipCode": "15006"
+    },
+    {
+      "city": "Madrid",
+      "latitude": "40.44681900",
+      "longitude": "-3.58740600",
+      "name": "Phone House - C.C. Plenilunio",
+      "street": "Calle Aracne s/n , Loc.82 - Pol.Ind. Las Mercedes",
+      "web": "http://reparaciones.phonehouse.es/servicio-tecnico/c-c-plenilunio-madrid-383",
+      "telephone": "999999999",
+      "zipCode": "28022"
+    },
+    {
+      "city": "Alcalá de Guadaira",
+      "latitude": "37.35478700",
+      "longitude": "-5.85890400",
+      "name": "Phone House - C.C. Alcalá Parque",
+      "street": "Autovia Sevilla-Málaga Km. 7, Local B10",
+      "web": "http://reparaciones.phonehouse.es/servicio-tecnico/tienda-outlet-cc-alcala-parque-alcala-de-guadaira-411",
+      "telephone": "999999999",
+      "zipCode": "41500"
+    },
+    {
+      "city": "Arroyomolinos",
+      "latitude": "40.30091700",
+      "longitude": "-3.92745600",
+      "name": "Phone House - C.C. Xanadú",
+      "street": "Autovía A-5, salida 22. Arroyomolinos",
+      "web": "http://reparaciones.phonehouse.es/servicio-tecnico/c-c-xanadu-arroyomolinos-730",
+      "telephone": "999999999",
+      "zipCode": "28939"
+    },
+    {
+      "city": "Madrid",
+      "latitude": "40.44450400",
+      "longitude": "-3.69876100",
+      "name": "PCBox Madrid (Ponzano)",
+      "street": "C/ Ponzano, 80",
+      "web": null,
+      "telephone": "915 357 440",
+      "zipCode": "28003"
+    },
+    {
+      "city": "Madrid",
+      "latitude": "40.40482800",
+      "longitude": "-3.68272600",
+      "name": "PCBox Madrid (Ciudad Barcelona)",
+      "street": "Avda. Ciudad de Barcelona, 110",
+      "web": null,
+      "telephone": "999999999",
+      "zipCode": "28007"
+    },
+    {
+      "city": "Valladolid",
+      "latitude": "41.64285900",
+      "longitude": "-4.71861900",
+      "name": "PC Coste Valladolid Paseo San Vicente",
+      "street": "Paseo San Vicente, 47",
+      "web": null,
+      "telephone": "999999999",
+      "zipCode": "47013"
+    },
+    {
+      "city": "Madrid",
+      "latitude": "40.43739200",
+      "longitude": "-3.63877700",
+      "name": "BEEP Alcalá Norte - C. C. Alcalá Norte",
+      "street": "C/ Alcalá, 414",
+      "web": null,
+      "telephone": "999999999",
+      "zipCode": "28017"
+    },
+    {
+      "city": "Madrid",
+      "latitude": "40.39384200",
+      "longitude": "-3.76301700",
+      "name": "BEEP Madrid Aluche",
+      "street": "C/ Illescas, 32",
+      "web": null,
+      "telephone": "999999999",
+      "zipCode": "28024"
+    },
+    {
+      "city": "Zaragoza",
+      "latitude": "41.67306990",
+      "longitude": "-0.88614250",
+      "name": "BEEP Zaragoza",
+      "street": "C/ Pablo Picasso,18",
+      "web": null,
+      "telephone": "999999999",
+      "zipCode": "50015"
+    }
+  ]
+}
