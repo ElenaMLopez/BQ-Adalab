@@ -92,21 +92,91 @@
   color: $orange-primary;
   background-color: $color-ligth;
   border: $border $orange-primary;
+}
 
   /* Botones Modal */
 
-.modal-btn-cancel{
- width: 162px;
- height: 40px;
- background-color: #ffffff;
- border: solid 1px #4d4d4f;
- border: solid 1px $grey-primary;
-}
+  @mixin modal-btn-cancel {
+    width: 162px;
+    height: 40px;
+    color: $grey-primary;
+    border: solid 1px $grey-primary;
+    font-size: $Text-normal;
+    padding-bottom: 6px;
+    padding-top: 6px;
+    background-color: #ffffff;
+    background-image: url(../images/cancel-icon-grey-m.png);
+    background-repeat: no-repeat;
+    background-position-x:17px;
+    background-position-y: 9px;
+    background-size: 22px;
+    padding-left: 35px;
+  }
 
-.modal-btn-accept{
-  width: 162px;
-  height: 40px;
-  background-color: #ffffff;
-  border: solid 1px #4d4d4f;
-  border: solid 1px $grey-primary;
-}
+  @mixin modal-btn-cancel-active {
+    width: 162px;
+    height: 40px;
+    color: "";
+    border: "";
+    font-size: $Text-normal;
+    padding-bottom: 6px;
+    padding-top: 6px;
+    background-color: #ffffff;
+    background-image: "";
+    background-repeat: no-repeat;
+    background-position-x:17px;
+    background-position-y: 9px;
+  }
+
+  @mixin modal-btn-accept-active {
+    width: 162px;
+    height: 40px;
+    color: "";
+    border: solid 1px "";
+    font-size: $Text-normal;
+    padding-bottom: 6px;
+    padding-top: 6px;
+    background-color: $color-ligth;
+    background-image: "";
+    background-repeat: no-repeat;
+    background-position-x: 17px;
+    background-position-y: 9px;
+  }
+  @mixin modal-btn-accept {
+    width: 162px;
+    height: 40px;
+    color: $grey-primary;
+    border: solid 1px $grey-primary;
+    font-size: $Text-normal;
+    padding-bottom: 6px;
+    padding-top: 6px;
+    background-color: $color-ligth;
+    background-image: url(../images/check-icon-grey-m.png);
+    background-repeat: no-repeat;
+    background-position-x: 17px;
+    background-position-y: 9px;
+    padding-left: 35px;
+  }
+
+
+  .modal-btn-cancel-client{
+    @include modal-btn-cancel;
+  }
+
+  .modal-btn-cancel-client:hover{
+    @include modal-btn-cancel-active;
+    color: $orange-primary;
+    border: solid 1px $orange-primary;
+    background-image: url(../images/cancel-icon-orange-m.png);
+  }
+
+  .modal-btn-accept-client{
+    @include modal-btn-accept;
+  }
+
+  .modal-btn-accept-client:hover{
+    @include modal-btn-accept-active;
+    color: $orange-primary;
+    border: solid 1px $orange-primary;
+    background-image: url(../images/check-icon-orange-m.png);
+  }
