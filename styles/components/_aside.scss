@@ -1,0 +1,15 @@
+.box-aside {
+  @include column;
+  width: 200px;
+  position: relative;
+  background-color: $bg-grey;
+}
+
+.box-dashboard {
+  @include row;
+  width: 200px;
+  height: 50px;
+  color: $pink-primary;
+  text-align: $text-center;
+  background-color: $pink-secondary;
+}
