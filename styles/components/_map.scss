@@ -1,6 +1,7 @@
 .box-map {
+  display: none;
   position: absolute;
-  z-index: -2;
+  z-index: -1;
   height: 100vh;
   max-height: 400px;
   max-width: 620px;

@@ -21,7 +21,8 @@
 .sidebar {
   @include column;
   width: 200px;
-  position: relative;
+  height: 100vh;
+  position: fixed;
   background-color: $bg-grey;
 }
 
@@ -33,24 +34,21 @@
 }
 
 .title-product {
-  @include row;
   @include title;
   color: $pink-primary;
   background-color: $pink-secondary;
 }
 
 .title-gestion {
-  @include row;
   @include title;
   color: $orange-primary;
   background-color: $orange-secondary;
 }
 
 .title-traductor {
-  @include row;
   @include title;
-  color: $pink-primary;
-  background-color: $pink-secondary;
+  color: $purple-primary;
+  background-color: $purple-secondary;
 }
 
 /* Botones producto */
@@ -93,8 +91,9 @@
 
 /* Botones traduccion */
 
-.traductor input[type="radio"]:checked + label{
+.traductor {
   color: $purple-primary;
+  padding-left: 20px;
   background-color: $color-ligth;
   border-left: $border-left $purple-primary;
 }
