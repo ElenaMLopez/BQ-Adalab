@@ -390,7 +390,9 @@ p {
   background-position-x: 17px;
   background-position-y: 9px;
   background-size: 22px;
-  padding-left: 35px; }
+  padding-left: 35px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s; }
 
 .modal-btn-cancel-client:hover {
   width: 162px;
@@ -407,6 +409,8 @@ p {
   background-position-x: 17px;
   background-position-y: 9px;
   background-size: 22px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   color: #ff5000;
   border: solid 1px #ff5000;
   background-image: url(../images/cancel-icon-orange-m.png); }
@@ -425,7 +429,9 @@ p {
   background-repeat: no-repeat;
   background-position-x: 17px;
   background-position-y: 9px;
-  padding-left: 35px; }
+  padding-left: 35px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s; }
 
 .modal-btn-accept-client:hover {
   width: 162px;
@@ -441,6 +447,8 @@ p {
   background-repeat: no-repeat;
   background-position-x: 17px;
   background-position-y: 9px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   color: #ff5000;
   border: solid 1px #ff5000;
   background-image: url(../images/check-icon-orange-m.png); }
@@ -460,7 +468,9 @@ p {
   background-position-x: 17px;
   background-position-y: 9px;
   background-size: 22px;
-  padding-left: 35px; }
+  padding-left: 35px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s; }
 
 .modal-btn-cancel-product:hover {
   width: 162px;
@@ -477,6 +487,8 @@ p {
   background-position-x: 17px;
   background-position-y: 9px;
   background-size: 22px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   color: #d60056;
   border: solid 1px #d60056;
   background-image: url(../images/cancel-icon-pink-m.png); }
@@ -495,7 +507,9 @@ p {
   background-repeat: no-repeat;
   background-position-x: 17px;
   background-position-y: 9px;
-  padding-left: 35px; }
+  padding-left: 35px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s; }
 
 .modal-btn-accept-product:hover {
   width: 162px;
@@ -511,6 +525,8 @@ p {
   background-repeat: no-repeat;
   background-position-x: 17px;
   background-position-y: 9px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   color: #d60056;
   border: solid 1px #d60056;
   background-image: url(../images/check-icon-pink-m.png); }
