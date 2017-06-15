@@ -10,6 +10,7 @@
 .liste {
   width: 100%;
   border-spacing: 0;
+  border-collapse: collapse;
 }
 
 .liste th, td {
@@ -17,7 +18,8 @@
 }
 
 .NameOption {
-  border: $border-small $grey-secondary;
+  border-top: $border-small $grey-secondary;
+  border-bottom: $border-small $grey-secondary;
 }
 
 .NameOption th {
@@ -29,11 +31,11 @@
   background-color: $bg-grey;
 }
 
-.list-grey:hover {
-  background-color: $pink-terciary;
+.line {
+  background-color: $color-ligth;
 }
 
-.line-pink:hover {
+.line:hover, .list-grey:hover {
   background-color: $pink-terciary;
 }
 

@@ -791,13 +791,15 @@ button {
 
 .liste {
   width: 100%;
-  border-spacing: 0; }
+  border-spacing: 0;
+  border-collapse: collapse; }
 
 .liste th, td {
   padding: 10px; }
 
 .NameOption {
-  border: solid 1px #d4d4d4; }
+  border-top: solid 1px #d4d4d4;
+  border-bottom: solid 1px #d4d4d4; }
 
 .NameOption th {
   text-align: left;
@@ -806,10 +808,10 @@ button {
 .list-grey {
   background-color: #f2f2f2; }
 
-.list-grey:hover {
-  background-color: #f9d9e6; }
+.line {
+  background-color: white; }
 
-.line-pink:hover {
+.line:hover, .list-grey:hover {
   background-color: #f9d9e6; }
 
 .iconProduct {
