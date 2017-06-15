@@ -13,4 +13,27 @@
   @include row;
   justify-content: space-between;
   padding: 10px 35px 10px 0;
+  border-bottom: $border-bottom $pink-primary;
+}
+
+.newuser-header {
+  position: relative;
+  width: 100%;
+  padding: 10px 0;
+  //border-bottom: $border-bottom $orange-primary;
+}
+
+.newuser-header-title {
+  text-align: center;
+  width: 100%;
+}
+
+.newuser-header-buttons {
+  position: absolute;
+  top: 10px;
+  right: 57px;
+}
+
+.btn-margin-header {
+  margin-right: 20px;
 }
