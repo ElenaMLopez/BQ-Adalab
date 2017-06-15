@@ -119,14 +119,37 @@ p {
       -ms-flex-pack: justify;
           justify-content: space-between; }
 
-.modal-product-icon {
+.icon-modal-circle-product {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  border: 1px solid green;
-  background-color: green; }
+  border: 2px solid #4d4d4f;
+  background-color: white;
+  background-image: url(../images/internetPurple.png);
+  background-repeat: no-repeat;
+  background-position: center; }
 
 .modal-tirth-title-product {
+  margin-top: 45px;
+  width: 720px;
+  height: 24px;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1;
+  text-align: center;
+  color: #4d4d4f; }
+
+.icon-modal-circle-user {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 2px solid #4d4d4f;
+  background-color: white;
+  background-image: url(../images/user-grey.png);
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.modal-tirth-title-user {
   margin-top: 45px;
   width: 720px;
   height: 24px;
@@ -357,6 +380,7 @@ p {
   height: 40px;
   color: #4d4d4f;
   border: solid 1px #4d4d4f;
+  outline: none;
   font-size: 20px;
   padding-bottom: 6px;
   padding-top: 6px;
@@ -373,6 +397,7 @@ p {
   height: 40px;
   color: "";
   border: "";
+  outline: none;
   font-size: 20px;
   padding-bottom: 6px;
   padding-top: 6px;
@@ -381,6 +406,7 @@ p {
   background-repeat: no-repeat;
   background-position-x: 17px;
   background-position-y: 9px;
+  background-size: 22px;
   color: #ff5000;
   border: solid 1px #ff5000;
   background-image: url(../images/cancel-icon-orange-m.png); }
@@ -390,6 +416,7 @@ p {
   height: 40px;
   color: #4d4d4f;
   border: solid 1px #4d4d4f;
+  outline: none;
   font-size: 20px;
   padding-bottom: 6px;
   padding-top: 6px;
@@ -405,6 +432,7 @@ p {
   height: 40px;
   color: "";
   border: solid 1px "";
+  outline: none;
   font-size: 20px;
   padding-bottom: 6px;
   padding-top: 6px;
@@ -416,6 +444,76 @@ p {
   color: #ff5000;
   border: solid 1px #ff5000;
   background-image: url(../images/check-icon-orange-m.png); }
+
+.modal-btn-cancel-product {
+  width: 162px;
+  height: 40px;
+  color: #4d4d4f;
+  border: solid 1px #4d4d4f;
+  outline: none;
+  font-size: 20px;
+  padding-bottom: 6px;
+  padding-top: 6px;
+  background-color: #ffffff;
+  background-image: url(../images/cancel-icon-grey-m.png);
+  background-repeat: no-repeat;
+  background-position-x: 17px;
+  background-position-y: 9px;
+  background-size: 22px;
+  padding-left: 35px; }
+
+.modal-btn-cancel-product:hover {
+  width: 162px;
+  height: 40px;
+  color: "";
+  border: "";
+  outline: none;
+  font-size: 20px;
+  padding-bottom: 6px;
+  padding-top: 6px;
+  background-color: #ffffff;
+  background-image: "";
+  background-repeat: no-repeat;
+  background-position-x: 17px;
+  background-position-y: 9px;
+  background-size: 22px;
+  color: #d60056;
+  border: solid 1px #d60056;
+  background-image: url(../images/cancel-icon-pink-m.png); }
+
+.modal-btn-accept-product {
+  width: 162px;
+  height: 40px;
+  color: #4d4d4f;
+  border: solid 1px #4d4d4f;
+  outline: none;
+  font-size: 20px;
+  padding-bottom: 6px;
+  padding-top: 6px;
+  background-color: white;
+  background-image: url(../images/check-icon-grey-m.png);
+  background-repeat: no-repeat;
+  background-position-x: 17px;
+  background-position-y: 9px;
+  padding-left: 35px; }
+
+.modal-btn-accept-product:hover {
+  width: 162px;
+  height: 40px;
+  color: "";
+  border: solid 1px "";
+  outline: none;
+  font-size: 20px;
+  padding-bottom: 6px;
+  padding-top: 6px;
+  background-color: white;
+  background-image: "";
+  background-repeat: no-repeat;
+  background-position-x: 17px;
+  background-position-y: 9px;
+  color: #d60056;
+  border: solid 1px #d60056;
+  background-image: url(../images/check-icon-pink-m.png); }
 
 .btn-productapp {
   width: 130px;
