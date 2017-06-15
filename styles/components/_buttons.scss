@@ -26,7 +26,7 @@ button {
   background-position-y: 4px;
 }
 
-@mixin button-action{
+@mixin button-action {
   width: 150px;
   height: 40px;
   font-size: $Text-xsmall;
@@ -38,13 +38,13 @@ button {
 
 /* Botones power */
 
-.btn-off{
+.btn-off {
   @include button-off;
   background-color: $grey-secondary;
   text-align: $text-center;
 }
 
-.btn-off:hover{
+.btn-off:hover {
   background-color: $grey-primary;
   background-image: url(../images/power-off-white.png);
 }
@@ -158,6 +158,7 @@ button {
   background-position-y: 9px;
   background-size: 22px;
   padding-left: 35px;
+  transition: 0.3s;
 }
 
 @mixin modal-btn-cancel-active {
@@ -175,6 +176,7 @@ button {
   background-position-x:17px;
   background-position-y: 9px;
   background-size: 22px;
+  transition: 0.3s;
 }
 
 @mixin modal-btn-accept-active {
@@ -191,6 +193,7 @@ button {
   background-repeat: no-repeat;
   background-position-x: 17px;
   background-position-y: 9px;
+  transition: 0.3s;
 }
 
 @mixin modal-btn-accept {
@@ -208,6 +211,7 @@ button {
   background-position-x: 17px;
   background-position-y: 9px;
   padding-left: 35px;
+  transition: 0.3s;
 }
 
 // Modal buttons for client orange

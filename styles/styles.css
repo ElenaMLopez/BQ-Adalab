@@ -41,6 +41,23 @@ h5 {
   font-size: 16px;
   font-weight: 400; }
 
+.newuser-header {
+  position: relative;
+  width: 100%;
+  padding: 10px 0; }
+
+.newuser-header-title {
+  text-align: center;
+  width: 100%; }
+
+.newuser-header-buttons {
+  position: absolute;
+  top: 10px;
+  right: 57px; }
+
+.btn-margin-header {
+  margin-right: 20px; }
+
 .header-product {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -56,6 +73,7 @@ h5 {
   z-index: 2;
   width: 85%;
   padding: 10px 35px 10px 0;
+  border-bottom: solid 2px #d60056;
   background-color: white;
   border-bottom: solid 2px #d60056; }
 
@@ -74,6 +92,7 @@ h5 {
   z-index: 2;
   width: 85%;
   padding: 10px 35px 10px 0;
+  border-bottom: solid 2px #d60056;
   background-color: white;
   border-bottom: solid 2px #ff5000; }
 
@@ -92,6 +111,7 @@ h5 {
   z-index: 2;
   width: 85%;
   padding: 10px 35px 10px 0;
+  border-bottom: solid 2px #d60056;
   background-color: white;
   border-bottom: solid 2px #892d87; }
 
@@ -238,6 +258,18 @@ p {
 .content {
   margin-left: 225px;
   width: 100%; }
+
+.line-orange {
+  width: 100%;
+  height: 2px;
+  background-color: #ff5000;
+  margin-left: 35px; }
+
+.line-pink {
+  width: 100%;
+  height: 2px;
+  background-color: #d60056;
+  margin-left: 35px; }
 
 .box-map {
   display: none;
@@ -407,7 +439,9 @@ button {
   background-position-x: 17px;
   background-position-y: 9px;
   background-size: 22px;
-  padding-left: 35px; }
+  padding-left: 35px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s; }
 
 .modal-btn-cancel-client:hover {
   width: 162px;
@@ -424,6 +458,8 @@ button {
   background-position-x: 17px;
   background-position-y: 9px;
   background-size: 22px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   color: #ff5000;
   border: solid 1px #ff5000;
   background-image: url(../images/cancel-icon-orange-m.png); }
@@ -442,7 +478,9 @@ button {
   background-repeat: no-repeat;
   background-position-x: 17px;
   background-position-y: 9px;
-  padding-left: 35px; }
+  padding-left: 35px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s; }
 
 .modal-btn-accept-client:hover {
   width: 162px;
@@ -458,6 +496,8 @@ button {
   background-repeat: no-repeat;
   background-position-x: 17px;
   background-position-y: 9px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   color: #ff5000;
   border: solid 1px #ff5000;
   background-image: url(../images/check-icon-orange-m.png); }
@@ -477,7 +517,9 @@ button {
   background-position-x: 17px;
   background-position-y: 9px;
   background-size: 22px;
-  padding-left: 35px; }
+  padding-left: 35px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s; }
 
 .modal-btn-cancel-product:hover {
   width: 162px;
@@ -494,6 +536,8 @@ button {
   background-position-x: 17px;
   background-position-y: 9px;
   background-size: 22px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   color: #d60056;
   border: solid 1px #d60056;
   background-image: url(../images/cancel-icon-pink-m.png); }
@@ -512,7 +556,9 @@ button {
   background-repeat: no-repeat;
   background-position-x: 17px;
   background-position-y: 9px;
-  padding-left: 35px; }
+  padding-left: 35px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s; }
 
 .modal-btn-accept-product:hover {
   width: 162px;
@@ -528,6 +574,8 @@ button {
   background-repeat: no-repeat;
   background-position-x: 17px;
   background-position-y: 9px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   color: #d60056;
   border: solid 1px #d60056;
   background-image: url(../images/check-icon-pink-m.png); }
