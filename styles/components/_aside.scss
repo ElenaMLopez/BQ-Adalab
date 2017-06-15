@@ -1,15 +1,100 @@
-.box-aside {
+@mixin column {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+@mixin row {
+  display: flex;
+  flex-direction: row;
+}
+
+@mixin select-options {
+  width: 200px;
+  height: 50px;
+  padding-left: 20px;
+  line-height: 50px;
+  text-align: $text-left;
+  font-size: $Text-xsmall;
+}
+
+.sidebar {
   @include column;
   width: 200px;
   position: relative;
   background-color: $bg-grey;
 }
 
-.box-dashboard {
+@mixin title {
   @include row;
   width: 200px;
   height: 50px;
+  text-align: $text-left;
+}
+
+.title-product {
+  @include row;
+  @include title;
   color: $pink-primary;
-  text-align: $text-center;
   background-color: $pink-secondary;
+}
+
+.title-gestion {
+  @include row;
+  @include title;
+  color: $orange-primary;
+  background-color: $orange-secondary;
+}
+
+.title-traductor {
+  @include row;
+  @include title;
+  color: $pink-primary;
+  background-color: $pink-secondary;
+}
+
+/* Botones producto */
+
+.select-option input[type="radio"] {
+  display: none;
+}
+
+.select-option label {
+  @include select-options;
+  display: inline-block;
+  cursor: pointer;
+  color: $grey-primary;
+  background-color: $bg-grey;
+}
+
+.product label:hover {
+  color: $pink-primary;
+  background-color: $color-ligth;
+}
+
+.product input[type="radio"]:checked + label{
+  color: $pink-primary;
+  background-color: $color-ligth;
+  border-left: $border-left $pink-primary;
+}
+
+/* Botones Gestión */
+
+.gestion label:hover {
+  color: $orange-primary;
+  background-color: $color-ligth;
+}
+
+.gestion input[type="radio"]:checked + label{
+  color: $orange-primary;
+  background-color: $color-ligth;
+  border-left: $border-left $orange-primary;
+}
+
+/* Botones traduccion */
+
+.traductor input[type="radio"]:checked + label{
+  color: $purple-primary;
+  background-color: $color-ligth;
+  border-left: $border-left $purple-primary;
 }

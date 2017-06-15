@@ -1,0 +1,16 @@
+@mixin column {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+@mixin row {
+  display: flex;
+  flex-direction: row;
+}
+
+.box-header {
+  @include row;
+  justify-content: space-between;
+  padding: 10px 35px 10px 0;
+}
