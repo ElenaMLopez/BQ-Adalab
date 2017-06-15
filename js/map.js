@@ -15,7 +15,7 @@ google.maps.event.addDomListener(window, 'load', showMap);
 
 
 function MarkerShops(){
-  var objJson = '/bq-adalab-stores.json';
+  var objJson = 'BQ-Adalab/js/bq-adalab-stores.json';
   var request = new XMLHttpRequest();
   request.withCredentials = true;
   request.open('GET', objJson, true);

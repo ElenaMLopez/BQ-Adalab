@@ -1,14 +1,5 @@
 /* Buttons */
 
-@mixin button-options {
-  width: 200px;
-  height: 50px;
-  padding-left: 20px;
-  text-align: $text-left;
-  border-width: 0;
-  font-size: $Text-xsmall;
-}
-
 @mixin button-off {
   width: 200px;
   height: 40px;
@@ -46,30 +37,12 @@
   @include button-off;
   background-color: $grey-secondary;
   text-align: $text-center;
+  transition: 0.2s;
 }
 
 .btn-off:hover{
-  background-color: $bg-grey;
-  text-align: $text-center;
-}
-
-/* Botones Gestión */
-
-.btn-select-gestion {
-  @include button-options;
-  color: $grey-primary;
-  background-color: $bg-grey;
-}
-
-.btn-select-gestion:hover {
-  color: $orange-primary;
-  background-color: $color-ligth;
-}
-
-.btn-select-gestion:active {
-  color: $orange-primary;
-  background-color: $color-ligth;
-  border-left: $border-left $orange-primary;
+  background-color: $grey-primary;
+  background-image: url(../images/power-off-white.png);
 }
 
 /* Botones Usuario */
@@ -99,25 +72,6 @@
   background-color: $orange-terciary;
 }
 
-/* Botones producto */
-
-.btn-select-product {
-  @include button-options;
-  color: $grey-primary;
-  background-color: $bg-grey;
-}
-
-.btn-select-product:hover {
-  color: $pink-primary;
-  background-color: $color-ligth;
-}
-
-.btn-select-product:active {
-  color: $pink-primary;
-  background-color: $color-ligth;
-  border-left: $border-left $pink-primary;
-}
-
 /* Botones nuevo producto */
 
 .btn-product {
@@ -129,14 +83,6 @@
 
 .btn-product:hover {
   background-color: $pink-terciary;
-}
-
-/* Botones traduccion */
-
-.btn-select-traduction {
-  @include button-options;
-  background-color: $color-ligth;
-  border-left: $border-left $purple-primary;
 }
 
 /* Botones Salir */
