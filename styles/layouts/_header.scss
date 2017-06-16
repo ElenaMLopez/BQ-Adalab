@@ -1,17 +1,14 @@
-@mixin column {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
 
 @mixin row {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 
-.box-header {
-  @include row;
-  justify-content: space-between;
+@mixin header {
+  position: fixed;
+  z-index: 2;
+  width: 85%;
   padding: 10px 35px 10px 0;
   border-bottom: $border-bottom $pink-primary;
 }
@@ -20,7 +17,6 @@
   position: relative;
   width: 100%;
   padding: 10px 0;
-  //border-bottom: $border-bottom $orange-primary;
 }
 
 .newuser-header-title {
@@ -36,4 +32,25 @@
 
 .btn-margin-header {
   margin-right: 20px;
+}
+
+.header-product {
+  @include row;
+  @include header;
+  background-color: $color-ligth;
+  border-bottom: $border-bottom $pink-primary;
+}
+
+.header-gestion {
+  @include row;
+  @include header;
+  background-color: $color-ligth;
+  border-bottom: $border-bottom $orange-primary;
+}
+
+.header-traduct {
+  @include row;
+  @include header;
+  background-color: $color-ligth;
+  border-bottom: $border-bottom $purple-primary;
 }
