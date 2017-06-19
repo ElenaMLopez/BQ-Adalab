@@ -17,7 +17,10 @@ function acceptErase(){
   occultModal();
 }
 
+<<<<<<< HEAD
+=======
 
+>>>>>>> e7b60f5bd1629923bd73cfd5924d9f8e1e5c404d
 cancelButton.addEventListener('click', occultModal);
 buttonToErase.addEventListener('click', showModal);
 acceptButon.addEventListener('click', acceptErase);

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Crear producto</title>
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+</head>
+<body>
+
+  <header class="createProduct-header">
+    <div class="createProduct-heading">
+      <h2>Crear Producto</h2>
+    </div>
+
+    <div class="createProduct-header-buttons">
+      <button class="btn-create-pink btn-margin-header">Crear</button>
+      <button class="btn-exit btn-margin-header">Salir</button>
+    </div>
+  </header>
+
+  <form class="createProduct-form" action="index.html" method="post">
+
+    <fieldset>
+      <legend>Tipo de producto</legend>
+      <h4>¿Qué tipo de producto es?</h4>
+      <div class="Product-type">
+        <input type="radio" name="Type1">
+        <img src="" alt="">
+        <input type="radio" name="Type2">
+        <img src="" alt="">
+        <input type="radio" name="Type3">
+        <img src="" alt="">
+        <input type="radio" name="Type4">
+        <img src="" alt="">
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Datos del producto</legend>
+      <div class="row">
+        <div class="column">
+          <label for="product-name">Nombre del producto</label>
+          <input type="text" name="product-name" placeholder="Producto 1">
+        </div>
+
+        <div class="column">
+          <label for="price">Precio</label>
+          <input type="text" name="price" placeholder="0,45€">
+        </div>
+      </div>
+
+      <div class="column">
+        <label for="product-pic">Imagen del producto</label>
+        <button type="button" name="button">Añadir imagen</button>
+        <input type="img" name="product-pic" value="">
+        <button type="button" name="erase-pic">Borrar imagen</button>
+      </div>
+
+    <div class="column">
+      <label for="product-pic">Imagen del producto</label>
+      <button type="button" name="button" class="add-img-btn">Añadir imagen</button>
+      <input type="img" name="product-pic" value="">
+      <button type="button" name="erase-pic" class="erase-pic-btn">Borrar imagen</button>
+    </div>
+    </fieldset>
+
+  </form>
+
+</body>
+</html>

@@ -8,6 +8,10 @@ a {
   color:$grey-primary;
 }
 
+legend {
+  font-size: $Text-medium;
+}
+
 h1 {
   font-size: $Text-xlarge;
   margin: 10px;
@@ -15,7 +19,7 @@ h1 {
 
 h2 {
   font-size: $Text-large;
-  margin: 5px;
+  margin: 10px;
   font-weight: 300;
 }
 
