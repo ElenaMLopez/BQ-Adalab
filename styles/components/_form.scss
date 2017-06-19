@@ -1,0 +1,34 @@
+
+form {
+  max-width: 800px;
+  margin: auto;
+  margin-top: 60px;
+}
+
+fieldset {
+  border-style: none;
+}
+
+legend {
+  width: 100%;
+  border-bottom: 1px solid $form-border-grey;
+}
+
+input {
+  height: 2em;
+}
+
+.createProduct-form legend {
+  color: $pink-primary;
+}
+
+.column {
+  display: flex;
+  flex-direction:column;
+  width: 400px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
