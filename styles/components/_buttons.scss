@@ -140,6 +140,25 @@ button {
   background-color: $purple-terciary;
 }
 
+/* Botones añadir imagen y Borrar imagen de crear Producto*/
+
+.add-img-btn {
+  @include button-action;
+  border: $border $pink-primary;
+  color: $pink-primary;
+}
+
+.add-img-btn:hover {
+  background-color: $orange-terciary;
+}
+
+.erase-pic-btn {
+  @include button-action;
+  @include button-img;
+  border: none;
+  background-image: url(../images/circle-cancel.png);
+}
+
 /* Botones Modal */
 
 @mixin modal-btn-cancel {

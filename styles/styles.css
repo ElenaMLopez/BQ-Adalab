@@ -498,6 +498,39 @@ button {
 .btn-save:hover {
   background-color: #f9e9f9; }
 
+/* Botones añadir imagen y Borrar imagen de crear Producto*/
+.add-img-btn {
+  width: 150px;
+  height: 40px;
+  font-size: 16px;
+  background-repeat: no-repeat;
+  background-color: white;
+  background-position-x: 15px;
+  background-position-y: 4px;
+  border: solid 1.5px #d60056;
+  color: #d60056; }
+
+.add-img-btn:hover {
+  background-color: #ffe5d9; }
+
+.erase-pic-btn {
+  width: 150px;
+  height: 40px;
+  font-size: 16px;
+  background-repeat: no-repeat;
+  background-color: white;
+  background-position-x: 15px;
+  background-position-y: 4px;
+  width: 200px;
+  height: 40px;
+  font-size: 16px;
+  background-repeat: no-repeat;
+  background-color: white;
+  background-position-x: 10px;
+  background-position-y: 4px;
+  border: none;
+  background-image: url(../images/circle-cancel.png); }
+
 /* Botones Modal */
 .modal-btn-cancel-client {
   width: 162px;
