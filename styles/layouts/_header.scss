@@ -34,6 +34,33 @@
   margin-right: 20px;
 }
 
+
+//////////////////////////// createProduct-header//////////////////////////////
+
+.createProduct-header {
+  @include row;
+  width: 100%;
+  padding: 10px 0;
+  border-bottom: $border-bottom $pink-primary;
+}
+
+.createProduct-heading {
+  width: 800px;
+  height: 40px;
+  text-align: center;
+  margin: auto;
+}
+
+.createProduct-header-buttons {
+  width: 100%;
+  z-index: 2;
+  position: absolute;
+  display: flex;
+  justify-content: flex-end;
+}
+
+///////////////////////////////////////////////////////////////////////////////
+
 .header-product {
   @include row;
   @include header;

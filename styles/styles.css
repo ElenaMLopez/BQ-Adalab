@@ -19,6 +19,9 @@ a {
   text-decoration: none;
   color: #4d4d4f; }
 
+legend {
+  font-size: 24px; }
+
 h1 {
   font-size: 48px;
   margin: 10px; }
@@ -57,6 +60,38 @@ h5 {
 
 .btn-margin-header {
   margin-right: 20px; }
+
+.createProduct-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  padding: 10px 0;
+  border-bottom: solid 2px #d60056; }
+
+.createProduct-heading {
+  width: 800px;
+  height: 40px;
+  text-align: center;
+  margin: auto; }
+
+.createProduct-header-buttons {
+  width: 100%;
+  z-index: 2;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
 
 .header-product {
   display: -webkit-box;
@@ -140,7 +175,8 @@ p {
       -ms-flex-align: center;
           align-items: center;
   position: fixed;
-  margin-top: 0; }
+  margin-top: 0;
+  display: none; }
 
 .modal-div {
   width: 800px;
@@ -158,8 +194,10 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 225px;
-  margin-bottom: 800px; }
+  margin-top: 150px;
+  margin-bottom: 800px;
+  margin-left: auto;
+  margin-right: auto; }
 
 .modal-title {
   width: 720px;
@@ -258,6 +296,43 @@ p {
 .content {
   margin-left: 225px;
   width: 100%; }
+
+form {
+  max-width: 800px;
+  margin: auto;
+  margin-top: 60px; }
+
+fieldset {
+  border-style: none; }
+
+legend {
+  width: 100%;
+  border-bottom: 1px solid #e4e4e4; }
+
+input {
+  height: 2em; }
+
+.createProduct-form legend {
+  color: #d60056; }
+
+.column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 400px; }
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row; }
 
 .line-orange {
   width: 100%;
@@ -860,5 +935,4 @@ button {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; }
-
 /*# sourceMappingURL=styles.css.map */
