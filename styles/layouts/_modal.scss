@@ -21,6 +21,7 @@ p {
   align-items: center;
   position: fixed;
   margin-top: 0;
+  display: none;
 }
 
 .modal-div {
@@ -32,8 +33,10 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 225px;
+  margin-top: 150px;
   margin-bottom: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .modal-title {
@@ -74,8 +77,9 @@ p {
   display: flex;
   justify-content: space-between;
 }
+
 //////  MODAL PRODUCT  //////////
-.icon-modal-circle-product{
+.icon-modal-circle-product {
   width: 100px;
   height: 100px;
   border-radius: 50%;
@@ -85,7 +89,8 @@ p {
   background-repeat: no-repeat;
   background-position: center;
 }
-.modal-tirth-title-product{
+
+.modal-tirth-title-product {
   margin-top: 45px;
   width: 720px;
   height: 24px;
@@ -98,7 +103,7 @@ p {
 
 ////////   MODAL USER //////
 
-.icon-modal-circle-user{
+.icon-modal-circle-user {
   width: 100px;
   height: 100px;
   border-radius: 50%;
@@ -108,7 +113,8 @@ p {
   background-repeat: no-repeat;
   background-position: center;
 }
-.modal-tirth-title-user{
+
+.modal-tirth-title-user {
   margin-top: 45px;
   width: 720px;
   height: 24px;

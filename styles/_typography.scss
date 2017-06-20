@@ -3,14 +3,24 @@ body {
   font-family: $font;
 }
 
+a {
+  text-decoration: none;
+  color:$grey-primary;
+}
+
+legend {
+  font-size: $Text-medium;
+}
+
 h1 {
   font-size: $Text-xlarge;
+  margin: 10px;
 }
 
 h2 {
   font-size: $Text-large;
-  margin: 0px;
-  margin: 5px;
+  margin: 10px;
+  font-weight: 300;
 }
 
 h3 {
@@ -21,9 +31,11 @@ h4 {
   font-size: $Text-normal;
   margin: 0;
   padding: 15px;
+  font-weight: 300;
 }
 
 h5 {
   font-size: $Text-xsmall;
+  font-weight: 400;
 
 }

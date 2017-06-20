@@ -1,12 +1,19 @@
+
 .newuser-form {
   width: 50%;
   margin-left: auto;
   margin-right: auto;
+
+form {
+  max-width: 50%;
+  margin: auto;
+  margin-top: 60px;
 }
 
 fieldset {
   border-style: none;
   margin-top: 20px;
+  padding: 0;
 }
 
 legend {
@@ -111,3 +118,37 @@ $gutter: 40px;
  border: $border-small $color-blue;
  background-color: $color-blue;
 }
+
+input {
+  height: 2em;
+  margin: 20px 0px;
+}
+
+.createProduct-form legend {
+  color: $pink-primary;
+}
+
+.label {
+  margin-top: 30px;
+}
+
+.input-name {
+  margin-right: 30px;
+}
+
+.column {
+  display: flex;
+  flex-direction:column;
+  width: 50%;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.product-pic {
+  height: 162px;
+  margin: 0;
+  margin-top: 30px;
+}}

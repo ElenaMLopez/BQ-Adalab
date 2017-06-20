@@ -1,0 +1,5 @@
+[
+  { "name": "abc", "age": 50,"hobby": "swimming"  },
+  { "name": "abc","age": "25", "hobby": "swimming" },
+  { "name": "xyz", "age": "25", "hobby": "programming" }
+];

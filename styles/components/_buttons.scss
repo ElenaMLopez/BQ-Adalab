@@ -1,4 +1,9 @@
 /* Buttons */
+button {
+  cursor: pointer;
+  transition: 0.3s;
+  outline: none;
+}
 
 @mixin button-off {
   width: 200px;
@@ -21,7 +26,7 @@
   background-position-y: 4px;
 }
 
-@mixin button-action{
+@mixin button-action {
   width: 150px;
   height: 40px;
   font-size: $Text-xsmall;
@@ -33,14 +38,13 @@
 
 /* Botones power */
 
-.btn-off{
+.btn-off {
   @include button-off;
   background-color: $grey-secondary;
   text-align: $text-center;
-  transition: 0.2s;
 }
 
-.btn-off:hover{
+.btn-off:hover {
   background-color: $grey-primary;
   background-image: url(../images/power-off-white.png);
 }
@@ -136,6 +140,27 @@
   background-color: $purple-terciary;
 }
 
+/* Botones añadir imagen y Borrar imagen de crear Producto*/
+
+.add-img-btn {
+  @include button-action;
+  border: $border $pink-primary;
+  color: $pink-primary;
+  margin-top: 30px;
+}
+
+.add-img-btn:hover {
+  background-color: $orange-terciary;
+}
+
+.erase-pic-btn {
+  @include button-action;
+  @include button-img;
+  border: none;
+  background-image: url(../images/circle-cancel.png);
+  margin-top: 15px;
+}
+
 /* Botones Modal */
 
 @mixin modal-btn-cancel {
@@ -154,6 +179,7 @@
   background-position-y: 9px;
   background-size: 22px;
   padding-left: 35px;
+  transition: 0.3s;
 }
 
 @mixin modal-btn-cancel-active {
@@ -171,6 +197,7 @@
   background-position-x:17px;
   background-position-y: 9px;
   background-size: 22px;
+  transition: 0.3s;
 }
 
 @mixin modal-btn-accept-active {
@@ -187,6 +214,7 @@
   background-repeat: no-repeat;
   background-position-x: 17px;
   background-position-y: 9px;
+  transition: 0.3s;
 }
 
 @mixin modal-btn-accept {
@@ -204,7 +232,9 @@
   background-position-x: 17px;
   background-position-y: 9px;
   padding-left: 35px;
+  transition: 0.3s;
 }
+
 // Modal buttons for client orange
 .modal-btn-cancel-client {
   @include modal-btn-cancel;
@@ -227,28 +257,29 @@
   border: solid 1px $orange-primary;
   background-image: url(../images/check-icon-orange-m.png);
 }
+
 // Modal buttons for product pink
-.modal-btn-cancel-product{
+.modal-btn-cancel-product {
   @include modal-btn-cancel
 }
 
-.modal-btn-cancel-product:hover{
+.modal-btn-cancel-product:hover {
   @include modal-btn-cancel-active;
   color: $pink-primary;
   border: solid 1px $pink-primary;
   background-image: url(../images/cancel-icon-pink-m.png);
 }
-.modal-btn-accept-product{
+
+.modal-btn-accept-product {
   @include modal-btn-accept;
 }
-.modal-btn-accept-product:hover{
+
+.modal-btn-accept-product:hover {
   @include modal-btn-accept-active;
   color: $pink-primary;
   border: solid 1px $pink-primary;
   background-image: url(../images/check-icon-pink-m.png);
-
 }
-
 
 // Botones de la Apps
 @mixin btn-app {
