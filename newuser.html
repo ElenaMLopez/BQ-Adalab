@@ -18,11 +18,86 @@
       </div>
     </header>
 
-    <div class="line-orange">
-    </div>
+    <main class="newuser-form">
+      <form class="" action="index.html" method="post">
+        <fieldset>
+          <legend><h3 class="newuser-legend">Datos del usuario</h3></legend>
+          <div class="newuser-datos row">
+            <div class="newuser-containers-dats column">
+              <label for="name">Nombre</label>
+              <input class="newuser-box-dats" type="text" name="first name" value="" placeholder="Nombre" id="name">
+            </div>
+            <div class="newuser-containers-dats column">
+              <label for="lastname">Apellidos</label>
+              <input class="newuser-box-dats" type="text" name="last name" value="" placeholder="Apellidos" id="lastname">
+            </div>
+            <div class="newuser-containers-dats column">
+              <label for="user">Usuario</label>
+              <input class="newuser-box-dats" type="text" name="user" value="" placeholder="Usuario" id="user">
+            </div>
+            <div class="newuser-containers-dats column">
+              <label for="email">E-mail</label>
+              <input class="newuser-box-dats" type="text" name="email" value="" placeholder="ejemplo@bq.com" id="email">
+            </div>
 
-    <main>
-      
+            <div class="newuser-active column">
+              <p class="newuser-active-ask">¿El usuario está activo?</p>
+              <input type="radio" name="active" id="si">
+              <label class="si" for="si">Sí</label>
+              <input type="radio" name="active" id="no">
+              <label class="no" for="no">No</label>
+            </div>
+          </div>
+
+        </fieldset>
+
+        <fieldset>
+          <legend><h3 class="newuser-legend">Roles del usuario</h3></legend>
+          <div class="newuser-datos">
+            <div class="newuser-check">
+              <input class="custom-checkbox" type="checkbox" name="" value="" id="contentmanager">
+              <label for="contentmanager">Gestor de contenidos</label>
+            </div>
+            <div class="newuser-check">
+              <input class="custom-checkbox" type="checkbox" name="" value="" id="agents">
+              <label for="agents">Agentes</label>
+            </div>
+            <div class="newuser-check">
+              <input class="custom-checkbox" type="checkbox" name="" value="" id="marketing">
+              <label for="marketing">Marketing</label>
+            </div>
+            <div class="newuser-check">
+              <input class="custom-checkbox" type="checkbox" name="" value="" id="websale">
+              <label for="websale">Venta web</label>
+            </div>
+            <div class="newuser-check">
+              <input class="custom-checkbox" type="checkbox" name="" value="" id="support">
+              <label for="support">Soporte</label>
+            </div>
+            <div class="newuser-check">
+              <input class="custom-checkbox" type="checkbox" name="" value="" id="logistics">
+              <label for="logistics">Logística</label>
+            </div>
+            <div class="newuser-check">
+              <input class="custom-checkbox" type="checkbox" name="" value="" id="ux">
+              <label for="ux">UX</label>
+            </div>
+            <div class="newuser-check">
+              <input class="custom-checkbox" type="checkbox" name="" value="" id="technician">
+              <label for="technician">Técnicos</label>
+            </div>
+            <div class="newuser-check">
+              <input class="custom-checkbox" type="checkbox" name="" value="" id="products">
+              <label for="products">Productos</label>
+            </div>
+            <div class="newuser-check">
+              <input class="custom-checkbox" type="checkbox" name="" value="" id="qa">
+              <label for="qa">QA</label>
+            </div>
+          </div>
+        </fieldset>
+
+      </form>
     </main>
 
   </body>

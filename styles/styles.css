@@ -43,7 +43,11 @@ h5 {
 .newuser-header {
   position: relative;
   width: 100%;
-  padding: 10px 0; }
+  padding: 10px 0;
+  background-image: linear-gradient(to left, #ff5000 0, #ff5000 0);
+  background-size: 100% 2px;
+  background-repeat: no-repeat;
+  background-position: 40px bottom; }
 
 .newuser-header-title {
   text-align: center;
@@ -177,6 +181,99 @@ p {
 .content {
   margin-left: 35px;
   width: 100%; }
+
+.newuser-form {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto; }
+
+fieldset {
+  border-style: none;
+  margin-top: 20px; }
+
+legend {
+  width: 100%;
+  margin-bottom: 20px; }
+
+.newuser-legend {
+  width: 100%;
+  color: #ff5000;
+  border-bottom: solid 1px #d4d4d4; }
+
+.newuser-datos {
+  display: flex;
+  flex-wrap: wrap; }
+
+.newuser-containers-dats {
+  width: 50%;
+  display: flex;
+  flex-direction: column; }
+
+.newuser-box-dats {
+  margin-top: 5px;
+  margin-bottom: 15px; }
+
+.newuser-active {
+  display: flex;
+  align-items: center; }
+
+.newuser-active-ask {
+  margin-top: 15px;
+  margin-right: 60px; }
+
+.newuser-active input[type="radio"] {
+  display: none; }
+
+.newuser-active label {
+  width: 40px;
+  height: 40px;
+  color: #4d4d4f;
+  border: solid 1px #4d4d4f;
+  line-height: 2.5;
+  text-align: center;
+  cursor: pointer; }
+
+.newuser-active input[type="radio"]:checked + label {
+  color: #ec661c;
+  border: solid 1px #ec661c; }
+
+.row {
+  display: flex;
+  margin-left: -20px;
+  margin-right: -20px; }
+
+.column {
+  padding-left: 20px;
+  padding-right: 20px; }
+
+.newuser-check {
+  width: 50%;
+  margin-bottom: 15px; }
+
+.custom-checkbox {
+  display: none; }
+
+.custom-checkbox + label {
+  position: relative;
+  padding-left: 25px; }
+
+.custom-checkbox + label:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  border: solid 1px #4d4d4f;
+  border-radius: 4px; }
+
+.custom-checkbox:checked + label:before {
+  text-align: center;
+  line-height: 1;
+  color: white;
+  content: "✔";
+  border: solid 1px #1f8eff;
+  background-color: #1f8eff; }
 
 .line-orange {
   width: 100%;

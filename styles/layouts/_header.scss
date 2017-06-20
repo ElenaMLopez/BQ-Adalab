@@ -20,7 +20,10 @@
   position: relative;
   width: 100%;
   padding: 10px 0;
-  //border-bottom: $border-bottom $orange-primary;
+  background-image: linear-gradient(to left, $orange-primary 0, $orange-primary 0);
+  background-size: 100% 2px;
+  background-repeat: no-repeat;
+  background-position: 40px bottom;
 }
 
 .newuser-header-title {

@@ -1,0 +1,113 @@
+.newuser-form {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+fieldset {
+  border-style: none;
+  margin-top: 20px;
+}
+
+legend {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.newuser-legend {
+  width: 100%;
+  color: $orange-primary;
+  border-bottom: $border-small $grey-secondary;
+}
+
+.newuser-datos {
+  display: flex;
+  flex-wrap: wrap
+}
+
+.newuser-containers-dats {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.newuser-box-dats {
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+.newuser-active {
+  display: flex;
+  align-items: center;
+}
+
+.newuser-active-ask {
+  margin-top: 15px;
+  margin-right: 60px;
+}
+
+.newuser-active input[type="radio"] {
+  display: none;
+}
+
+.newuser-active label {
+  width: 40px;
+  height: 40px;
+  color: #4d4d4f;
+  border: $border-small #4d4d4f;
+  line-height: 2.5;
+  text-align: center;
+  cursor: pointer;
+}
+
+.newuser-active input[type="radio"]:checked + label {
+  color: #ec661c;
+  border: $border-small #ec661c;
+}
+
+$gutter: 40px;
+
+.row {
+  display: flex;
+  margin-left: -$gutter / 2;
+  margin-right: -$gutter / 2;
+}
+
+.column {
+  padding-left: $gutter / 2;
+  padding-right: $gutter / 2;
+}
+
+.newuser-check {
+  width: 50%;
+  margin-bottom: 15px;
+}
+
+.custom-checkbox {
+  display: none;
+}
+
+.custom-checkbox + label {
+  position: relative;
+  padding-left: 25px;
+}
+
+.custom-checkbox + label:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  border: $border-small $grey-primary;
+  border-radius: 4px;
+}
+
+.custom-checkbox:checked + label:before {
+ text-align: center;
+ line-height: 1;
+ color: $color-ligth;
+ content: "✔";
+ border: $border-small $color-blue;
+ background-color: $color-blue;
+}
