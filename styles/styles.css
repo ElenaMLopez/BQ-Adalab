@@ -79,7 +79,11 @@ h5 {
           justify-content: space-between;
   width: 100%;
   padding: 10px 0;
-  border-bottom: solid 2px #d60056; }
+  background-image: -webkit-gradient(linear, right top, left top, color-stop(0, #d60056), color-stop(0, #d60056));
+  background-image: linear-gradient(to left, #d60056 0, #d60056 0);
+  background-size: 100% 2px;
+  background-repeat: no-repeat;
+  background-position: 40px bottom; }
 
 .createProduct-heading {
   width: 800px;
@@ -431,11 +435,14 @@ p {
   height: 2em;
   margin: 20px 0px; }
 
+.input-price {
+  margin-left: 20px; }
+
 .label {
   margin-top: 30px; }
 
 .input-name {
-  margin-right: 30px; }
+  margin-right: 20px; }
 
 .p-column {
   display: -webkit-box;
@@ -458,7 +465,7 @@ p {
 
 .product-pic {
   height: 162px;
-  margin: 0;
+  margin-right: 20px;
   margin-top: 30px; }
 
 .line-orange {
@@ -1097,4 +1104,5 @@ button {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; }
+
 /*# sourceMappingURL=styles.css.map */
