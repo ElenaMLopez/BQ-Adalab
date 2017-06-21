@@ -1,18 +1,13 @@
 
-* {
-  box-sizing: border-box;
-}
 
-body {
-  margin:0;
-  padding:0;
-  font-family: $font;
-}
 
 p {
   margin-top: 0;
 }
-
+.svg{
+  width: 20px;
+  height: 20px;
+}
 .modal-container {
   background: rgba(40, 40, 40, 0.53);
   width: 100%;
