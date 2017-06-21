@@ -115,6 +115,10 @@ $gutter: 40px;
 
 /************************** Create Product Form*******************************/
 
+input[type="radio"] {
+    display: none;
+}
+
 .createProduct-form {
   max-width: 50%;
   margin: auto;
