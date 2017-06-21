@@ -4,9 +4,11 @@
 /* Font-size */
 /* Text align  */
 /* border */
-body {
+* {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+          box-sizing: border-box; }
+
+body {
   margin: 0;
   padding: 0;
   color: #4d4d4f; }
