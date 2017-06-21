@@ -146,6 +146,7 @@ button {
   @include button-action;
   border: $border $pink-primary;
   color: $pink-primary;
+  margin-top: 30px;
 }
 
 .add-img-btn:hover {
@@ -157,6 +158,7 @@ button {
   @include button-img;
   border: none;
   background-image: url(../images/circle-cancel.png);
+  margin-top: 15px;
 }
 
 /* Botones Modal */

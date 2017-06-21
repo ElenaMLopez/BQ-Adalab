@@ -17,6 +17,10 @@
   position: relative;
   width: 100%;
   padding: 10px 0;
+  background-image: linear-gradient(to left, $orange-primary 0, $orange-primary 0);
+  background-size: 100% 2px;
+  background-repeat: no-repeat;
+  background-position: 40px bottom;
 }
 
 .newuser-header-title {
@@ -41,7 +45,10 @@
   @include row;
   width: 100%;
   padding: 10px 0;
-  border-bottom: $border-bottom $pink-primary;
+  background-image: linear-gradient(to left, $pink-primary 0, $pink-primary 0);
+  background-size: 100% 2px;
+  background-repeat: no-repeat;
+  background-position: 40px bottom;
 }
 
 .createProduct-heading {

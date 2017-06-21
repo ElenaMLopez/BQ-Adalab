@@ -21,46 +21,39 @@
 
   <form class="createProduct-form" action="index.html" method="post">
 
-    <fieldset>
-      <legend>Tipo de producto</legend>
+    <fieldset class="fieldset-product">
+      <legend class="product-legend">Tipo de producto</legend>
       <h4>¿Qué tipo de producto es?</h4>
       <div class="Product-type">
-        <input type="radio" name="Type1">
+        <input class="input-product" type="radio" name="Type1">
         <img src="" alt="">
-        <input type="radio" name="Type2">
+        <input class="input-product" type="radio" name="Type2">
         <img src="" alt="">
-        <input type="radio" name="Type3">
+        <input class="input-product" type="radio" name="Type3">
         <img src="" alt="">
-        <input type="radio" name="Type4">
+        <input class="input-product" type="radio" name="Type4">
         <img src="" alt="">
       </div>
     </fieldset>
 
-    <fieldset>
-      <legend>Datos del producto</legend>
-      <div class="row">
-        <div class="column">
-          <label for="product-name">Nombre del producto</label>
-          <input type="text" name="product-name" placeholder="Producto 1">
+    <fieldset class="fieldset-product">
+      <legend class="product-legend">Datos del producto</legend>
+      <div class="p-row">
+        <div class="p-column">
+          <label class="label" for="product-name">Nombre del producto</label>
+          <input class="input-product input-name" type="text" name="product-name" placeholder="Producto 1">
         </div>
 
-        <div class="column">
-          <label for="price">Precio</label>
-          <input type="text" name="price" placeholder="0,45€">
+        <div class="p-column">
+          <label class="label" for="price">Precio</label>
+          <input class="input-product input-price" type="text" name="price" placeholder="0,45€">
         </div>
       </div>
 
-      <div class="column">
-        <label for="product-pic">Imagen del producto</label>
-        <button type="button" name="button">Añadir imagen</button>
-        <input type="img" name="product-pic" value="">
-        <button type="button" name="erase-pic">Borrar imagen</button>
-      </div>
-
-    <div class="column">
+    <div class="p-column">
       <label for="product-pic">Imagen del producto</label>
       <button type="button" name="button" class="add-img-btn">Añadir imagen</button>
-      <input type="img" name="product-pic" value="">
+      <input type="img" name="product-pic" value="" class="product-pic">
       <button type="button" name="erase-pic" class="erase-pic-btn">Borrar imagen</button>
     </div>
     </fieldset>
