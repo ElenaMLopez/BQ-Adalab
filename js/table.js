@@ -1,3 +1,5 @@
+'use strict';
+
 var listUser = document.getElementById("listUser";
 var listRoles = document.getElementById("listRoles");
 
