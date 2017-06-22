@@ -6,7 +6,7 @@
     <title>modal</title>
   </head>
   <body>
-    <div class="modal-container">
+    <div id="modal-container" class="modal-container">
 
 
     <div class="modal-div">
@@ -18,12 +18,26 @@
       </div>
       <p class="modal-tirth-title-user"> Usuario </p><!-- meter id para función js-->
       <div class="modal-buttons">
-          <button class="modal-btn-cancel-product" type="button" name="button">Cancelar</button>
+        <button id="cancel-button" class="modal-btn-cancel-client" type="button" name="button">
+          <svg  class="svg" viewBox="0 0 64 64">
+            <use xlink:href="svg-images.svg#modal-cancel-icon"></use>
+          </svg>
+          <span class="text-button">Cancelar
+          </span>
+        </button>
 
-          <button class="modal-btn-accept-product" type="button" name="button">Sí, borrar</button>
+        <button id="accept-button" class="modal-btn-accept-client" type="button" name="button">
+          <svg class="svg" viewBox="0 0 64 64">
+            <use xlink:href="svg-images.svg#modal-accept-icon"></use>
+            <span class="text-button">Sí, borrar</span>
+          </svg>
+        </button>
+
 
       </div>
     </div>
    </div>
+     <button id="trash" class="client-trash" type="button" name="button">borrar algo</button>
+<script src="../js/modal.js" charset="utf-8"></script>
   </body>
 </html>

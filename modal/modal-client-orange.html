@@ -18,16 +18,26 @@
       </div> -->
       <p class="modal-tirth-title"> Gestor de productos </p><!-- meter id para función js-->
       <div class="modal-buttons">
-          <button id="cancel-button" class="modal-btn-cancel-client" type="button" name="button">Cancelar</button>
 
-          <button id="accept-button" class="modal-btn-accept-client" type="button" name="button">Sí, borrar</button>
+          <button id="cancel-button" class="modal-btn-cancel-client" type="button" name="button">
+            <svg  class="modal-svg" viewBox="0 0 64 64">
+              <use xlink:href="svg-images.svg#modal-cancel-icon"></use>
+            </svg>
+            <span class="text-button">Cancelar
+            </span>
+          </button>
+
+          <button id="accept-button" class="modal-btn-accept-client" type="button" name="button">
+            <svg class="modal-svg" viewBox="0 0 64 64">
+              <use xlink:href="svg-images.svg#modal-accept-icon"></use>
+              <span class="text-button">Sí, borrar</span>
+            </svg>
+          </button>
 
       </div>
     </div>
    </div>
 
-   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-   </p>
    <button id="trash" class="client-trash" type="button" name="button">borrar algo</button>
 <script src="../js/modal.js" charset="utf-8"></script>
   </body>
