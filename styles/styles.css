@@ -313,6 +313,114 @@ h5 {
   margin-left: 240px;
   width: 100%; }
 
+.sidebar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 200px;
+  height: 100vh;
+  position: fixed;
+  background-color: #f2f2f2; }
+
+.title-product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 200px;
+  height: 50px;
+  text-align: left;
+  color: #d60056;
+  background-color: #f1a6c4; }
+
+.title-gestion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 200px;
+  height: 50px;
+  text-align: left;
+  color: #ff5000;
+  background-color: #ffc2a6; }
+
+.title-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 200px;
+  height: 50px;
+  text-align: left;
+  color: #892d87;
+  background-color: #d4a5d3; }
+
+.title-header-traductor {
+  color: #892d87; }
+
+/* Botones producto */
+.select-option input[type="radio"] {
+  display: none; }
+
+.select-option label {
+  width: 200px;
+  height: 50px;
+  padding-left: 20px;
+  line-height: 50px;
+  text-align: left;
+  font-size: 16px;
+  display: inline-block;
+  cursor: pointer;
+  color: #4d4d4f;
+  background-color: #f2f2f2; }
+
+.product label:hover {
+  color: #d60056;
+  background-color: white; }
+
+.product input[type="radio"]:checked + label {
+  color: #d60056;
+  background-color: white;
+  border-left: solid 3px #d60056; }
+
+/* Botones Gestión */
+.gestion label:hover {
+  color: #ff5000;
+  background-color: white; }
+
+.gestion input[type="radio"]:checked + label {
+  color: #ff5000;
+  background-color: white;
+  border-left: solid 3px #ff5000; }
+
+/* Botones traduccion */
+.traductor {
+  width: 200px;
+  height: 50px;
+  padding-left: 20px;
+  line-height: 50px;
+  text-align: left;
+  font-size: 16px;
+  color: #892d87;
+  background-color: white;
+  border-left: solid 3px #892d87; }
+
 .newuser-form {
   width: 50%;
   margin-left: auto;
@@ -489,21 +597,6 @@ input[type="radio"] {
   height: 2px;
   background-color: #d60056;
   margin-left: 35px; }
-
-.box-map {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: absolute;
-  z-index: -1;
-  height: 100vh;
-  max-height: 400px;
-  max-width: 620px;
-  margin: 10% 20%;
-  padding: 0; }
-
-#googleMap {
-  height: 100%; }
 
 /* Buttons */
 button {
@@ -937,114 +1030,6 @@ button {
   background-color: #892d87;
   color: white; }
 
-.sidebar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  width: 200px;
-  height: 100vh;
-  position: fixed;
-  background-color: #f2f2f2; }
-
-.title-product {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  width: 200px;
-  height: 50px;
-  text-align: left;
-  color: #d60056;
-  background-color: #f1a6c4; }
-
-.title-gestion {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  width: 200px;
-  height: 50px;
-  text-align: left;
-  color: #ff5000;
-  background-color: #ffc2a6; }
-
-.title-page {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  width: 200px;
-  height: 50px;
-  text-align: left;
-  color: #892d87;
-  background-color: #d4a5d3; }
-
-.title-header-traductor {
-  color: #892d87; }
-
-/* Botones producto */
-.select-option input[type="radio"] {
-  display: none; }
-
-.select-option label {
-  width: 200px;
-  height: 50px;
-  padding-left: 20px;
-  line-height: 50px;
-  text-align: left;
-  font-size: 16px;
-  display: inline-block;
-  cursor: pointer;
-  color: #4d4d4f;
-  background-color: #f2f2f2; }
-
-.product label:hover {
-  color: #d60056;
-  background-color: white; }
-
-.product input[type="radio"]:checked + label {
-  color: #d60056;
-  background-color: white;
-  border-left: solid 3px #d60056; }
-
-/* Botones Gestión */
-.gestion label:hover {
-  color: #ff5000;
-  background-color: white; }
-
-.gestion input[type="radio"]:checked + label {
-  color: #ff5000;
-  background-color: white;
-  border-left: solid 3px #ff5000; }
-
-/* Botones traduccion */
-.traductor {
-  width: 200px;
-  height: 50px;
-  padding-left: 20px;
-  line-height: 50px;
-  text-align: left;
-  font-size: 16px;
-  color: #892d87;
-  background-color: white;
-  border-left: solid 3px #892d87; }
-
 .dashboard {
   width: 100%;
   height: 100vh;
@@ -1127,6 +1112,21 @@ button {
 .trash, .edit {
   width: 6%; }
 
+.box-map {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  z-index: -1;
+  height: 100vh;
+  max-height: 400px;
+  max-width: 620px;
+  margin: 10% 20%;
+  padding: 0; }
+
+#googleMap {
+  height: 100%; }
+
 .appContent {
   width: 100%;
   height: 100vh;
@@ -1162,10 +1162,7 @@ button {
       -ms-flex-pack: justify;
           justify-content: space-between; }
 
-<<<<<<< HEAD
 .hidden {
   display: none; }
 
-=======
->>>>>>> 0267223d7a6ecb31e760482aa504cc879d31ca2f
 /*# sourceMappingURL=styles.css.map */

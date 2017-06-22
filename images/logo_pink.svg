@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #d60056;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <rect id="_3" data-name="3" class="cls-1" y="20.5" width="18.5" height="18.5"/>
+  <rect id="_4" data-name="4" class="cls-1" x="20.5" y="20.5" width="18.5" height="18.5"/>
+  <rect id="_1" data-name="1" class="cls-1" width="18.5" height="18.5"/>
+  <rect id="_2" data-name="2" class="cls-1" x="20.5" width="18.5" height="18.5"/>
+</svg>
