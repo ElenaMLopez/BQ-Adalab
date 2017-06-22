@@ -4,6 +4,8 @@ var modal = document.querySelector('#modal-container');
 var cancelButton = document.getElementById('cancel-button');
 var acceptButon = document.getElementById('accept-button');
 var buttonToErase = document.getElementById('trash');
+// var imprime = document.querySelectorAll('trash');
+// console.log(imprime);
 
 function showModal (){
   modal.style.display = 'inline';
