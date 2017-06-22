@@ -1,18 +1,32 @@
+*{
+  box-sizing: border-box;
+}
+p{
+  margin-left: 0;
+}
+
 
 .modal-svg{
-  width: 20px;
-  height: 20px;
+  width: 0px;
+  height: 0px;
 }
 
 .modal-container {
   background: rgba(40, 40, 40, 0.53);
   width: 100%;
+  height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center;
+  // align-items: center;
   position: fixed;
+  z-index: 3;
   margin-top: 0;
-  display: none;
+  // display: none;
+  overflow: hidden;
+}
+.showModal{
+  display: inline;
+  position: fixed;
 }
 
 .modal-div {

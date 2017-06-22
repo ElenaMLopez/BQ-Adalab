@@ -161,25 +161,35 @@ h5 {
   background-color: white;
   border-bottom: solid 2px #892d87; }
 
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+p {
+  margin-left: 0; }
+
 .modal-svg {
-  width: 20px;
-  height: 20px; }
+  width: 0px;
+  height: 0px; }
 
 .modal-container {
   background: rgba(40, 40, 40, 0.53);
   width: 100%;
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   position: fixed;
+  z-index: 3;
   margin-top: 0;
-  display: none; }
+  overflow: hidden; }
+
+.showModal {
+  display: inline;
+  position: fixed; }
 
 .modal-div {
   width: 800px;
