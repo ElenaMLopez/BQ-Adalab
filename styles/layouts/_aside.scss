@@ -54,6 +54,29 @@
 .title-header-traductor {
   color: $purple-primary;
 }
+
+@mixin logo-svg {
+  width: 40px;
+  fill: none;
+  stroke: #ff5000;
+  stroke-width: 2px;
+}
+
+.logo-pink {
+  @include logo-svg;
+  stroke: #d60056;
+}
+
+.logo-orange {
+  @include logo-svg;
+  stroke: #ff5000;
+}
+
+.logo-purple {
+  @include logo-svg;
+  stroke: #892d87;
+}
+
 /* Botones producto */
 
 .select-option input[type="radio"] {

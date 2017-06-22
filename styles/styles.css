@@ -374,6 +374,27 @@ h5 {
 .title-header-traductor {
   color: #892d87; }
 
+.logo-pink {
+  width: 40px;
+  fill: none;
+  stroke: #ff5000;
+  stroke-width: 2px;
+  stroke: #d60056; }
+
+.logo-orange {
+  width: 40px;
+  fill: none;
+  stroke: #ff5000;
+  stroke-width: 2px;
+  stroke: #ff5000; }
+
+.logo-purple {
+  width: 40px;
+  fill: none;
+  stroke: #ff5000;
+  stroke-width: 2px;
+  stroke: #892d87; }
+
 /* Botones producto */
 .select-option input[type="radio"] {
   display: none; }
@@ -1084,6 +1105,9 @@ button {
 
 .page {
   width: 80%; }
+
+.hour {
+  width: 40%; }
 
 .box-inactive {
   width: 100px;

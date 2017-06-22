@@ -76,6 +76,9 @@
   width: 80%;
 }
 
+.hour {
+  width: 40%;
+}
 .box-inactive {
   @include box;
   border: $border-xsmall $color-inactive;
