@@ -181,6 +181,7 @@ h5 {
 .modal-container {
   background: rgba(40, 40, 40, 0.53);
   width: 100%;
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -191,8 +192,10 @@ h5 {
       -ms-flex-align: center;
           align-items: center;
   position: fixed;
-  margin-top: 0;
-  display: none; }
+  z-index: 3;
+  top: 0;
+  display: none;
+  overflow: hidden; }
 
 .modal-div {
   width: 800px;

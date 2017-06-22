@@ -9,6 +9,7 @@
 </head>
 <body>
   <div class="container">
+
     <aside class="sidebar">
       <div class="title-gestion">
         <svg class="logo-orange" viewBox="0 0 40 40">
@@ -29,12 +30,14 @@
     </aside>
 
     <div class="content">
+
       <header class="header-gestion">
         <h2 id="titlePages">Usuarios</h2>
         <a href="newuser.html"><button class="btn-user" type="button" name="button">Nuevo usuario</button></a>
         <a class="hidden" href="newrol.html"><button class="btn-rol" type="button" name="button">Nuevo rol</button></a>
       </header>
 
+      <!-- USUARIOS -->
       <div class="listUser">
         <table class="liste">
           <tr class="NameOption">
@@ -47,90 +50,91 @@
             <td>Gestor de contenidos</td>
             <td></td>
             <td class="edit" ><img src="images/edit.png" alt=""></td>
-            <td class="trash"><img src="images/trash.png" alt=""></td>
+            <td class="trash"><button id="trash" type="button" name="button"><img src="images/trash.png" alt=""></button></td>
           </tr>
           <tr class="line">
             <td>Traductor</td>
             <td></td>
             <td class="edit" ><img src="images/edit.png" alt=""></td>
-            <td class="trash"><img src="images/trash.png" alt=""></td>
+            <td id="trash"><img src="images/trash.png" alt=""></td>
           </tr>
           <tr class="list-grey">
             <td>Gestor multimedia</td>
             <td></td>
             <td class="edit" ><img src="images/edit.png" alt=""></td>
-            <td class="trash"><img src="images/trash.png" alt=""></td>
+            <td id="trash"><img src="images/trash.png" alt=""></td>
           </tr>
           <tr class="line">
             <td>Gestor de contenidos</td>
             <td></td>
             <td class="edit" ><img src="images/edit.png" alt=""></td>
-            <td class="trash"><img src="images/trash.png" alt=""></td>
+            <td id="trash"><img src="images/trash.png" alt=""></td>
           </tr>
           <tr class="list-grey">
             <td>Gestor multimedia</td>
             <td></td>
             <td class="edit" ><img src="images/edit.png" alt=""></td>
-            <td class="trash"><img src="images/trash.png" alt=""></td>
+            <td id="trash"><img src="images/trash.png" alt=""></td>
           </tr>
           <tr class="line">
             <td>Editor de contenidos</td>
             <td></td>
             <td class="edit" ><img src="images/edit.png" alt=""></td>
-            <td class="trash"><img src="images/trash.png" alt=""></td>
+            <td id="trash"><img src="images/trash.png" alt=""></td>
           </tr>
           <tr class="list-grey">
             <td>Agente de soporte</td>
             <td></td>
             <td class="edit" ><img src="images/edit.png" alt=""></td>
-            <td class="trash"><img src="images/trash.png" alt=""></td>
+            <td id="trash"><img src="images/trash.png" alt=""></td>
           </tr>
           <tr class="line">
             <td>Editor de contenidos</td>
             <td></td>
             <td class="edit" ><img src="images/edit.png" alt=""></td>
-            <td class="trash"><img src="images/trash.png" alt=""></td>
+            <td id="trash"><img src="images/trash.png" alt=""></td>
           </tr>
           <tr class="list-grey">
             <td>Agente de soporte</td>
             <td></td>
             <td class="edit" ><img src="images/edit.png" alt=""></td>
-            <td class="trash"><img src="images/trash.png" alt=""></td>
+            <td id="trash"><img src="images/trash.png" alt=""></td>
           </tr>
           <tr class="line">
             <td>Gestor de contenidos</td>
             <td></td>
             <td class="edit" ><img src="images/edit.png" alt=""></td>
-            <td class="trash"><img src="images/trash.png" alt=""></td>
+            <td id="trash"><img src="images/trash.png" alt=""></td>
           </tr>
           <tr class="list-grey">
             <td>Gestor de contenidos</td>
             <td></td>
             <td class="edit" ><img src="images/edit.png" alt=""></td>
-            <td class="trash"><img src="images/trash.png" alt=""></td>
+            <td id="trash"><img src="images/trash.png" alt=""></td>
           </tr>
           <tr class="line">
             <td>Gestor de contenidos</td>
             <td></td>
             <td class="edit" ><img src="images/edit.png" alt=""></td>
-            <td class="trash"><img src="images/trash.png" alt=""></td>
+            <td id="trash"><img src="images/trash.png" alt=""></td>
           </tr>
           <tr class="list-grey">
             <td>Gestor de contenidos</td>
             <td></td>
             <td class="edit" ><img src="images/edit.png" alt=""></td>
-            <td class="trash"><img src="images/trash.png" alt=""></td>
+            <td id="trash"><img src="images/trash.png" alt=""></td>
           </tr>
           <tr class="line">
             <td>Gestor de contenidos</td>
             <td></td>
             <td class="edit" ><img src="images/edit.png" alt=""></td>
-            <td class="trash"><img src="images/trash.png" alt=""></td>
+            <td id="trash"><img src="images/trash.png" alt=""></td>
           </tr>
 
         </table>
       </div>
 
+      <!-- ROL -->
       <div class="listRoles hidden">
         <table class="liste">
           <tr class="NameOption">
@@ -151,7 +155,7 @@
             <td>16:24:03 27-12-2016</td>
             <td><div class="box-inactive"><span class="text-inactive">Inactivo</span></div></td>
             <td class="edit"><img src="images/edit.png" alt=""></td>
-            <td class="trash"><img src="images/trash.png" alt=""></td>
+            <td id="trash"><img src="images/trash.png" alt=""></td>
           </tr>
           <tr class="line">
             <td class="user"><img src="images/circle.svg" alt=""></td>
@@ -161,7 +165,7 @@
             <td>16:24:03 27-12-2016</td>
             <td><div class="box-active"><span class="text-active">Activo</span></div></td>
             <td class="edit" ><img src="images/edit.png" alt=""></td>
-            <td class="trash"><img src="images/trash.png" alt=""></td>
+            <td id="trash"><img src="images/trash.png" alt=""></td>
           </tr>
           <tr class="list-grey">
             <td class="user"><img src="images/circle.svg" alt=""></td>
@@ -171,7 +175,7 @@
             <td>16:24:03 27-12-2016</td>
             <td><div class="box-inactive"><span class="text-inactive">Inactivo</span></div></td>
             <td class="edit" ><img src="images/edit.png" alt=""></td>
-            <td class="trash"><img src="images/trash.png" alt=""></td>
+            <td id="trash"><img src="images/trash.png" alt=""></td>
           </tr>
           <tr class="line">
             <td class="user"><img src="images/circle.svg" alt=""></td>
@@ -181,7 +185,7 @@
             <td>16:24:03 27-12-2016</td>
             <td><div class="box-inactive"><span class="text-inactive">Inactivo</span></div></td>
             <td class="edit" ><img src="images/edit.png" alt=""></td>
-            <td class="trash"><img src="images/trash.png" alt=""></td>
+            <td id="trash"><img src="images/trash.png" alt=""></td>
           </tr>
           <tr class="list-grey">
             <td class="user"><img src="images/circle.svg" alt=""></td>
@@ -191,7 +195,7 @@
             <td>16:24:03 27-12-2016</td>
             <td><div class="box-active"><span class="text-active">Activo</span></div></td>
             <td class="edit" ><img src="images/edit.png" alt=""></td>
-            <td class="trash"><img src="images/trash.png" alt=""></td>
+            <td id="trash"><img src="images/trash.png" alt=""></td>
           </tr>
           <tr class="line">
             <td class="user"><img src="images/circle.svg" alt=""></td>
@@ -201,7 +205,7 @@
             <td>16:24:03 27-12-2016</td>
             <td><div class="box-active"><span class="text-active">Activo</span></div></td>
             <td class="edit" ><img src="images/edit.png" alt=""></td>
-            <td class="trash"><img src="images/trash.png" alt=""></td>
+            <td id="trash"><img src="images/trash.png" alt=""></td>
           </tr>
           <tr class="list-grey">
             <td class="user"><img src="images/circle.svg" alt=""></td>
@@ -211,7 +215,7 @@
             <td>16:24:03 27-12-2016</td>
             <td><div class="box-inactive"><span class="text-inactive">Activo</span></div></td>
             <td class="edit" ><img src="images/edit.png" alt=""></td>
-            <td class="trash"><img src="images/trash.png" alt=""></td>
+            <td id="trash"><img src="images/trash.png" alt=""></td>
           </tr>
           <tr class="line">
             <td class="user"><img src="images/circle.svg" alt=""></td>
@@ -221,7 +225,7 @@
             <td>16:24:03 27-12-2016</td>
             <td><div class="box-inactive"><span class="text-inactive">Inactivo</span></div></td>
             <td class="edit" ><img src="images/edit.png" alt=""></td>
-            <td class="trash"><img src="images/trash.png" alt=""></td>
+            <td id="trash"><img src="images/trash.png" alt=""></td>
           </tr>
           <tr class="list-grey">
             <td class="user"><img src="images/circle.svg" alt=""></td>
@@ -231,7 +235,7 @@
             <td>16:24:03 27-12-2016</td>
             <td><div class="box-inactive"><span class="text-inactive">Inactivo</span></div></td>
             <td class="edit" ><img src="images/edit.png" alt=""></td>
-            <td class="trash"><img src="images/trash.png" alt=""></td>
+            <td id="trash"><img src="images/trash.png" alt=""></td>
           </tr>
           <tr class="line">
             <td class="user"><img src="images/circle.svg" alt=""></td>
@@ -241,7 +245,7 @@
             <td>16:24:03 27-12-2016</td>
             <td><div class="box-active"><span class="text-active">Activo</span></div></td>
             <td class="edit" ><img src="images/edit.png" alt=""></td>
-            <td class="trash"><img src="images/trash.png" alt=""></td>
+            <td id="trash"><img src="images/trash.png" alt=""></td>
           </tr>
           <tr class="list-grey">
             <td class="user"><img src="images/circle.svg" alt=""></td>
@@ -251,7 +255,7 @@
             <td>16:24:03 27-12-2016</td>
             <td><div class="box-inactive"><span class="text-inactive">Inactivo</span></div></td>
             <td class="edit" ><img src="images/edit.png" alt=""></td>
-            <td class="trash"><img src="images/trash.png" alt=""></td>
+            <td id="trash"><img src="images/trash.png" alt=""></td>
           </tr>
           <tr class="line">
             <td class="user"><img src="images/circle.svg" alt=""></td>
@@ -261,7 +265,7 @@
             <td>16:24:03 27-12-2016</td>
             <td><div class="box-inactive"><span class="text-inactive">Inactivo</span></div></td>
             <td class="edit" ><img src="images/edit.png" alt=""></td>
-            <td class="trash"><img src="images/trash.png" alt=""></td>
+            <td id="trash"><img src="images/trash.png" alt=""></td>
           </tr>
           <tr class="list-grey">
             <td class="user"><img src="images/circle.svg" alt=""></td>
@@ -271,7 +275,7 @@
             <td>16:24:03 27-12-2016</td>
             <td><div class="box-active"><span class="text-active">Activo</span></div></td>
             <td class="edit" ><img src="images/edit.png" alt=""></td>
-            <td class="trash"><img src="images/trash.png" alt=""></td>
+            <td id="trash"><img src="images/trash.png" alt=""></td>
           </tr>
           <tr class="line">
             <td class="user"><img src="images/circle.svg" alt=""></td>
@@ -281,7 +285,7 @@
             <td>16:24:03 27-12-2016</td>
             <td><div class="box-active"><span class="text-active">Activo</span></div></td>
             <td class="edit" ><img src="images/edit.png" alt=""></td>
-            <td class="trash"><img src="images/trash.png" alt=""></td>
+            <td id="trash"><img src="images/trash.png" alt=""></td>
           </tr>
           <tr class="list-grey">
             <td class="user"><img src="images/circle.svg" alt=""></td>
@@ -291,16 +295,75 @@
             <td>16:24:03 27-12-2016</td>
             <td><div class="box-active"><span class="text-active">Activo</span></div></td>
             <td class="edit" ><img src="images/edit.png" alt=""></td>
-            <td class="trash"><img src="images/trash.png" alt=""></td>
+            <td id="trash"><img src="images/trash.png" alt=""></td>
           </tr>
 
         </table>
+      </div>
+    </div>
+  </div>
+  <!-- MODAL USUARIOS -->
+  <div id="modal-container" class="modal-container">
+
+    <div class="modal-div">
+      <p class="modal-title"> Vas a borrar el siguiente usuario </p>
+      <p class="modal-secondary-title"> ¿Estás seguro? </p>
+      <p></p>
+      <div id="modal-user-icon" class="icon-modal-circle-user"><!-- Tiene que tomar el icono de la tabla-->
+        <!-- <img src="../images/user-grey.png" alt="ICON"> -->
+      </div>
+      <p class="modal-tirth-title-user"> Usuario </p><!-- meter id para función js-->
+      <div class="modal-buttons">
+        <button id="cancel-button" class="modal-btn-cancel-client" type="button" name="button">
+          <svg  class="modal-svg" viewBox="0 0 64 64">
+            <use xlink:href="svg-images.svg#modal-cancel-icon"></use>
+          </svg>
+          <span class="text-button">Cancelar</span>
+        </button>
+
+        <button id="accept-button" class="modal-btn-accept-client" type="button" name="button">
+          <svg class="modal-svg" viewBox="0 0 64 64">
+            <use xlink:href="svg-images.svg#modal-accept-icon"></use>
+            <span class="text-button">Sí, borrar</span>
+          </svg>
+        </button>
 
       </div>
-
     </div>
-
   </div>
+  <!-- MODAL ROLES -->
+  <div id="modal-container" class="modal-container">
+
+    <div class="modal-div">
+      <p class="modal-title"> Vas a borrar el siguiente usuario </p>
+      <p class="modal-secondary-title"> ¿Estás seguro? </p>
+      <p></p>
+      <div id="modal-user-icon" class="icon-modal-circle-user"><!-- Tiene que tomar el icono de la tabla-->
+        <!-- <img src="../images/user-grey.png" alt="ICON"> -->
+      </div>
+      <p class="modal-tirth-title-user"> Usuario </p><!-- meter id para función js-->
+      <div class="modal-buttons">
+        <button id="cancel-button" class="modal-btn-cancel-client" type="button" name="button">
+          <svg  class="svg" viewBox="0 0 64 64">
+            <use xlink:href="svg-images.svg#modal-cancel-icon"></use>
+          </svg>
+          <span class="text-button">Cancelar
+          </span>
+        </button>
+
+        <button id="accept-button" class="modal-btn-accept-client" type="button" name="button">
+          <svg class="svg" viewBox="0 0 64 64">
+            <use xlink:href="svg-images.svg#modal-accept-icon"></use>
+            <span class="text-button">Sí, borrar</span>
+          </svg>
+        </button>
+
+      </div>
+    </div>
+  </div>
+
   <script type="text/javascript" src="js/gestion.js"></script>
+  <script type="text/javascript" src="js/modal.js"></script>
+
 </body>
 </html>
