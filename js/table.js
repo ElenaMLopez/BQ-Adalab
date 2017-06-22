@@ -17,8 +17,9 @@ function genera_tabla() {
       for (var j = 0; j < 2; j++) {
         var celda = document.createElement("td");
         celda.appendChild(textoCelda);
-        hilera.appendChild(celda);listUser;
+        hilera.appendChild(celda);
       }
+      return celda = data[j];
       listUser.appendChild(hilera);
     }
   }

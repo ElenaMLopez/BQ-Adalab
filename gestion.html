@@ -13,155 +13,112 @@
         <img src="" alt="">
         <h4>GESTIÓN</h4>
       </div>
-      <!-- <button class="btn-select-product" type="button" name="button">Productos</button> -->
+
       <div class="select-option gestion">
-        <input type="radio" name="select" id="selectUser">
-        <label for="selectUser">Usuarios</label>
+        <input type="radio" name="select" id="selectUser" checked>
+        <label id="loadUser" for="selectUser">Usuarios</label>
         <input type="radio" name="select" id="selectRol">
-        <label for="selectRol">Roles</label>
+        <label id="loadRoles" for="selectRol">Roles</label>
       </div>
-      <!-- <button class="btn-select-product" type="button" name="button">Mapa de tiendas</button> -->
+
       <button class="btn-off down" type="button" name="button"></button>
     </aside>
 
     <div class="content">
       <header class="header-gestion">
-        <h2>Gestión</h2>
-        <button class="btn-user" type="button" name="button">Nuevo producto</button>
+        <h2 id="titlePages">Usuarios</h2>
+        <button class="btn-user" type="button" name="button">Nuevo usuario</button>
       </header>
 
-      <div id="listProduct" class="dashboard">
+      <div class="listUser">
         <table class="liste">
           <tr class="NameOption">
-            <th></th>
-            <th>Fecha</th>
-            <th>Producto</th>
+            <th>Nombre</th>
             <th></th>
             <th></th>
+            <th></th>
           </tr>
           <tr class="list-grey">
-            <td class="iconProduct"><img src="images/product-apple.png" alt=""></td>
-            <td class="data">20/02/2017</td>
-            <td class="product">Producto 1</td>
+            <td class="name">Gestor de contenidos</td>
+            <td></td>
             <td class="edit" ><img src="images/edit.png" alt=""></td>
             <td class="trash"><img src="images/trash.png" alt=""></td>
           </tr>
           <tr class="line">
-            <td class="iconProduct"><img src="images/product-apple.png" alt=""></td>
-            <td class="data">20/02/2017</td>
-            <td class="product">Producto 1</td>
+            <td class="data">Traductor</td>
+            <td></td>
             <td class="edit" ><img src="images/edit.png" alt=""></td>
             <td class="trash"><img src="images/trash.png" alt=""></td>
           </tr>
           <tr class="list-grey">
-            <td class="iconProduct"><img src="images/product-grape.png" alt=""></td>
-            <td class="data">20/02/2017</td>
-            <td class="product">Producto 1</td>
+            <td class="data">Gestor multimedia</td>
+            <td></td>
             <td class="edit" ><img src="images/edit.png" alt=""></td>
             <td class="trash"><img src="images/trash.png" alt=""></td>
           </tr>
           <tr class="line">
-            <td class="iconProduct"><img src="images/product-melon.png" alt=""></td>
-            <td class="data">20/02/2017</td>
-            <td class="product">Producto 1</td>
+            <td class="data">Gestor de contenidos</td>
+            <td></td>
             <td class="edit" ><img src="images/edit.png" alt=""></td>
             <td class="trash"><img src="images/trash.png" alt=""></td>
           </tr>
           <tr class="list-grey">
-            <td class="iconProduct"><img src="images/product-melon.png" alt=""></td>
-            <td class="data">20/02/2017</td>
-            <td class="product">Producto 1</td>
+            <td class="data">Gestor multimedia</td>
+            <td></td>
             <td class="edit" ><img src="images/edit.png" alt=""></td>
             <td class="trash"><img src="images/trash.png" alt=""></td>
           </tr>
           <tr class="line">
-            <td class="iconProduct"><img src="images/product-grape.png" alt=""></td>
-            <td class="data">20/02/2017</td>
-            <td class="product">Producto 1</td>
+            <td class="data">Editor de contenidos</td>
+            <td></td>
             <td class="edit" ><img src="images/edit.png" alt=""></td>
             <td class="trash"><img src="images/trash.png" alt=""></td>
           </tr>
           <tr class="list-grey">
-            <td class="iconProduct"><img src="images/product-apple.png" alt=""></td>
-            <td class="data">20/02/2017</td>
-            <td class="product">Producto 1</td>
+            <td class="data">Agente de soporte</td>
+            <td></td>
             <td class="edit" ><img src="images/edit.png" alt=""></td>
             <td class="trash"><img src="images/trash.png" alt=""></td>
           </tr>
           <tr class="line">
-            <td class="iconProduct"><img src="images/product-apple.png" alt=""></td>
-            <td class="data">20/02/2017</td>
-            <td class="product">Producto 1</td>
+            <td class="data">Editor de contenidos</td>
+            <td></td>
             <td class="edit" ><img src="images/edit.png" alt=""></td>
             <td class="trash"><img src="images/trash.png" alt=""></td>
           </tr>
           <tr class="list-grey">
-            <td class="iconProduct"><img src="images/product-grape.png" alt=""></td>
-            <td class="data">20/02/2017</td>
-            <td class="product">Producto 1</td>
+            <td class="data">Agente de soporte</td>
+            <td></td>
             <td class="edit" ><img src="images/edit.png" alt=""></td>
             <td class="trash"><img src="images/trash.png" alt=""></td>
           </tr>
           <tr class="line">
-            <td class="iconProduct"><img src="images/product-melon.png" alt=""></td>
-            <td class="data">20/02/2017</td>
-            <td class="product">Producto 1</td>
+            <td class="data">Gestor de contenidos</td>
+            <td></td>
             <td class="edit" ><img src="images/edit.png" alt=""></td>
             <td class="trash"><img src="images/trash.png" alt=""></td>
           </tr>
           <tr class="list-grey">
-            <td class="iconProduct"><img src="images/product-melon.png" alt=""></td>
-            <td class="data">20/02/2017</td>
-            <td class="product">Producto 1</td>
+            <td class="data">Gestor de contenidos</td>
+            <td></td>
             <td class="edit" ><img src="images/edit.png" alt=""></td>
             <td class="trash"><img src="images/trash.png" alt=""></td>
           </tr>
           <tr class="line">
-            <td class="iconProduct"><img src="images/product-grape.png" alt=""></td>
-            <td class="data">20/02/2017</td>
-            <td class="product">Producto 1</td>
+            <td class="data">Gestor de contenidos</td>
+            <td></td>
             <td class="edit" ><img src="images/edit.png" alt=""></td>
             <td class="trash"><img src="images/trash.png" alt=""></td>
           </tr>
           <tr class="list-grey">
-            <td class="iconProduct"><img src="images/product-apple.png" alt=""></td>
-            <td class="data">20/02/2017</td>
-            <td class="product">Producto 1</td>
+            <td class="data">Gestor de contenidos</td>
+            <td></td>
             <td class="edit" ><img src="images/edit.png" alt=""></td>
             <td class="trash"><img src="images/trash.png" alt=""></td>
           </tr>
           <tr class="line">
-            <td class="iconProduct"><img src="images/product-apple.png" alt=""></td>
-            <td class="data">20/02/2017</td>
-            <td class="product">Producto 1</td>
-            <td class="edit" ><img src="images/edit.png" alt=""></td>
-            <td class="trash"><img src="images/trash.png" alt=""></td>
-          </tr>
-          <tr class="list-grey">
-            <td class="iconProduct"><img src="images/product-grape.png" alt=""></td>
-            <td class="data">20/02/2017</td>
-            <td class="product">Producto 1</td>
-            <td class="edit" ><img src="images/edit.png" alt=""></td>
-            <td class="trash"><img src="images/trash.png" alt=""></td>
-          </tr>
-          <tr class="line">
-            <td class="iconProduct"><img src="images/product-melon.png" alt=""></td>
-            <td class="data">20/02/2017</td>
-            <td class="product">Producto 1</td>
-            <td class="edit" ><img src="images/edit.png" alt=""></td>
-            <td class="trash"><img src="images/trash.png" alt=""></td>
-          </tr>
-          <tr class="list-grey">
-            <td class="iconProduct"><img src="images/product-melon.png" alt=""></td>
-            <td class="data">20/02/2017</td>
-            <td class="product">Producto 1</td>
-            <td class="edit" ><img src="images/edit.png" alt=""></td>
-            <td class="trash"><img src="images/trash.png" alt=""></td>
-          </tr>
-          <tr class="line">
-            <td class="iconProduct"><img src="images/product-grape.png" alt=""></td>
-            <td class="data">20/02/2017</td>
-            <td class="product">Producto 1</td>
+            <td class="data">Gestor de contenidos</td>
+            <td></td>
             <td class="edit" ><img src="images/edit.png" alt=""></td>
             <td class="trash"><img src="images/trash.png" alt=""></td>
           </tr>
@@ -169,9 +126,176 @@
         </table>
       </div>
 
+      <div class="listRoles hidden">
+        <table class="liste">
+          <tr class="NameOption">
+            <th></th>
+            <th>Nombre</th>
+            <th>Apellidos</th>
+            <th>Usuario</th>
+            <th>último acceso</th>
+            <th>Estado</th>
+            <th></th>
+            <th></th>
+          </tr>
+          <tr class="list-grey">
+            <td class="user" ><img src="images/circle.svg" alt=""></td>
+            <td class="nameUser">Lorena</td>
+            <td class="nameUser">Serrano</td>
+            <td class="nameUser">lorena.serrano</td>
+            <td class="nameUser">16:24:03 27-12-2016</td>
+            <td><div class="box-inactive"><span class="text-inactive">Inactivo</span></div></td>
+            <td class="edit" ><img src="images/edit.png" alt=""></td>
+            <td class="trash"><img src="images/trash.png" alt=""></td>
+          </tr>
+          <tr class="line">
+            <td class="user" ><img src="images/circle.svg" alt=""></td>
+            <td class="nameUser">Lorena</td>
+            <td class="nameUser">Serrano</td>
+            <td class="nameUser">lorena.serrano</td>
+            <td class="nameUser">16:24:03 27-12-2016</td>
+            <td><div class="box-active"><span class="text-active">Activo</span></div></td>
+            <td class="edit" ><img src="images/edit.png" alt=""></td>
+            <td class="trash"><img src="images/trash.png" alt=""></td>
+          </tr>
+          <tr class="list-grey">
+            <td class="user" ><img src="images/circle.svg" alt=""></td>
+            <td class="nameUser">Lorena</td>
+            <td class="nameUser">Serrano</td>
+            <td class="nameUser">lorena.serrano</td>
+            <td class="nameUser">16:24:03 27-12-2016</td>
+            <td><div class="box-inactive"><span class="text-inactive">Inactivo</span></div></td>
+            <td class="edit" ><img src="images/edit.png" alt=""></td>
+            <td class="trash"><img src="images/trash.png" alt=""></td>
+          </tr>
+          <tr class="line">
+            <td class="user" ><img src="images/circle.svg" alt=""></td>
+            <td class="nameUser">Lorena</td>
+            <td class="nameUser">Serrano</td>
+            <td class="nameUser">lorena.serrano</td>
+            <td class="nameUser">16:24:03 27-12-2016</td>
+            <td><div class="box-inactive"><span class="text-inactive">Inactivo</span></div></td>
+            <td class="edit" ><img src="images/edit.png" alt=""></td>
+            <td class="trash"><img src="images/trash.png" alt=""></td>
+          </tr>
+          <tr class="list-grey">
+            <td class="user" ><img src="images/circle.svg" alt=""></td>
+            <td class="nameUser">Lorena</td>
+            <td class="nameUser">Serrano</td>
+            <td class="nameUser">lorena.serrano</td>
+            <td class="nameUser">16:24:03 27-12-2016</td>
+            <td><div class="box-active"><span class="text-active">Activo</span></div></td>
+            <td class="edit" ><img src="images/edit.png" alt=""></td>
+            <td class="trash"><img src="images/trash.png" alt=""></td>
+          </tr>
+          <tr class="line">
+            <td class="user" ><img src="images/circle.svg" alt=""></td>
+            <td class="nameUser">Lorena</td>
+            <td class="nameUser">Serrano</td>
+            <td class="nameUser">lorena.serrano</td>
+            <td class="nameUser">16:24:03 27-12-2016</td>
+            <td><div class="box-active"><span class="text-active">Activo</span></div></td>
+            <td class="edit" ><img src="images/edit.png" alt=""></td>
+            <td class="trash"><img src="images/trash.png" alt=""></td>
+          </tr>
+          <tr class="list-grey">
+            <td class="user" ><img src="images/circle.svg" alt=""></td>
+            <td class="nameUser">Lorena</td>
+            <td class="nameUser">Serrano</td>
+            <td class="nameUser">lorena.serrano</td>
+            <td class="nameUser">16:24:03 27-12-2016</td>
+            <td><div class="box-inactive"><span class="text-inactive">Activo</span></div></td>
+            <td class="edit" ><img src="images/edit.png" alt=""></td>
+            <td class="trash"><img src="images/trash.png" alt=""></td>
+          </tr>
+          <tr class="line">
+            <td class="user" ><img src="images/circle.svg" alt=""></td>
+            <td class="nameUser">Lorena</td>
+            <td class="nameUser">Serrano</td>
+            <td class="nameUser">lorena.serrano</td>
+            <td class="nameUser">16:24:03 27-12-2016</td>
+            <td><div class="box-inactive"><span class="text-inactive">Inactivo</span></div></td>
+            <td class="edit" ><img src="images/edit.png" alt=""></td>
+            <td class="trash"><img src="images/trash.png" alt=""></td>
+          </tr>
+          <tr class="list-grey">
+            <td class="user" ><img src="images/circle.svg" alt=""></td>
+            <td class="nameUser">Lorena</td>
+            <td class="nameUser">Serrano</td>
+            <td class="nameUser">lorena.serrano</td>
+            <td class="nameUser">16:24:03 27-12-2016</td>
+            <td><div class="box-inactive"><span class="text-inactive">Inactivo</span></div></td>
+            <td class="edit" ><img src="images/edit.png" alt=""></td>
+            <td class="trash"><img src="images/trash.png" alt=""></td>
+          </tr>
+          <tr class="line">
+            <td class="user" ><img src="images/circle.svg" alt=""></td>
+            <td class="nameUser">Lorena</td>
+            <td class="nameUser">Serrano</td>
+            <td class="nameUser">lorena.serrano</td>
+            <td class="nameUser">16:24:03 27-12-2016</td>
+            <td><div class="box-active"><span class="text-active">Activo</span></div></td>
+            <td class="edit" ><img src="images/edit.png" alt=""></td>
+            <td class="trash"><img src="images/trash.png" alt=""></td>
+          </tr>
+          <tr class="list-grey">
+            <td class="user" ><img src="images/circle.svg" alt=""></td>
+            <td class="nameUser">Lorena</td>
+            <td class="nameUser">Serrano</td>
+            <td class="nameUser">lorena.serrano</td>
+            <td class="nameUser">16:24:03 27-12-2016</td>
+            <td><div class="box-inactive"><span class="text-inactive">Inactivo</span></div></td>
+            <td class="edit" ><img src="images/edit.png" alt=""></td>
+            <td class="trash"><img src="images/trash.png" alt=""></td>
+          </tr>
+          <tr class="line">
+            <td class="user" ><img src="images/circle.svg" alt=""></td>
+            <td class="nameUser">Lorena</td>
+            <td class="nameUser">Serrano</td>
+            <td class="nameUser">lorena.serrano</td>
+            <td class="nameUser">16:24:03 27-12-2016</td>
+            <td><div class="box-inactive"><span class="text-inactive">Inactivo</span></div></td>
+            <td class="edit" ><img src="images/edit.png" alt=""></td>
+            <td class="trash"><img src="images/trash.png" alt=""></td>
+          </tr>
+          <tr class="list-grey">
+            <td class="user" ><img src="images/circle.svg" alt=""></td>
+            <td class="nameUser">Lorena</td>
+            <td class="nameUser">Serrano</td>
+            <td class="nameUser">lorena.serrano</td>
+            <td class="nameUser">16:24:03 27-12-2016</td>
+            <td><div class="box-active"><span class="text-active">Activo</span></div></td>
+            <td class="edit" ><img src="images/edit.png" alt=""></td>
+            <td class="trash"><img src="images/trash.png" alt=""></td>
+          </tr>
+          <tr class="line">
+            <td class="user" ><img src="images/circle.svg" alt=""></td>
+            <td class="nameUser">Lorena</td>
+            <td class="nameUser">Serrano</td>
+            <td class="nameUser">lorena.serrano</td>
+            <td class="nameUser">16:24:03 27-12-2016</td>
+            <td><div class="box-active"><span class="text-active">Activo</span></div></td>
+            <td class="edit" ><img src="images/edit.png" alt=""></td>
+            <td class="trash"><img src="images/trash.png" alt=""></td>
+          </tr>
+          <tr class="list-grey">
+            <td class="user" ><img src="images/circle.svg" alt=""></td>
+            <td class="nameUser">Lorena</td>
+            <td class="nameUser">Serrano</td>
+            <td class="nameUser">lorena.serrano</td>
+            <td class="nameUser">16:24:03 27-12-2016</td>
+            <td><div class="box-active"><span class="text-active">Activo</span></div></td>
+            <td class="edit" ><img src="images/edit.png" alt=""></td>
+            <td class="trash"><img src="images/trash.png" alt=""></td>
+          </tr>
+
+        </table>
+
+      </div>
+
     </div>
 
   </div>
-
+  <script type="text/javascript" src="js/gestion.js"></script>
 </body>
 </html>

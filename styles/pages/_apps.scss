@@ -1,0 +1,23 @@
+.appContent{
+  width: 100%;
+  height: 100vh;
+  background-color: $orange-terciary;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  padding-top: 100px;
+}
+
+.img-app{
+  width: 64px;
+  height: 80px;
+}
+
+.btn-content{
+  width: 50%;
+  margin-top: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

@@ -15,10 +15,10 @@
       </div>
 
       <div class="select-option product">
-        <input type="radio" name="select" id="selectProduct">
-        <label for="selectProduct">Productos</label>
+        <input type="radio" name="select" id="selectProduct" checked>
+        <label id="loadProduct" for="selectProduct">Productos</label>
         <input type="radio" name="select" id="selectMap">
-        <label for="selectMap">Mapa de tiendas</label>
+        <label id="loadMap" for="selectMap">Mapa de tiendas</label>
       </div>
 
       <button class="btn-off down" type="button" name="button"></button>
@@ -26,7 +26,7 @@
 
     <div class="content">
       <header class="header-product">
-        <h2>Productos</h2>
+        <h2 id="titlePages">Productos</h2>
         <button class="btn-product" type="button" name="button">Nuevo producto</button>
       </header>
 
@@ -168,14 +168,14 @@
 
         </table>
       </div>
-      <div id="mapStore" class="box-map">
-        <div id="googleMap"></div>
-      </div>
+
+      <div id="googleMap" class="box-map hidden"></div>
     </div>
 
 
   </div>
-  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAvt3Ruu-32KmfwUMKW02YNbZ3OkQsaU0Y&sensor=false" ></script>
-  <script type="text/javascript" src="js/map.js"></script>
+  <!-- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAvt3Ruu-32KmfwUMKW02YNbZ3OkQsaU0Y&sensor=false" ></script>
+  <script type="text/javascript" src="js/map.js"></script> -->
+  <script type="text/javascript" src="js/product.js"></script>
 </body>
 </html>

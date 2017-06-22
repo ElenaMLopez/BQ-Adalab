@@ -1,7 +1,6 @@
 @import "settings";
 @import "general";
 @import "typography";
-@import "main";
 @import "layouts/header";
 @import "layouts/modal";
 @import "layouts/product";
@@ -10,6 +9,7 @@
 @import "components/lines";
 @import "components/map";
 @import "components/buttons";
-@import "components/aside";
+@import "layouts/aside";
 @import "components/table";
-@import "apps";
+@import "pages/apps";
+@import "helpers";
