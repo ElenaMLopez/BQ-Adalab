@@ -4,13 +4,20 @@
 @import "layouts/header";
 @import "layouts/modal";
 @import "layouts/product";
+@import "layouts/login";
 @import "layouts/aside";
 @import "components/circle";
 @import "components/form";
 @import "components/lines";
 @import "components/buttons";
 @import "components/table";
+<<<<<<< HEAD
 @import "components/images";
+=======
+@import "pages/apps";
+@import "helpers";
+@import "apps";
+>>>>>>> 48e75d4db0b8303bb80b2169a75fa16b886447b7
 @import "pages/map";
 @import "pages/apps";
 @import "helpers";
