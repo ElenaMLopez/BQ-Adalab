@@ -451,7 +451,7 @@ h5 {
 
 .newuser-active-ask {
   margin-top: 15px;
-  margin-right: 60px; }
+  margin-right: 56px; }
 
 .newuser-active input[type="radio"] {
   display: none; }
@@ -511,10 +511,8 @@ h5 {
 
 .custom-select {
   -webkit-appearance: none;
-  -moz-appearance: none;
-  -o-appearance: none;
-  -ms-appearance: none;
-  appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   padding: 2.5px 0;
   background: no-repeat;
   background-image: url("../images/arrow-down.png");
@@ -538,7 +536,7 @@ input[type="radio"] {
 
 .product-legend {
   width: 100%;
-  border-bottom: 1px solid #e4e4e4;
+  border-bottom: solid 1px #e4e4e4;
   color: #d60056;
   margin-bottom: 20px; }
 
@@ -1086,6 +1084,9 @@ td {
 
 .name {
   width: 50%; }
+
+.roles {
+  width: 85%; }
 
 .page {
   width: 80%; }

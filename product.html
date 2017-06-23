@@ -5,8 +5,8 @@
   <link rel="stylesheet" href="styles/styles.css">
   <link rel="icon" type="image/png" href="images/logo_pink.svg" alt="logo pink"/>
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
-  <title>Productos</title>
   <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAvt3Ruu-32KmfwUMKW02YNbZ3OkQsaU0Y&sensor=false" ></script>
+  <title>Productos</title>
 </head>
 
 <body>
@@ -171,10 +171,39 @@
 
         </table>
       </div>
-F
+
       <div id="googleMap" class="box-map hidden"></div>
     </div>
 
+  </div>
+  <!-- Modal Eliminar producto -->
+  <div id="modal-container" class="modal-container hidden">
+
+    <div class="modal-div">
+      <p class="modal-title"> Vas a borrar el siguiente producto </p>
+      <p class="modal-secondary-title"> ¿Estás seguro? </p>
+      <div id="modal-product-icon" class="icon-modal-circle-product"><!-- Tiene que tomar el icono de la tabla-->
+      </div>
+      <p class="modal-tirth-title-product"> Producto </p><!-- meter id para función js-->
+
+      <div class="modal-buttons">
+        <button id="cancel-button" class="modal-btn-cancel-product" type="button" name="button">
+          <svg  class="svg" viewBox="0 0 64 64">
+            <use xlink:href="svg-images.svg#modal-cancel-icon"></use>
+          </svg>
+          <span class="text-button">Cancelar
+          </span>
+        </button>
+
+        <button id="accept-button" class="modal-btn-accept-product" type="button" name="button">
+          <svg class="svg" viewBox="0 0 64 64">
+            <use xlink:href="svg-images.svg#modal-accept-icon"></use>
+          </svg>
+          <span class="text-button">Sí, borrar</span>
+        </button>
+      </div>
+
+    </div>
   </div>
 
   <script type="text/javascript" src="js/map.js"></script>

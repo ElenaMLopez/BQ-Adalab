@@ -44,7 +44,7 @@
 
 .newuser-active-ask {
   margin-top: 15px;
-  margin-right: 60px;
+  margin-right: 56px;
 }
 
 .newuser-active input[type="radio"] {
@@ -112,12 +112,7 @@
 }
 
 .custom-select {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -o-appearance: none;
-  -ms-appearance: none;
   appearance: none;
-
   padding: 2.5px 0;
   background: no-repeat;
   background-image: url("../images/arrow-down.png");
@@ -146,7 +141,7 @@ input[type="radio"] {
 
 .product-legend {
   width: 100%;
-  border-bottom: 1px solid $form-border-grey;
+  border-bottom: $border-small $form-border-grey;
   color: $pink-primary;
   margin-bottom: 20px;
 }
