@@ -39,7 +39,7 @@
 
 .newuser-active {
   display: flex;
-  align-items: center;
+  align-items: $align-center;
 }
 
 .newuser-active-ask {
@@ -57,7 +57,7 @@
   color: #4d4d4f;
   border: $border-small #4d4d4f;
   line-height: 2.5;
-  text-align: center;
+  text-align: $align-center;
   cursor: pointer;
 }
 
@@ -103,7 +103,7 @@
 }
 
 .custom-checkbox:checked + label:before {
- text-align: center;
+ text-align: $align-center;
  line-height: 1;
  color: $color-ligth;
  content: "✔";
@@ -129,7 +129,7 @@
 /************************** Create Product Form*******************************/
 
 input[type="radio"] {
-    display: none;
+  display: none;
 }
 
 .createProduct-form {
