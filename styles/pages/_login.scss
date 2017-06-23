@@ -4,7 +4,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: $align-center;
 }
 
 .name-login {
@@ -15,13 +15,6 @@
 .login-bg {
   background-color: $orange-terciary;
 }
-
-.logo-login {
-  margin-bottom: 55px;
-  width: 120px;
-  height: 120px;
-  justify-content: center;
- }
 
 @mixin rectangle {
   width: 400px;
@@ -34,14 +27,14 @@
 .input-login {
   @include rectangle;
   padding-left: 15px;
-  text-align: $text-left;
+  text-align: $align-left;
   color: $grey-secondary;
-  border: solid 1px #e4e4e4;
+  border: $border-small #e4e4e4;
 }
 
 .box {
   display: flex ;
-  align-items: center;
+  align-items: $align-center;
 }
 
 .bitmap {

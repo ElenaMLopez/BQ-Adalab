@@ -2,7 +2,7 @@
 /* Colours */
 /* Tipografia */
 /* Font-size */
-/* Text align  */
+/* align  */
 /* border */
 /* Form */
 * {
@@ -457,7 +457,7 @@ h5 {
 
 .newuser-active-ask {
   margin-top: 15px;
-  margin-right: 60px; }
+  margin-right: 56px; }
 
 .newuser-active input[type="radio"] {
   display: none; }
@@ -517,10 +517,8 @@ h5 {
 
 .custom-select {
   -webkit-appearance: none;
-  -moz-appearance: none;
-  -o-appearance: none;
-  -ms-appearance: none;
-  appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   padding: 2.5px 0;
   background: no-repeat;
   background-image: url("../images/arrow-down.png");
@@ -544,7 +542,7 @@ input[type="radio"] {
 
 .product-legend {
   width: 100%;
-  border-bottom: 1px solid #e4e4e4;
+  border-bottom: solid 1px #e4e4e4;
   color: #d60056;
   margin-bottom: 20px; }
 
@@ -791,7 +789,7 @@ button {
   width: 162px;
   height: 40px;
   color: #4d4d4f;
-  border: solid 1px #4d4d4f;
+  border: solid 1.5px #4d4d4f;
   outline: none;
   font-size: 20px;
   padding-bottom: 6px;
@@ -814,13 +812,13 @@ button {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   color: #ff5000;
-  border: solid 1px #ff5000; }
+  border: solid 1.5px #ff5000; }
 
 .modal-btn-accept-client {
   width: 162px;
   height: 40px;
   color: #4d4d4f;
-  border: solid 1px #4d4d4f;
+  border: solid 1.5px #4d4d4f;
   outline: none;
   font-size: 20px;
   padding-bottom: 6px;
@@ -834,7 +832,7 @@ button {
   width: 162px;
   height: 40px;
   color: "";
-  border: solid 1px "";
+  border: solid 1.5px "";
   outline: none;
   font-size: 20px;
   padding-bottom: 6px;
@@ -843,13 +841,13 @@ button {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   color: #ff5000;
-  border: solid 1px #ff5000; }
+  border: solid 1.5px #ff5000; }
 
 .modal-btn-cancel-product {
   width: 162px;
   height: 40px;
   color: #4d4d4f;
-  border: solid 1px #4d4d4f;
+  border: solid 1.5px #4d4d4f;
   outline: none;
   font-size: 20px;
   padding-bottom: 6px;
@@ -872,13 +870,13 @@ button {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   color: #d60056;
-  border: solid 1px #d60056; }
+  border: solid 1.5px #d60056; }
 
 .modal-btn-accept-product {
   width: 162px;
   height: 40px;
   color: #4d4d4f;
-  border: solid 1px #4d4d4f;
+  border: solid 1.5px #4d4d4f;
   outline: none;
   font-size: 20px;
   padding-bottom: 6px;
@@ -892,7 +890,7 @@ button {
   width: 162px;
   height: 40px;
   color: "";
-  border: solid 1px "";
+  border: solid 1.5px "";
   outline: none;
   font-size: 20px;
   padding-bottom: 6px;
@@ -901,7 +899,7 @@ button {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   color: #d60056;
-  border: solid 1px #d60056; }
+  border: solid 1.5px #d60056; }
 
 .btn-productapp {
   width: 130px;
@@ -926,12 +924,12 @@ button {
   background-position-x: center;
   padding-top: 60px;
   font-family: "Roboto", sans-serif;
-  border: 3px solid #d60056;
+  border: solid 3px #d60056;
   background-image: url(../images/appleIconPink.png);
   color: #d60056; }
 
 .btn-productapp:hover {
-  border: 3px solid #d60056;
+  border: solid 3px #d60056;
   background-image: url(../images/appleIcon.png);
   background-color: #d60056;
   color: white; }
@@ -959,13 +957,13 @@ button {
   background-position-x: center;
   padding-top: 60px;
   font-family: "Roboto", sans-serif;
-  border: 3px solid #ff5000;
+  border: solid 3px #ff5000;
   background-image: url(../images/userOrange.png);
   background-size: 50px;
   color: #ff5000; }
 
 .btn-userapp:hover {
-  border: 3px solid #ff5000;
+  border: solid 3px #ff5000;
   background-image: url(../images/user.png);
   background-color: #ff5000;
   color: white; }
@@ -993,13 +991,13 @@ button {
   background-position-x: center;
   padding-top: 60px;
   font-family: "Roboto", sans-serif;
-  border: 3px solid #892d87;
+  border: solid 3px #892d87;
   background-image: url(../images/internetPurple.png);
   background-size: 50px;
   color: #892d87; }
 
 .btn-traductorapp:hover {
-  border: 3px solid #892d87;
+  border: solid 3px #892d87;
   background-image: url(../images/internet.png);
   background-color: #892d87;
   color: white; }
@@ -1053,6 +1051,9 @@ td {
 .name {
   width: 50%; }
 
+.roles {
+  width: 85%; }
+
 .page {
   width: 80%; }
 
@@ -1092,6 +1093,14 @@ td {
 .trashRol img,
 .user img {
   width: 30px; }
+
+.img-login {
+  margin-bottom: 55px;
+  width: 120px;
+  height: 120px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
 
 .logo-pink {
   width: 40px;
@@ -1186,14 +1195,6 @@ td {
 
 .login-bg {
   background-color: #ffe5d9; }
-
-.logo-login {
-  margin-bottom: 55px;
-  width: 120px;
-  height: 120px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
 
 .input-login {
   width: 400px;

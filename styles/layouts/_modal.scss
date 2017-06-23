@@ -27,10 +27,10 @@
   height: 450px;
   border-radius: 15px;
   background-color: #ffffff;
-  border: solid 1px #cdcdc9;
+  border: $border-small #cdcdc9;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: $align-center;
   margin-top: 150px;
   margin-bottom: 800px;
   margin-left: auto;
@@ -42,7 +42,7 @@
   height: 29px;
   font-size: 24px;
   line-height: 1.21;
-  text-align: center;
+  text-align: $align-center;
   color: $grey-primary;
   margin-top: 35px;
 }
@@ -53,7 +53,7 @@
   font-size: $Text-small;
   font-weight: 300;
   line-height: 1.33;
-  text-align: center;
+  text-align: $align-center;
   color: $grey-primary;
 }
 
@@ -63,7 +63,7 @@
   font-size: 24px;
   font-weight: 300;
   line-height: 1;
-  text-align: center;
+  text-align: $align-center;
   color: #4d4d4f;
 }
 
@@ -85,7 +85,7 @@
   background-color: $color-ligth;
   background-image: url(../images/internetPurple.png);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: $align-center;
 }
 
 .modal-tirth-title-product {
@@ -95,7 +95,7 @@
   font-size: 24px;
   font-weight: 300;
   line-height: 1;
-  text-align: center;
+  text-align: $align-center;
   color: #4d4d4f;
 }
 
@@ -109,7 +109,7 @@
   background-color: $color-ligth;
   background-image: url(../images/user-grey.png);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: $align-center;
 }
 
 .modal-tirth-title-user {
@@ -119,6 +119,6 @@
   font-size: 24px;
   font-weight: 300;
   line-height: 1;
-  text-align: center;
+  text-align: $align-center;
   color: #4d4d4f;
 }

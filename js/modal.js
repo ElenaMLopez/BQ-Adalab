@@ -2,9 +2,11 @@
 
 var modalUser = document.getElementById('modal-user');
 var modalRol = document.getElementById('modal-rol');
-var cancelButton = document.getElementById('cancel-button');
-var acceptButon = document.getElementById('accept-button');
-var trashUser = document.querySelectorAll('.trashUser'); //querySelectorAll para formar un array con todos los botones de borrar
+var cancelButtonUser = document.getElementById('cancel-button-user');
+var acceptButonUser = document.getElementById('accept-button-user');
+var cancelButtonRol = document.getElementById('cancel-button-rol');
+var acceptButonRol = document.getElementById('accept-button-rol');
+var trashUser = document.querySelectorAll('.trashUser');//querySelectorAll para formar un array con todos los botones de borrar
 var trashRol = document.querySelectorAll('.trashRol');
 
 
@@ -17,6 +19,15 @@ for (var i = 0; i < trashUser.length; i++) {
   trashUser[i].addEventListener('click', showModalUser, false);
 }
 
+function occultModalUser(){
+  modalUser.classList.toggle('hidden');
+}
+
+function acceptEraseUser(){
+  // function to connect with server;
+  occultModalUser();
+}
+
 // Function Modal Roles
 
 function showModalRol (event){
@@ -27,15 +38,16 @@ for (var j = 0; j < trashRol.length; j++) {
   trashRol[j].addEventListener('click', showModalRol, false);
 }
 
-function occultModal(){
-  modalUser.classList.toggle('hidden');
+function occultModalRol(){
   modalRol.classList.toggle('hidden');
 }
 
-function acceptErase(){
+function acceptEraseRol(){
   // function to connect with server;
-  occultModal();
+  occultModalRol();
 }
 
-cancelButton.addEventListener('click', occultModal);
-acceptButon.addEventListener('click', acceptErase);
+cancelButtonUser.addEventListener('click', occultModalUser);
+acceptButonUser.addEventListener('click', acceptEraseUser);
+cancelButtonRol.addEventListener('click', occultModalRol);
+acceptButonRol.addEventListener('click', acceptEraseRol);

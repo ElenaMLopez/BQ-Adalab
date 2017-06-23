@@ -39,12 +39,12 @@
 
 .newuser-active {
   display: flex;
-  align-items: center;
+  align-items: $align-center;
 }
 
 .newuser-active-ask {
   margin-top: 15px;
-  margin-right: 60px;
+  margin-right: 56px;
 }
 
 .newuser-active input[type="radio"] {
@@ -57,7 +57,7 @@
   color: #4d4d4f;
   border: $border-small #4d4d4f;
   line-height: 2.5;
-  text-align: center;
+  text-align: $align-center;
   cursor: pointer;
 }
 
@@ -103,7 +103,7 @@
 }
 
 .custom-checkbox:checked + label:before {
- text-align: center;
+ text-align: $align-center;
  line-height: 1;
  color: $color-ligth;
  content: "✔";
@@ -112,12 +112,7 @@
 }
 
 .custom-select {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -o-appearance: none;
-  -ms-appearance: none;
   appearance: none;
-
   padding: 2.5px 0;
   background: no-repeat;
   background-image: url("../images/arrow-down.png");
@@ -129,7 +124,7 @@
 /************************** Create Product Form*******************************/
 
 input[type="radio"] {
-    display: none;
+  display: none;
 }
 
 .createProduct-form {
@@ -146,7 +141,7 @@ input[type="radio"] {
 
 .product-legend {
   width: 100%;
-  border-bottom: 1px solid $form-border-grey;
+  border-bottom: $border-small $form-border-grey;
   color: $pink-primary;
   margin-bottom: 20px;
 }

@@ -3,7 +3,7 @@
   height: 30px;
   padding: 3px;
   background-color: $color-ligth;
-  text-align: $text-center;
+  text-align: $align-center;
 }
 
 .dashboard {
@@ -39,7 +39,7 @@ td {
 }
 
 .NameOption th {
-  text-align: $text-left;
+  text-align: $align-left;
   padding: 20px;
 }
 
@@ -66,6 +66,10 @@ td {
 
 .name {
   width: 50%;
+}
+
+.roles {
+  width: 85%;
 }
 
 .page {
