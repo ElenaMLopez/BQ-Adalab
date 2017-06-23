@@ -173,11 +173,11 @@ button {
   padding-bottom: 6px;
   padding-top: 6px;
   background-color: #ffffff;
-  background-image: url(../images/cancel-icon-grey-m.png);
-  background-repeat: no-repeat;
-  background-position-x:17px;
-  background-position-y: 9px;
-  background-size: 22px;
+  // background-image: url(../images/cancel-icon-grey-m.png);
+  // background-repeat: no-repeat;
+  // background-position-x:17px;
+  // background-position-y: 9px;
+  // background-size: 22px;
   padding-left: 35px;
   transition: 0.3s;
 }
@@ -192,11 +192,11 @@ button {
   padding-bottom: 6px;
   padding-top: 6px;
   background-color: #ffffff;
-  background-image: "";
-  background-repeat: no-repeat;
-  background-position-x:17px;
-  background-position-y: 9px;
-  background-size: 22px;
+  // background-image: "";
+  // background-repeat: no-repeat;
+  // background-position-x:17px;
+  // background-position-y: 9px;
+  // background-size: 22px;
   transition: 0.3s;
 }
 
@@ -210,10 +210,10 @@ button {
   padding-bottom: 6px;
   padding-top: 6px;
   background-color: $color-ligth;
-  background-image: "";
-  background-repeat: no-repeat;
-  background-position-x: 17px;
-  background-position-y: 9px;
+  // background-image: "";
+  // background-repeat: no-repeat;
+  // background-position-x: 17px;
+  // background-position-y: 9px;
   transition: 0.3s;
 }
 
@@ -227,10 +227,10 @@ button {
   padding-bottom: 6px;
   padding-top: 6px;
   background-color: $color-ligth;
-  background-image: url(../images/check-icon-grey-m.png);
-  background-repeat: no-repeat;
-  background-position-x: 17px;
-  background-position-y: 9px;
+  // background-image: url(../images/check-icon-grey-m.png);
+  // background-repeat: no-repeat;
+  // background-position-x: 17px;
+  // background-position-y: 9px;
   padding-left: 35px;
   transition: 0.3s;
 }
@@ -244,7 +244,7 @@ button {
   @include modal-btn-cancel-active;
   color: $orange-primary;
   border: solid 1px $orange-primary;
-  background-image: url(../images/cancel-icon-orange-m.png);
+  // background-image: url(../images/cancel-icon-orange-m.png);
 }
 
 .modal-btn-accept-client {
@@ -255,7 +255,7 @@ button {
   @include modal-btn-accept-active;
   color: $orange-primary;
   border: solid 1px $orange-primary;
-  background-image: url(../images/check-icon-orange-m.png);
+  // background-image: url(../images/check-icon-orange-m.png);
 }
 
 // Modal buttons for product pink
@@ -267,7 +267,7 @@ button {
   @include modal-btn-cancel-active;
   color: $pink-primary;
   border: solid 1px $pink-primary;
-  background-image: url(../images/cancel-icon-pink-m.png);
+  // background-image: url(../images/cancel-icon-pink-m.png);
 }
 
 .modal-btn-accept-product {
@@ -278,7 +278,7 @@ button {
   @include modal-btn-accept-active;
   color: $pink-primary;
   border: solid 1px $pink-primary;
-  background-image: url(../images/check-icon-pink-m.png);
+  // background-image: url(../images/check-icon-pink-m.png);
 }
 
 // Botones de la Apps

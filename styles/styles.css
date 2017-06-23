@@ -174,13 +174,6 @@ h5 {
   background-color: white;
   border-bottom: solid 2px #892d87; }
 
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
-
-p {
-  margin-left: 0; }
-
 .modal-svg {
   width: 1px;
   height: 1px; }
@@ -700,11 +693,6 @@ button {
   padding-bottom: 6px;
   padding-top: 6px;
   background-color: #ffffff;
-  background-image: url(../images/cancel-icon-grey-m.png);
-  background-repeat: no-repeat;
-  background-position-x: 17px;
-  background-position-y: 9px;
-  background-size: 22px;
   padding-left: 35px;
   -webkit-transition: 0.3s;
   transition: 0.3s; }
@@ -719,16 +707,10 @@ button {
   padding-bottom: 6px;
   padding-top: 6px;
   background-color: #ffffff;
-  background-image: "";
-  background-repeat: no-repeat;
-  background-position-x: 17px;
-  background-position-y: 9px;
-  background-size: 22px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   color: #ff5000;
-  border: solid 1px #ff5000;
-  background-image: url(../images/cancel-icon-orange-m.png); }
+  border: solid 1px #ff5000; }
 
 .modal-btn-accept-client {
   width: 162px;
@@ -740,10 +722,6 @@ button {
   padding-bottom: 6px;
   padding-top: 6px;
   background-color: white;
-  background-image: url(../images/check-icon-grey-m.png);
-  background-repeat: no-repeat;
-  background-position-x: 17px;
-  background-position-y: 9px;
   padding-left: 35px;
   -webkit-transition: 0.3s;
   transition: 0.3s; }
@@ -758,15 +736,10 @@ button {
   padding-bottom: 6px;
   padding-top: 6px;
   background-color: white;
-  background-image: "";
-  background-repeat: no-repeat;
-  background-position-x: 17px;
-  background-position-y: 9px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   color: #ff5000;
-  border: solid 1px #ff5000;
-  background-image: url(../images/check-icon-orange-m.png); }
+  border: solid 1px #ff5000; }
 
 .modal-btn-cancel-product {
   width: 162px;
@@ -778,11 +751,6 @@ button {
   padding-bottom: 6px;
   padding-top: 6px;
   background-color: #ffffff;
-  background-image: url(../images/cancel-icon-grey-m.png);
-  background-repeat: no-repeat;
-  background-position-x: 17px;
-  background-position-y: 9px;
-  background-size: 22px;
   padding-left: 35px;
   -webkit-transition: 0.3s;
   transition: 0.3s; }
@@ -797,16 +765,10 @@ button {
   padding-bottom: 6px;
   padding-top: 6px;
   background-color: #ffffff;
-  background-image: "";
-  background-repeat: no-repeat;
-  background-position-x: 17px;
-  background-position-y: 9px;
-  background-size: 22px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   color: #d60056;
-  border: solid 1px #d60056;
-  background-image: url(../images/cancel-icon-pink-m.png); }
+  border: solid 1px #d60056; }
 
 .modal-btn-accept-product {
   width: 162px;
@@ -818,10 +780,6 @@ button {
   padding-bottom: 6px;
   padding-top: 6px;
   background-color: white;
-  background-image: url(../images/check-icon-grey-m.png);
-  background-repeat: no-repeat;
-  background-position-x: 17px;
-  background-position-y: 9px;
   padding-left: 35px;
   -webkit-transition: 0.3s;
   transition: 0.3s; }
@@ -836,15 +794,10 @@ button {
   padding-bottom: 6px;
   padding-top: 6px;
   background-color: white;
-  background-image: "";
-  background-repeat: no-repeat;
-  background-position-x: 17px;
-  background-position-y: 9px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   color: #d60056;
-  border: solid 1px #d60056;
-  background-image: url(../images/check-icon-pink-m.png); }
+  border: solid 1px #d60056; }
 
 .btn-productapp {
   width: 130px;
