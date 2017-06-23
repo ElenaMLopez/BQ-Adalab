@@ -1,65 +1,68 @@
- body {
-  font-style: $font;
-  background-color: $orange-terciary;
-}
 
-.container {
+.main {
+  margin-top: 8%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: $orange-terciary;
-}
-
-.content {
-  display: flex;
-  flex-direction: column;
   align-items: center;
 }
 
-.logo {
-  margin-bottom: 20px;
-  width: 120px;
-  height: 120px;
+.name-login {
+  display: flex;
+  flex-direction: column;
 }
 
-.rectangle-1 {
-  width: 401px;
+.login-bg {
+  background-color: $orange-terciary;
+}
+
+.logo-login {
+  margin-bottom: 55px;
+  width: 120px;
+  height: 120px;
+  justify-content: center;
+ }
+
+@mixin rectangle {
+  width: 400px;
   height: 40px;
-  background-color: $color-ligth;
-  border: solid 1px #e4e4e4;
-  display: flex;
-  font-size: $Text-normal;
-  text-align: $text-left;
-  color: #b2b2b2;
-  padding-left: 3px;
   margin-bottom: 20px;
+  background-color: $color-ligth;
+  font-size: $Text-normal;
+}
+
+.btn-login-purple {
+  @include rectangle;
+  text-align:$text-center;
+  border: solid 2px $purple-primary;
+  color: $purple-primary;
+}
+
+.btn-login-purple:hover {
+  color: $color-ligth;
+  background-color: $purple-primary;
+}
+
+.input-login {
+  @include rectangle;
+  padding-left: 15px;
+  text-align: $text-left;
+  color: $grey-secondary;
+  border: solid 1px #e4e4e4;
 }
 
 .box{
   display: flex ;
   align-items: center;
 }
+
 .bitmap {
-  margin-top: 6px;
-  margin-bottom: 2px;
+  margin-top: 10px;
+  margin-bottom: 17px;
   width: 26px;
   height: 26px;
   border-radius: 5%;
   background-color: $color-ligth;
-}
-
-.rectangle-5_purple {
-  width: 400px;
-  height: 42px;
-  background-color: $color-ligth;
-  border: solid 2px $purple-primary;
-  border: solid 2px;
-  text-align:$text-center;
-  font-size: $Text-normal;
-  color: $purple-primary;
-  margin-top: 18px;
-  margin-bottom: 10px;
-  padding-left: 5px;
 }
 
 .norecuerda {
@@ -70,9 +73,6 @@
 
 .recordar-datos {
   font-size: $Text-small;
-  font-weight: 300;
-  text-align: $text-left;
   color: $grey-primary;
-  font-family: $font;
- top: 0;
+  margin-left: 12px;
 }
