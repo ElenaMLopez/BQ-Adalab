@@ -188,14 +188,9 @@ h5 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   position: fixed;
   z-index: 3;
-  top: 0;
-  display: none;
-  overflow: hidden; }
+  top: 0; }
 
 .modal-div {
   width: 800px;
@@ -1143,16 +1138,11 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: absolute;
-  z-index: -1;
-  height: 100vh;
-  max-height: 400px;
-  max-width: 620px;
-  margin: 10% 20%;
-  padding: 0; }
-
-#googleMap {
-  height: 100%; }
+  width: 860px;
+  height: 518px;
+  max-height: 597px;
+  max-width: 1277px;
+  margin: 150px; }
 
 .appContent {
   width: 100%;

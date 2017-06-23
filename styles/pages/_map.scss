@@ -1,14 +1,8 @@
 .box-map {
   display: flex;
-  position: absolute;
-  z-index: -1;
-  height: 100vh;
-  max-height: 400px;
-  max-width: 620px;
-  margin: 10% 20%;
-  padding: 0;
-}
-
-#googleMap {
-  height: 100%;
+  width: 860px;
+  height: 518px;
+  max-height: 597px;
+  max-width: 1277px;
+  margin: 150px;
 }

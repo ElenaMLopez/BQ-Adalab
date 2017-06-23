@@ -1,15 +1,23 @@
 'use strict';
 
-var modal = document.getElementById('modal-container');
+var modalUser = document.getElementById('modal-user');
+var modalRol = document.getElementById('modal-rol');
 var cancelButton = document.getElementById('cancel-button');
 var acceptButon = document.getElementById('accept-button');
-var buttonToErase = document.getElementById('trash');
+var buttonToErase = document.querySelectorAll('.trash');
 
 function showModal (){
-  modal.style.display = 'inline';
+  modalUser.classList.toggle('hidden');
+  modalRol.classList.toggle('hidden');
+  for (var i = 0; i < buttonToErase.length; i++) {
+    buttonToErase[i].addEventListener('click', showModal)
+  }
+  console.log(buttonToErase);
 }
+
 function occultModal(){
-  modal.style.display = 'none';
+  modalUser.classList.toggle('hidden');
+  modalRol.classList.toggle('hidden');
 }
 
 function acceptErase(){
@@ -18,5 +26,4 @@ function acceptErase(){
 }
 
 cancelButton.addEventListener('click', occultModal);
-buttonToErase.addEventListener('click', showModal);
 acceptButon.addEventListener('click', acceptErase);

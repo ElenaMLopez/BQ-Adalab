@@ -32,3 +32,4 @@ function toggleViewProduct() {
 
 labelProduct.addEventListener("click", toggleViewProduct);
 labelMap.addEventListener("click", toggleViewProduct);
+labelMap.addEventListener("click", showMap);
