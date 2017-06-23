@@ -12,8 +12,8 @@ function showModalUser (event){
   modalUser.classList.toggle('hidden');
 }
 
-for (var i = 0; i < buttonToErase.length; i++) {
-  buttonToErase[i].addEventListener('click', showModal, false);
+for (var i = 0; i < trashUser.length; i++) {
+  trashUser[i].addEventListener('click', showModalUser, false);
 }
 
 // Function Modal Roles
@@ -21,8 +21,8 @@ function showModalRol (event){
   modalRol.classList.toggle('hidden');
 }
 
-for (var i = 0; i < buttonToErase.length; i++) {
-  buttonToErase[i].addEventListener('click', showModalRol, false);
+for (var i = 0; i < trashRol.length; i++) {
+  trashRol[i].addEventListener('click', showModalRol, false);
 }
 
 function occultModal(){

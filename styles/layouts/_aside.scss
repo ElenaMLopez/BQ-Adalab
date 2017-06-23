@@ -9,6 +9,13 @@
   flex-direction: row;
 }
 
+@mixin title {
+  @include row;
+  width: 200px;
+  height: 50px;
+  text-align: $text-left;
+}
+
 @mixin select-options {
   width: 200px;
   height: 50px;
@@ -24,13 +31,6 @@
   height: 100vh;
   position: fixed;
   background-color: $bg-grey;
-}
-
-@mixin title {
-  @include row;
-  width: 200px;
-  height: 50px;
-  text-align: $text-left;
 }
 
 .title-product {
@@ -53,28 +53,6 @@
 
 .title-header-traductor {
   color: $purple-primary;
-}
-
-@mixin logo-svg {
-  width: 40px;
-  fill: none;
-  stroke: #ff5000;
-  stroke-width: 2px;
-}
-
-.logo-pink {
-  @include logo-svg;
-  stroke: #d60056;
-}
-
-.logo-orange {
-  @include logo-svg;
-  stroke: #ff5000;
-}
-
-.logo-purple {
-  @include logo-svg;
-  stroke: #892d87;
 }
 
 /* Botones producto */

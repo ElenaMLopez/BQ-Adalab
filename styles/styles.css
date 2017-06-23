@@ -372,27 +372,6 @@ h5 {
 .title-header-traductor {
   color: #892d87; }
 
-.logo-pink {
-  width: 40px;
-  fill: none;
-  stroke: #ff5000;
-  stroke-width: 2px;
-  stroke: #d60056; }
-
-.logo-orange {
-  width: 40px;
-  fill: none;
-  stroke: #ff5000;
-  stroke-width: 2px;
-  stroke: #ff5000; }
-
-.logo-purple {
-  width: 40px;
-  fill: none;
-  stroke: #ff5000;
-  stroke-width: 2px;
-  stroke: #892d87; }
-
 /* Botones producto */
 .select-option input[type="radio"] {
   display: none; }
@@ -1067,7 +1046,8 @@ button {
   border-spacing: 0;
   border-collapse: collapse; }
 
-.liste th, td {
+.liste th,
+td {
   padding: 10px 20px; }
 
 .NameOption {
@@ -1084,16 +1064,12 @@ button {
 .line {
   background-color: white; }
 
-.line:hover, .list-grey:hover {
+.line:hover,
+.list-grey:hover {
   background-color: #f9d9e6; }
 
 .iconProduct {
   width: 5%; }
-
-.edit img,
-.trash img,
-.user img {
-  width: 30px; }
 
 .data {
   width: 10%; }
@@ -1131,8 +1107,36 @@ button {
   font-size: 18px;
   color: #0c840c; }
 
-.trash, .edit {
+.trash,
+.edit {
   width: 6%; }
+
+.edit img,
+.trashUser img,
+.trashRol img,
+.user img {
+  width: 30px; }
+
+.logo-pink {
+  width: 40px;
+  fill: none;
+  stroke: #ff5000;
+  stroke-width: 2px;
+  stroke: #d60056; }
+
+.logo-orange {
+  width: 40px;
+  fill: none;
+  stroke: #ff5000;
+  stroke-width: 2px;
+  stroke: #ff5000; }
+
+.logo-purple {
+  width: 40px;
+  fill: none;
+  stroke: #ff5000;
+  stroke-width: 2px;
+  stroke: #892d87; }
 
 .box-map {
   display: -webkit-box;

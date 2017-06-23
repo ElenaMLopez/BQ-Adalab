@@ -28,7 +28,8 @@
   border-collapse: collapse;
 }
 
-.liste th, td {
+.liste th,
+td {
   padding: 10px 20px;
 }
 
@@ -50,18 +51,13 @@
   background-color: $color-ligth;
 }
 
-.line:hover, .list-grey:hover {
+.line:hover,
+.list-grey:hover {
   background-color: $pink-terciary;
 }
 
 .iconProduct {
   width: 5%;
-}
-
-.edit img,
-.trash img,
-.user img {
-  width: 30px;
 }
 
 .data {
@@ -79,6 +75,7 @@
 .hour {
   width: 40%;
 }
+
 .box-inactive {
   @include box;
   border: $border-xsmall $color-inactive;
@@ -99,6 +96,7 @@
   color: $color-active;
 }
 
-.trash, .edit {
+.trash,
+.edit {
   width: 6%;
 }
