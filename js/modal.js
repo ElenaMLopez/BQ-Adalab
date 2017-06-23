@@ -1,17 +1,35 @@
 'use strict';
 
-var modal = document.querySelector('#modal-container');
+var modalUser = document.getElementById('modal-user');
+var modalRol = document.getElementById('modal-rol');
 var cancelButton = document.getElementById('cancel-button');
 var acceptButon = document.getElementById('accept-button');
-var buttonToErase = document.getElementById('trash');
-// var imprime = document.querySelectorAll('trash');
-// console.log(imprime);
+var trashUser = document.querySelectorAll('.trashUser'); //querySelectorAll para formar un array con todos los botones de borrar
+var trashRol = document.querySelectorAll('.trashRol');
 
-function showModal (){
-  modal.style.display = 'inline';
+
+// Function Modal User
+function showModalUser (event){ //event es para decirle a JS que hay un evento.
+  modalUser.classList.toggle('hidden');
 }
+
+for (var i = 0; i < trashUser.length; i++) {
+  trashUser[i].addEventListener('click', showModalUser, false);
+}
+
+// Function Modal Roles
+
+function showModalRol (event){
+  modalRol.classList.toggle('hidden');
+}
+
+for (var j = 0; j < trashRol.length; j++) {
+  trashRol[j].addEventListener('click', showModalRol, false);
+}
+
 function occultModal(){
-  modal.style.display = 'none';
+  modalUser.classList.toggle('hidden');
+  modalRol.classList.toggle('hidden');
 }
 
 function acceptErase(){
@@ -20,39 +38,4 @@ function acceptErase(){
 }
 
 cancelButton.addEventListener('click', occultModal);
-buttonToErase.addEventListener('click', showModal);
 acceptButon.addEventListener('click', acceptErase);
-
-//------------------
-
-// var buttonToErase = document.getElementById('trash');
-//
-// var cancelButton = document.getElementById('cancel-button');
-// var acceptButon = document.getElementById('accept-button');
-//
-//
-// function showOrHideModal(){
-//   var modal= document.getElementById('modal-container');
-//   modal.classList.toggle('showModal');
-// }
-//
-//
-// function acceptErase(){
-//   // function to connect with server;
-//   showOrHideModal();
-// }
-//
-// cancelButton.addEventListener('click', showOrHideModal);
-// buttonToErase.addEventListener('click', showOrHideModal);
-// acceptButon.addEventListener('click', acceptErase);
-//
-//
-// // var button = document.querySelector('#botonMenu');
-// //
-// // function showOrHideMobileMenu(){
-// //
-// //   var menu = document.querySelector('#menu');
-// //   menu.classList.toggle('show-menu');
-// // }
-// //
-// // button.addEventListener('click', showOrHideMobileMenu);

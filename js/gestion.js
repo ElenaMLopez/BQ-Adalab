@@ -12,6 +12,7 @@ var rolesElement = document.querySelector(".listRoles");
 var userElement = document.querySelector(".listUser");
 // Button
 var btnUser = document.querySelector(".btn-user");
+var btnRol = document.querySelector(".hidden");
 
 function toggleViewGestion() {
   //Si la opcion con id selectProduct (dentro del documento) >
@@ -20,16 +21,14 @@ function toggleViewGestion() {
     userElement.classList.toggle("hidden");
     rolesElement.classList.toggle("hidden");
     titlePages.innerHTML = "Roles";
-    btnUser.innerHTML = "Nuevo rol"
-    btnUser.classList.remove("btn-user");
-    btnUser.classList.add("btn-rol");
+    btnUser.classList.toggle("hidden");
+    btnRol.classList.toggle("hidden");
   } else {
     userElement.classList.toggle("hidden");
     rolesElement.classList.toggle("hidden");
     titlePages.innerHTML = "Usuarios";
-    btnUser.innerHTML = "Nuevo usuario"
-    btnUser.classList.remove("btn-rol");
-    btnUser.classList.add("btn-user");
+    btnUser.classList.toggle("hidden");
+    btnRol.classList.toggle("hidden");
   }
 }
 
