@@ -115,8 +115,13 @@ $gutter: 40px;
 
 /************************** Create Product Form*******************************/
 
-input[type="radio"] {
+.input-product[type="radio"] {
     display: none;
+}
+
+#grapes {
+  height: 62px;
+  width: 62px;
 }
 
 .createProduct-form {
