@@ -4,25 +4,25 @@ var map;
 
 function showMap() {
   map = new google.maps.Map(document.getElementById('googleMap'), {
-    zoom: 5,
+    zoom: 6,
     center: new google.maps.LatLng(40.3964129438718, -3.7129999999999654),
     mapTypeId: 'roadmap'
   });
   MarkerShops();
 }
 
-google.maps.event.addDomListener(window, 'load', showMap);
+// google.maps.event.addDomListener(window, 'load', showMap);
 
 
 function MarkerShops(){
-  var objJson = 'http://127.0.0.1:3000/js/bq-adalab-stores.json';
+  var objJson = '/js/bq-adalab-stores.json';
   var request = new XMLHttpRequest();
   request.withCredentials = true;
   request.open('GET', objJson, true);
 
   request.onload = function() {
     var showData = JSON.parse(request.responseText);
-    var myIcon = new google.maps.MarkerImage("../pin.png", null, null, null, new google.maps.Size(16,16));
+    var myIcon = new google.maps.MarkerImage("../images/pin.png", null, null, null, new google.maps.Size(16,16));
     for (var i = 0; i < showData.stores.length; i++) {
       var coords = showData.stores[i];
       var latLng = new google.maps.LatLng(coords.latitude, coords.longitude);

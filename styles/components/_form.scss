@@ -39,12 +39,12 @@
 
 .newuser-active {
   display: flex;
-  align-items: center;
+  align-items: $align-center;
 }
 
 .newuser-active-ask {
   margin-top: 15px;
-  margin-right: 60px;
+  margin-right: 56px;
 }
 
 .newuser-active input[type="radio"] {
@@ -57,7 +57,7 @@
   color: #4d4d4f;
   border: $border-small #4d4d4f;
   line-height: 2.5;
-  text-align: center;
+  text-align: $align-center;
   cursor: pointer;
 }
 
@@ -66,15 +66,13 @@
   border: $border-small #ec661c;
 }
 
-$gutter: 40px;
-
-.row {
+.row-form {
   display: flex;
   margin-left: -$gutter / 2;
   margin-right: -$gutter / 2;
 }
 
-.column {
+.column-form {
   padding-left: $gutter / 2;
   padding-right: $gutter / 2;
 }
@@ -105,12 +103,22 @@ $gutter: 40px;
 }
 
 .custom-checkbox:checked + label:before {
- text-align: center;
+ text-align: $align-center;
  line-height: 1;
  color: $color-ligth;
  content: "✔";
  border: $border-small $color-blue;
  background-color: $color-blue;
+}
+
+.custom-select {
+  appearance: none;
+  padding: 2.5px 0;
+  background: no-repeat;
+  background-image: url("../images/arrow-down.png");
+  background-size: 5%;
+  background-position: 95%;
+  border: $border-small $grey-primary;
 }
 
 /************************** Create Product Form*******************************/
@@ -138,7 +146,7 @@ $gutter: 40px;
 
 .product-legend {
   width: 100%;
-  border-bottom: 1px solid $form-border-grey;
+  border-bottom: $border-small $form-border-grey;
   color: $pink-primary;
   margin-bottom: 20px;
 }

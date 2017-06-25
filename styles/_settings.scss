@@ -34,16 +34,20 @@ $Text-normal: 20px;
 $Text-small: 18px;
 $Text-xsmall: 16px;
 
-/* Text align  */
+/* align  */
 
-$text-center: center;
-$text-left:left;
-$text-right: right;
+$align-center: center;
+$align-left:left;
+$align-right:right;
 
 /* border */
 
-$border-right: solid 3px;
-$border-left: solid 3px;
-$border-bottom: solid 2px;
-$border: solid 1.5px;
+$border-xlarge: solid 3px;
+$border-large: solid 2px;
+$border-normal: solid 1.5px;
 $border-small: solid 1px;
+$border-xsmall: solid 0.5px;
+
+/* Form */
+
+$gutter: 40px;

@@ -3,14 +3,15 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
 
 @mixin header {
   position: fixed;
   z-index: 2;
   width: 85%;
-  padding: 10px 35px 10px 0;
-  border-bottom: $border-bottom $pink-primary;
+  padding: 5px 85px 5px 0;
+  border-bottom: $border-large $pink-primary;
 }
 
 .newuser-header {
@@ -54,7 +55,7 @@
 .createProduct-heading {
   width: 800px;
   height: 40px;
-  text-align: center;
+  text-align: $align-center;
   margin: auto;
 }
 
@@ -72,19 +73,19 @@
   @include row;
   @include header;
   background-color: $color-ligth;
-  border-bottom: $border-bottom $pink-primary;
+  border-bottom: $border-large $pink-primary;
 }
 
 .header-gestion {
   @include row;
   @include header;
   background-color: $color-ligth;
-  border-bottom: $border-bottom $orange-primary;
+  border-bottom: $border-large $orange-primary;
 }
 
 .header-traduct {
   @include row;
   @include header;
   background-color: $color-ligth;
-  border-bottom: $border-bottom $purple-primary;
+  border-bottom: $border-large $purple-primary;
 }

@@ -9,12 +9,19 @@
   flex-direction: row;
 }
 
+@mixin title {
+  @include row;
+  width: 200px;
+  height: 50px;
+  text-align: $align-left;
+}
+
 @mixin select-options {
   width: 200px;
   height: 50px;
   padding-left: 20px;
   line-height: 50px;
-  text-align: $text-left;
+  text-align: $align-left;
   font-size: $Text-xsmall;
 }
 
@@ -24,13 +31,6 @@
   height: 100vh;
   position: fixed;
   background-color: $bg-grey;
-}
-
-@mixin title {
-  @include row;
-  width: 200px;
-  height: 50px;
-  text-align: $text-left;
 }
 
 .title-product {
@@ -45,10 +45,14 @@
   background-color: $orange-secondary;
 }
 
-.title-traductor {
+.title-page {
   @include title;
   color: $purple-primary;
   background-color: $purple-secondary;
+}
+
+.title-header-traductor {
+  color: $purple-primary;
 }
 
 /* Botones producto */
@@ -73,7 +77,7 @@
 .product input[type="radio"]:checked + label{
   color: $pink-primary;
   background-color: $color-ligth;
-  border-left: $border-left $pink-primary;
+  border-left: $border-xlarge $pink-primary;
 }
 
 /* Botones Gestión */
@@ -86,14 +90,14 @@
 .gestion input[type="radio"]:checked + label{
   color: $orange-primary;
   background-color: $color-ligth;
-  border-left: $border-left $orange-primary;
+  border-left: $border-xlarge $orange-primary;
 }
 
 /* Botones traduccion */
 
 .traductor {
+  @include select-options;
   color: $purple-primary;
-  padding-left: 20px;
   background-color: $color-ligth;
-  border-left: $border-left $purple-primary;
+  border-left: $border-xlarge $purple-primary;
 }

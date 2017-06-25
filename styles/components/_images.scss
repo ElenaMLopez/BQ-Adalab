@@ -1,0 +1,41 @@
+//IMAGES Elements Table
+
+.edit img,
+.trashUser img,
+.trashRol img,
+.user img {
+  width: 30px;
+}
+
+//IMAGES Login
+
+.img-login {
+  margin-bottom: 55px;
+  width: 120px;
+  height: 120px;
+  justify-content: center;
+ }
+
+//IMAGES Logo Aside
+
+@mixin logo-svg {
+  width: 40px;
+  fill: none;
+  stroke: #ff5000;
+  stroke-width: 2px;
+}
+
+.logo-pink {
+  @include logo-svg;
+  stroke: #d60056;
+}
+
+.logo-orange {
+  @include logo-svg;
+  stroke: #ff5000;
+}
+
+.logo-purple {
+  @include logo-svg;
+  stroke: #892d87;
+}
