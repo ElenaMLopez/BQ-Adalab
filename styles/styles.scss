@@ -1,16 +1,18 @@
 @import "settings";
 @import "general";
 @import "typography";
-@import "layouts/header";
-@import "layouts/modal";
-@import "layouts/product";
-@import "layouts/aside";
-@import "components/circle";
-@import "components/form";
-@import "components/lines";
-@import "components/buttons";
-@import "components/table";
-@import "pages/map";
-@import "pages/apps";
+@import "layouts/header",
+        "layouts/modal",
+        "layouts/aside";
+@import "components/form",
+        "components/lines",
+        "components/buttons",
+        "components/table",
+        "components/images";
+@import "pages/map",
+        "pages/apps",
+        "pages/login",
+        "pages/product";
 @import "helpers";
+
 // Cambiar en tipograghy las etiquetas de componentes por clases

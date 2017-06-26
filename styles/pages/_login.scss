@@ -1,0 +1,59 @@
+
+.main {
+  margin-top: 8%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: $align-center;
+}
+
+.name-login {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-bg {
+  background-color: $orange-terciary;
+}
+
+@mixin rectangle {
+  width: 400px;
+  height: 40px;
+  margin-bottom: 20px;
+  background-color: $color-ligth;
+  font-size: $Text-normal;
+}
+
+.input-login {
+  @include rectangle;
+  padding-left: 15px;
+  text-align: $align-left;
+  color: $grey-secondary;
+  border: $border-small #e4e4e4;
+}
+
+.box {
+  display: flex ;
+  align-items: $align-center;
+}
+
+.bitmap {
+  margin-top: 10px;
+  margin-bottom: 17px;
+  width: 26px;
+  height: 26px;
+  border-radius: 5%;
+  background-color: $color-ligth;
+}
+
+.norecuerda {
+  font-size: 14px;
+  color: $purple-primary;
+  margin-left: 230px;
+}
+
+.recordar-datos {
+  font-size: $Text-small;
+  color: $grey-primary;
+  margin-left: 12px;
+}
