@@ -176,8 +176,8 @@ h5 {
   border-bottom: solid 2px #892d87; }
 
 .modal-svg {
-  width: 1px;
-  height: 1px; }
+  width: 20px;
+  height: 20px; }
 
 .modal-container {
   background: rgba(40, 40, 40, 0.53);
@@ -191,7 +191,7 @@ h5 {
           justify-content: center;
   position: fixed;
   z-index: 3;
-  margin-top: 0;
+  top: 0;
   overflow: hidden; }
 
 .showModal {
