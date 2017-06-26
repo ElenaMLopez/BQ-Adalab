@@ -1125,6 +1125,7 @@ td {
 .edit img,
 .trashUser img,
 .trashRol img,
+.trashProduct img,
 .user img {
   width: 30px; }
 
@@ -1139,21 +1140,18 @@ td {
 .logo-pink {
   width: 40px;
   fill: none;
-  stroke: #ff5000;
   stroke-width: 2px;
   stroke: #d60056; }
 
 .logo-orange {
   width: 40px;
   fill: none;
-  stroke: #ff5000;
   stroke-width: 2px;
   stroke: #ff5000; }
 
 .logo-purple {
   width: 40px;
   fill: none;
-  stroke: #ff5000;
   stroke-width: 2px;
   stroke: #892d87; }
 
