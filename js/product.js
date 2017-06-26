@@ -33,3 +33,26 @@ function toggleViewProduct() {
 labelProduct.addEventListener("click", toggleViewProduct);
 labelMap.addEventListener("click", toggleViewProduct);
 labelMap.addEventListener("click", showMap);
+
+
+//Function Modal Products:
+
+function showModalProduct(event) {
+  modalProduct.classList.toggle('hidden');
+}
+
+for (var k = 0; k < trashProduct.length; k++){
+  trashProduct[k].addEventListener('click', showModalProduct);
+}
+
+function occultModalProduct() {
+  modalProduct.classList.toggle('hiden');
+}
+
+function acceptEraseProduct() {
+ //function to connect with server
+  occultModalProduct();
+}
+
+cancelButtonProduct.addEventListener('click', occultModalProduct);
+acceptButtonProduct.addEventListener('click', acceptEraseProduct);

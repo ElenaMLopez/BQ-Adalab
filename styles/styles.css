@@ -445,7 +445,8 @@ h5 {
 
 .newuser-box-dats {
   margin-top: 5px;
-  margin-bottom: 15px; }
+  margin-bottom: 15px;
+  padding-left: 5px; }
 
 .newuser-active {
   display: -webkit-box;
@@ -465,15 +466,15 @@ h5 {
 .newuser-active label {
   width: 40px;
   height: 40px;
-  color: #4d4d4f;
-  border: solid 1px #4d4d4f;
+  color: #a9a9a9;
+  border: solid 1px #a9a9a9;
   line-height: 2.5;
   text-align: center;
   cursor: pointer; }
 
 .newuser-active input[type="radio"]:checked + label {
-  color: #ec661c;
-  border: solid 1px #ec661c; }
+  color: #ff5000;
+  border: solid 1px #ff5000; }
 
 .row-form {
   display: -webkit-box;
@@ -504,7 +505,7 @@ h5 {
   left: 0;
   width: 15px;
   height: 15px;
-  border: solid 1px #4d4d4f;
+  border: solid 1px #a9a9a9;
   border-radius: 4px; }
 
 .custom-checkbox:checked + label:before {
@@ -519,16 +520,21 @@ h5 {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  padding: 2.5px 0;
+  padding: 2.4px 0;
+  padding-left: 5px;
   background: no-repeat;
   background-image: url("../images/arrow-down.png");
   background-size: 5%;
   background-position: 95%;
-  border: solid 1px #4d4d4f; }
+  border: solid 1px #a9a9a9; }
 
 /************************** Create Product Form*******************************/
-input[type="radio"] {
+.input-product[type="radio"] {
   display: none; }
+
+#grapes {
+  height: 62px;
+  width: 62px; }
 
 .createProduct-form {
   max-width: 50%;
@@ -790,12 +796,8 @@ button {
   height: 40px;
   color: #4d4d4f;
   border: solid 1.5px #4d4d4f;
-  outline: none;
   font-size: 20px;
-  padding-bottom: 6px;
-  padding-top: 6px;
-  background-color: #ffffff;
-  padding-left: 35px;
+  background-color: white;
   -webkit-transition: 0.3s;
   transition: 0.3s; }
 
@@ -804,11 +806,8 @@ button {
   height: 40px;
   color: "";
   border: "";
-  outline: none;
   font-size: 20px;
-  padding-bottom: 6px;
-  padding-top: 6px;
-  background-color: #ffffff;
+  background-color: white;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   color: #ff5000;
@@ -819,12 +818,8 @@ button {
   height: 40px;
   color: #4d4d4f;
   border: solid 1.5px #4d4d4f;
-  outline: none;
   font-size: 20px;
-  padding-bottom: 6px;
-  padding-top: 6px;
   background-color: white;
-  padding-left: 35px;
   -webkit-transition: 0.3s;
   transition: 0.3s; }
 
@@ -833,10 +828,7 @@ button {
   height: 40px;
   color: "";
   border: solid 1.5px "";
-  outline: none;
   font-size: 20px;
-  padding-bottom: 6px;
-  padding-top: 6px;
   background-color: white;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -848,12 +840,8 @@ button {
   height: 40px;
   color: #4d4d4f;
   border: solid 1.5px #4d4d4f;
-  outline: none;
   font-size: 20px;
-  padding-bottom: 6px;
-  padding-top: 6px;
-  background-color: #ffffff;
-  padding-left: 35px;
+  background-color: white;
   -webkit-transition: 0.3s;
   transition: 0.3s; }
 
@@ -862,11 +850,8 @@ button {
   height: 40px;
   color: "";
   border: "";
-  outline: none;
   font-size: 20px;
-  padding-bottom: 6px;
-  padding-top: 6px;
-  background-color: #ffffff;
+  background-color: white;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   color: #d60056;
@@ -877,12 +862,8 @@ button {
   height: 40px;
   color: #4d4d4f;
   border: solid 1.5px #4d4d4f;
-  outline: none;
   font-size: 20px;
-  padding-bottom: 6px;
-  padding-top: 6px;
   background-color: white;
-  padding-left: 35px;
   -webkit-transition: 0.3s;
   transition: 0.3s; }
 
@@ -891,10 +872,7 @@ button {
   height: 40px;
   color: "";
   border: solid 1.5px "";
-  outline: none;
   font-size: 20px;
-  padding-bottom: 6px;
-  padding-top: 6px;
   background-color: white;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -1091,8 +1069,14 @@ td {
 .edit img,
 .trashUser img,
 .trashRol img,
+.trashProduct img,
 .user img {
   width: 30px; }
+
+.trashUser img,
+.trashRol img,
+.trashProduct img {
+  cursor: pointer; }
 
 .img-login {
   margin-bottom: 55px;
@@ -1105,21 +1089,18 @@ td {
 .logo-pink {
   width: 40px;
   fill: none;
-  stroke: #ff5000;
   stroke-width: 2px;
   stroke: #d60056; }
 
 .logo-orange {
   width: 40px;
   fill: none;
-  stroke: #ff5000;
   stroke-width: 2px;
   stroke: #ff5000; }
 
 .logo-purple {
   width: 40px;
   fill: none;
-  stroke: #ff5000;
   stroke-width: 2px;
   stroke: #892d87; }
 

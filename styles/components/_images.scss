@@ -3,12 +3,18 @@
 .edit img,
 .trashUser img,
 .trashRol img,
+.trashProduct img,
 .user img {
   width: 30px;
 }
 
-//IMAGES Login
+.trashUser img,
+.trashRol img,
+.trashProduct img {
+  cursor: pointer;
+}
 
+//IMAGES Login
 .img-login {
   margin-bottom: 55px;
   width: 120px;
@@ -17,11 +23,9 @@
  }
 
 //IMAGES Logo Aside
-
 @mixin logo-svg {
   width: 40px;
   fill: none;
-  stroke: #ff5000;
   stroke-width: 2px;
 }
 

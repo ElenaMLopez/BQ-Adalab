@@ -5,7 +5,6 @@ button {
   outline: none;
 }
 
-
 @mixin rectangle {
   width: 400px;
   height: 40px;
@@ -191,17 +190,8 @@ button {
   height: 40px;
   color: $grey-primary;
   border: $border-normal $grey-primary;
-  outline: none;
   font-size: $Text-normal;
-  padding-bottom: 6px;
-  padding-top: 6px;
-  background-color: #ffffff;
-  // background-image: url(../images/cancel-icon-grey-m.png);
-  // background-repeat: no-repeat;
-  // background-position-x:17px;
-  // background-position-y: 9px;
-  // background-size: 22px;
-  padding-left: 35px;
+  background-color: $color-ligth;
   transition: 0.3s;
 }
 
@@ -210,16 +200,8 @@ button {
   height: 40px;
   color: "";
   border: "";
-  outline: none;
   font-size: $Text-normal;
-  padding-bottom: 6px;
-  padding-top: 6px;
-  background-color: #ffffff;
-  // background-image: "";
-  // background-repeat: no-repeat;
-  // background-position-x:17px;
-  // background-position-y: 9px;
-  // background-size: 22px;
+  background-color: $color-ligth;
   transition: 0.3s;
 }
 
@@ -228,15 +210,8 @@ button {
   height: 40px;
   color: "";
   border: $border-normal "";
-  outline: none;
   font-size: $Text-normal;
-  padding-bottom: 6px;
-  padding-top: 6px;
   background-color: $color-ligth;
-  // background-image: "";
-  // background-repeat: no-repeat;
-  // background-position-x: 17px;
-  // background-position-y: 9px;
   transition: 0.3s;
 }
 
@@ -245,16 +220,8 @@ button {
   height: 40px;
   color: $grey-primary;
   border: $border-normal $grey-primary;
-  outline: none;
   font-size: $Text-normal;
-  padding-bottom: 6px;
-  padding-top: 6px;
   background-color: $color-ligth;
-  // background-image: url(../images/check-icon-grey-m.png);
-  // background-repeat: no-repeat;
-  // background-position-x: 17px;
-  // background-position-y: 9px;
-  padding-left: 35px;
   transition: 0.3s;
 }
 
@@ -290,7 +257,6 @@ button {
 .modal-btn-cancel-product:hover {
   @include modal-btn-cancel-active;
   color: $pink-primary;
-  // background-image: url(../images/cancel-icon-pink-m.png);
   border: $border-normal $pink-primary;
 }
 
