@@ -386,7 +386,8 @@ h5 {
 
 .newuser-box-dats {
   margin-top: 5px;
-  margin-bottom: 15px; }
+  margin-bottom: 15px;
+  padding-left: 5px; }
 
 .newuser-active {
   display: flex;
@@ -394,7 +395,7 @@ h5 {
 
 .newuser-active-ask {
   margin-top: 15px;
-  margin-right: 60px; }
+  margin-right: 56px; }
 
 .newuser-active input[type="radio"] {
   display: none; }
@@ -439,7 +440,7 @@ h5 {
   left: 0;
   width: 15px;
   height: 15px;
-  border: solid 1px #4d4d4f;
+  border: solid 1px #a9a9a9;
   border-radius: 4px; }
 
 .custom-checkbox:checked + label:before {
@@ -456,12 +457,13 @@ h5 {
   -o-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  padding: 2.5px 0;
+  padding: 2.4px 0;
+  padding-left: 5px;
   background: no-repeat;
   background-image: url("../images/arrow-down.png");
   background-size: 5%;
   background-position: 95%;
-  border: solid 1px #4d4d4f; }
+  border: solid 1px #a9a9a9; }
 
 /************************** Create Product Form*******************************/
 input[type="radio"] {
