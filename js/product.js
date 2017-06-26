@@ -37,6 +37,11 @@ labelMap.addEventListener("click", showMap);
 
 //Function Modal Products:
 
+var modalProduct = document.getElementById('modal-product');
+var trashProduct = document.querySelectorAll('.trashProduct');
+var cancelButtonProduct = document.getElementById('cancel-button-product');
+var acceptButtonProduct =document.getElementById('accept-button-product');
+
 function showModalProduct(event) {
   modalProduct.classList.toggle('hidden');
 }

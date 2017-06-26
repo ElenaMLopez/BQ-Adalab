@@ -35,6 +35,7 @@
 
 .title-product {
   @include title;
+  justify-content: center;
   color: $pink-primary;
   background-color: $pink-secondary;
 }
