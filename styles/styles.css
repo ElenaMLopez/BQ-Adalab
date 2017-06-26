@@ -48,6 +48,10 @@ h5 {
   font-weight: 400;
   margin: 0; }
 
+.text-button {
+  font-size: 20px;
+  font-weight: 300; }
+
 .newuser-header {
   position: relative;
   width: 100%;
@@ -628,6 +632,78 @@ button {
   color: white;
   background-color: #892d87; }
 
+.btn-productapp {
+  width: 130px;
+  height: 130px;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  border: solid 3px #d60056;
+  color: #d60056; }
+  .btn-productapp:hover {
+    background-color: #d60056;
+    color: white; }
+
+.btn-userapp {
+  width: 130px;
+  height: 130px;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  border: solid 3px #ff5000;
+  color: #ff5000; }
+  .btn-userapp:hover {
+    color: white;
+    background-color: #ff5000; }
+
+.btn-traductorapp {
+  width: 130px;
+  height: 130px;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  border: solid 3px #892d87;
+  color: #892d87; }
+  .btn-traductorapp:hover {
+    background-color: #892d87;
+    color: white; }
+
 /* Botones power */
 .btn-off {
   width: 200px;
@@ -883,107 +959,6 @@ button {
   transition: 0.3s;
   color: #d60056;
   border: solid 1.5px #d60056; }
-
-.btn-productapp {
-  width: 130px;
-  height: 130px;
-  border-radius: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: white;
-  background-repeat: no-repeat;
-  background-position-y: 20px;
-  background-position-x: center;
-  padding-top: 60px;
-  font-family: "Roboto", sans-serif;
-  border: solid 3px #d60056;
-  background-image: url(../images/appleIconPink.png);
-  color: #d60056; }
-
-.btn-productapp:hover {
-  border: solid 3px #d60056;
-  background-image: url(../images/appleIcon.png);
-  background-color: #d60056;
-  color: white; }
-
-.btn-userapp {
-  width: 130px;
-  height: 130px;
-  border-radius: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: white;
-  background-repeat: no-repeat;
-  background-position-y: 20px;
-  background-position-x: center;
-  padding-top: 60px;
-  font-family: "Roboto", sans-serif;
-  border: solid 3px #ff5000;
-  background-image: url(../images/userOrange.png);
-  background-size: 50px;
-  color: #ff5000; }
-
-.btn-userapp:hover {
-  border: solid 3px #ff5000;
-  background-image: url(../images/user.png);
-  background-color: #ff5000;
-  color: white; }
-
-.btn-traductorapp {
-  width: 130px;
-  height: 130px;
-  border-radius: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: white;
-  background-repeat: no-repeat;
-  background-position-y: 20px;
-  background-position-x: center;
-  padding-top: 60px;
-  font-family: "Roboto", sans-serif;
-  border: solid 3px #892d87;
-  background-image: url(../images/internetPurple.png);
-  background-size: 50px;
-  color: #892d87; }
-
-.btn-traductorapp:hover {
-  border: solid 3px #892d87;
-  background-image: url(../images/internet.png);
-  background-color: #892d87;
-  color: white; }
 
 .dashboard {
   width: 100%;

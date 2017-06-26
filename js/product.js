@@ -55,7 +55,7 @@ function occultModalProduct() {
 }
 
 function acceptEraseProduct() {
- //function to connect with server
+  //function to connect with server
   occultModalProduct();
 }
 
