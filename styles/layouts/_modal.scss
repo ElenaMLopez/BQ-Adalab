@@ -13,6 +13,13 @@
   position: fixed;
   z-index: 3;
   top: 0;
+  overflow: hidden;
+}
+
+.showModal {
+  display: inline;
+  position: fixed;
+  top: 0;
 }
 
 .modal-div {

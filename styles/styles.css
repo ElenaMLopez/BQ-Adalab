@@ -191,6 +191,12 @@ h5 {
           justify-content: center;
   position: fixed;
   z-index: 3;
+  top: 0;
+  overflow: hidden; }
+
+.showModal {
+  display: inline;
+  position: fixed;
   top: 0; }
 
 .modal-div {
@@ -439,7 +445,8 @@ h5 {
 
 .newuser-box-dats {
   margin-top: 5px;
-  margin-bottom: 15px; }
+  margin-bottom: 15px;
+  padding-left: 5px; }
 
 .newuser-active {
   display: -webkit-box;
@@ -459,15 +466,15 @@ h5 {
 .newuser-active label {
   width: 40px;
   height: 40px;
-  color: #4d4d4f;
-  border: solid 1px #4d4d4f;
+  color: #a9a9a9;
+  border: solid 1px #a9a9a9;
   line-height: 2.5;
   text-align: center;
   cursor: pointer; }
 
 .newuser-active input[type="radio"]:checked + label {
-  color: #ec661c;
-  border: solid 1px #ec661c; }
+  color: #ff5000;
+  border: solid 1px #ff5000; }
 
 .row-form {
   display: -webkit-box;
@@ -498,7 +505,7 @@ h5 {
   left: 0;
   width: 15px;
   height: 15px;
-  border: solid 1px #4d4d4f;
+  border: solid 1px #a9a9a9;
   border-radius: 4px; }
 
 .custom-checkbox:checked + label:before {
@@ -511,18 +518,25 @@ h5 {
 
 .custom-select {
   -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  padding: 2.5px 0;
+  -moz-appearance: none;
+  -o-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  padding: 2.4px 0;
+  padding-left: 5px;
   background: no-repeat;
   background-image: url("../images/arrow-down.png");
   background-size: 5%;
   background-position: 95%;
-  border: solid 1px #4d4d4f; }
+  border: solid 1px #a9a9a9; }
 
 /************************** Create Product Form*******************************/
-input[type="radio"] {
+.input-product[type="radio"] {
   display: none; }
+
+#grapes {
+  height: 62px;
+  width: 62px; }
 
 .createProduct-form {
   max-width: 50%;
@@ -784,17 +798,8 @@ button {
   height: 40px;
   color: #4d4d4f;
   border: solid 1.5px #4d4d4f;
-  outline: none;
   font-size: 20px;
-  padding-bottom: 6px;
-  padding-top: 6px;
-  background-color: #ffffff;
-  background-image: url(../images/cancel-icon-grey-m.png);
-  background-repeat: no-repeat;
-  background-position-x: 17px;
-  background-position-y: 9px;
-  background-size: 22px;
-  padding-left: 35px;
+  background-color: white;
   -webkit-transition: 0.3s;
   transition: 0.3s; }
 
@@ -803,37 +808,20 @@ button {
   height: 40px;
   color: "";
   border: "";
-  outline: none;
   font-size: 20px;
-  padding-bottom: 6px;
-  padding-top: 6px;
-  background-color: #ffffff;
-  background-image: "";
-  background-repeat: no-repeat;
-  background-position-x: 17px;
-  background-position-y: 9px;
-  background-size: 22px;
+  background-color: white;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   color: #ff5000;
-  border: solid 1.5px #ff5000;
-  background-image: url(../images/cancel-icon-orange-m.png); }
+  border: solid 1.5px #ff5000; }
 
 .modal-btn-accept-client {
   width: 162px;
   height: 40px;
   color: #4d4d4f;
   border: solid 1.5px #4d4d4f;
-  outline: none;
   font-size: 20px;
-  padding-bottom: 6px;
-  padding-top: 6px;
   background-color: white;
-  background-image: url(../images/check-icon-grey-m.png);
-  background-repeat: no-repeat;
-  background-position-x: 17px;
-  background-position-y: 9px;
-  padding-left: 35px;
   -webkit-transition: 0.3s;
   transition: 0.3s; }
 
@@ -842,37 +830,20 @@ button {
   height: 40px;
   color: "";
   border: solid 1.5px "";
-  outline: none;
   font-size: 20px;
-  padding-bottom: 6px;
-  padding-top: 6px;
   background-color: white;
-  background-image: "";
-  background-repeat: no-repeat;
-  background-position-x: 17px;
-  background-position-y: 9px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   color: #ff5000;
-  border: solid 1.5px #ff5000;
-  background-image: url(../images/check-icon-orange-m.png); }
+  border: solid 1.5px #ff5000; }
 
 .modal-btn-cancel-product {
   width: 162px;
   height: 40px;
   color: #4d4d4f;
   border: solid 1.5px #4d4d4f;
-  outline: none;
   font-size: 20px;
-  padding-bottom: 6px;
-  padding-top: 6px;
-  background-color: #ffffff;
-  background-image: url(../images/cancel-icon-grey-m.png);
-  background-repeat: no-repeat;
-  background-position-x: 17px;
-  background-position-y: 9px;
-  background-size: 22px;
-  padding-left: 35px;
+  background-color: white;
   -webkit-transition: 0.3s;
   transition: 0.3s; }
 
@@ -881,37 +852,20 @@ button {
   height: 40px;
   color: "";
   border: "";
-  outline: none;
   font-size: 20px;
-  padding-bottom: 6px;
-  padding-top: 6px;
-  background-color: #ffffff;
-  background-image: "";
-  background-repeat: no-repeat;
-  background-position-x: 17px;
-  background-position-y: 9px;
-  background-size: 22px;
+  background-color: white;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   color: #d60056;
-  border: solid 1.5px #d60056;
-  background-image: url(../images/cancel-icon-pink-m.png); }
+  border: solid 1.5px #d60056; }
 
 .modal-btn-accept-product {
   width: 162px;
   height: 40px;
   color: #4d4d4f;
   border: solid 1.5px #4d4d4f;
-  outline: none;
   font-size: 20px;
-  padding-bottom: 6px;
-  padding-top: 6px;
   background-color: white;
-  background-image: url(../images/check-icon-grey-m.png);
-  background-repeat: no-repeat;
-  background-position-x: 17px;
-  background-position-y: 9px;
-  padding-left: 35px;
   -webkit-transition: 0.3s;
   transition: 0.3s; }
 
@@ -920,20 +874,12 @@ button {
   height: 40px;
   color: "";
   border: solid 1.5px "";
-  outline: none;
   font-size: 20px;
-  padding-bottom: 6px;
-  padding-top: 6px;
   background-color: white;
-  background-image: "";
-  background-repeat: no-repeat;
-  background-position-x: 17px;
-  background-position-y: 9px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   color: #d60056;
-  border: solid 1.5px #d60056;
-  background-image: url(../images/check-icon-pink-m.png); }
+  border: solid 1.5px #d60056; }
 
 .btn-productapp {
   width: 130px;
@@ -1128,6 +1074,11 @@ td {
 .trashProduct img,
 .user img {
   width: 30px; }
+
+.trashUser img,
+.trashRol img,
+.trashProduct img {
+  cursor: pointer; }
 
 .img-login {
   margin-bottom: 55px;

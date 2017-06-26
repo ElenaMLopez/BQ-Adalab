@@ -35,6 +35,7 @@
 .newuser-box-dats {
   margin-top: 5px;
   margin-bottom: 15px;
+  padding-left: 5px;
 }
 
 .newuser-active {
@@ -54,16 +55,16 @@
 .newuser-active label {
   width: 40px;
   height: 40px;
-  color: #4d4d4f;
-  border: $border-small #4d4d4f;
+  color: $form-grey;
+  border: $border-small $form-grey;
   line-height: 2.5;
   text-align: $align-center;
   cursor: pointer;
 }
 
 .newuser-active input[type="radio"]:checked + label {
-  color: #ec661c;
-  border: $border-small #ec661c;
+  color: $orange-primary;
+  border: $border-small $orange-primary;
 }
 
 .row-form {
@@ -98,7 +99,7 @@
   left: 0;
   width: 15px;
   height: 15px;
-  border: $border-small $grey-primary;
+  border: $border-small $form-grey;
   border-radius: 4px;
 }
 
@@ -112,19 +113,30 @@
 }
 
 .custom-select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  -ms-appearance: none;
   appearance: none;
-  padding: 2.5px 0;
+
+  padding: 2.4px 0;
+  padding-left: 5px;
   background: no-repeat;
   background-image: url("../images/arrow-down.png");
   background-size: 5%;
   background-position: 95%;
-  border: $border-small $grey-primary;
+  border: $border-small $form-grey;
 }
 
 /************************** Create Product Form*******************************/
 
-input[type="radio"] {
-  display: none;
+.input-product[type="radio"] {
+    display: none;
+}
+
+#grapes {
+  height: 62px;
+  width: 62px;
 }
 
 .createProduct-form {
