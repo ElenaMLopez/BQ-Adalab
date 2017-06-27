@@ -13,7 +13,8 @@
   @include row;
   width: 200px;
   height: 50px;
-  text-align: $align-left;
+  padding: 0 20px;
+  justify-content: flex-start;
 }
 
 @mixin select-options {
@@ -35,7 +36,6 @@
 
 .title-product {
   @include title;
-  justify-content: space-around;
   align-items: center;
   color: $pink-primary;
   background-color: $pink-secondary;
@@ -43,7 +43,6 @@
 
 .title-gestion {
   @include title;
-  justify-content: space-around;
   align-items: center;
   color: $orange-primary;
   background-color: $orange-secondary;
@@ -52,7 +51,6 @@
 .title-page {
   @include title;
   color: $purple-primary;
-  align-items: center;
   background-color: $purple-secondary;
   justify-content: center;
 }
