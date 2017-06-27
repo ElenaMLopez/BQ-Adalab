@@ -34,9 +34,10 @@
 }
 
 .newuser-box-dats {
+  height: 40px;
   margin-top: 5px;
   margin-bottom: 15px;
-  padding-left: 5px;
+  padding-left: 13px;
 }
 
 .newuser-active {
@@ -127,7 +128,7 @@
 /************************** Create Product Form*******************************/
 
 .input-product[type="radio"] {
-    display: none;
+  display: none;
 }
 
 #grapes {
