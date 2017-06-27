@@ -130,13 +130,33 @@
 
 /************************** Create Product Form*******************************/
 
-.input-product[type="radio"] {
+.product-type input[type="radio"] {
     display: none;
 }
 
-#grapes {
-  height: 62px;
-  width: 62px;
+.product-type input[type="radio"] + label {
+  cursor:pointer;
+  background-size:contain;
+  background-repeat:no-repeat;
+  display:inline-block;
+  width:62px;
+  height:62px;
+  }
+
+.label-1 {
+  background-image: url("../images/grapes.svg");
+}
+
+.label-2 {
+  background-image: url("../images/apple.svg");
+}
+
+.label-3{
+  background-image: url("../images/orange.svg");
+}
+
+.label-4 {
+  background-image: url("../images/cherries.svg");
 }
 
 .createProduct-form {
