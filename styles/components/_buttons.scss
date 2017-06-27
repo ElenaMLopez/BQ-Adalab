@@ -193,6 +193,8 @@ button {
   font-size: $Text-normal;
   background-color: $color-ligth;
   transition: 0.3s;
+  display: flex;
+  justify-content: space-around;
 }
 
 @mixin modal-btn-cancel-active {
@@ -203,6 +205,8 @@ button {
   font-size: $Text-normal;
   background-color: $color-ligth;
   transition: 0.3s;
+  display: flex;
+  justify-content: space-around;
 }
 
 @mixin modal-btn-accept-active {

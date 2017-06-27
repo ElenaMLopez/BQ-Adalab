@@ -51,7 +51,7 @@ for (var k = 0; k < trashProduct.length; k++){
 }
 
 function occultModalProduct() {
-  modalProduct.classList.toggle('hiden');
+  modalProduct.classList.toggle('hidden');
 }
 
 function acceptEraseProduct() {
