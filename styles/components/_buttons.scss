@@ -257,6 +257,8 @@ button {
   color: "";
   border: $border-normal "";
   font-size: $Text-normal;
+  display: flex;
+  justify-content: space-around;
   background-color: $color-ligth;
   transition: 0.3s;
 }
@@ -267,6 +269,8 @@ button {
   color: $grey-primary;
   border: $border-normal $grey-primary;
   font-size: $Text-normal;
+  display: flex;
+  justify-content: space-around;
   background-color: $color-ligth;
   transition: 0.3s;
 }

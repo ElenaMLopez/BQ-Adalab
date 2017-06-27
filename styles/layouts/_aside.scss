@@ -43,7 +43,7 @@
 
 .title-gestion {
   @include title;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   color: $orange-primary;
   background-color: $orange-secondary;
