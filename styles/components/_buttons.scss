@@ -195,21 +195,26 @@ button {
 /* Botones añadir imagen y Borrar imagen de crear Producto*/
 
 .add-img-btn {
-  @include button-action;
+  // @include button-action;
+  width: 200px;
+  height: 40px;
+  background-color: $color-ligth;
+  font-size: $Text-normal;
   border: $border-normal $pink-primary;
   color: $pink-primary;
   margin-top: 30px;
   &:hover{
-    background-color: $orange-terciary;
-  }
+  background-color: $pink-terciary;
+}
 }
 
 .erase-pic-btn {
-  @include button-action;
   @include button-img;
   border: none;
   background-image: url(../images/circle-cancel.png);
   background-repeat: no-repeat;
+  background-position: 5% 35%;
+  justify-content: center;
   margin-top: 15px;
 }
 
