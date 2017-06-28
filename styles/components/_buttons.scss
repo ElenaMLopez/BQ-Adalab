@@ -194,12 +194,15 @@ button {
 /* Botones añadir imagen y Borrar imagen de crear Producto*/
 
 .add-img-btn {
-  @include button-action;
+  width: 200px;
+  height: 40px;
+  background-color: $color-ligth;
+  font-size: $Text-normal;
   border: $border-normal $pink-primary;
   color: $pink-primary;
   margin-top: 30px;
   &:hover{
-    background-color: $orange-terciary;
+    background-color: $pink-terciary;
   }
 }
 
