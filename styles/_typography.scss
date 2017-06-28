@@ -15,6 +15,7 @@ legend {
 h1 {
   font-size: $Text-xlarge;
   margin: 10px;
+  font-weight: 300;
 }
 
 h2 {
@@ -30,7 +31,7 @@ h3 {
 h4 {
   font-size: $Text-normal;
   margin: 0;
-  padding: 15px;
+  padding: 15px 0;
   font-weight: 300;
 }
 
@@ -38,5 +39,9 @@ h5 {
   font-size: $Text-xsmall;
   font-weight: 400;
   margin: 0;
+}
 
+.text-button {
+  font-size: $Text-normal;
+  font-weight: 300;
 }

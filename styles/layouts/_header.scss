@@ -15,7 +15,8 @@
 }
 
 .newuser-header {
-  position: relative;
+  position: fixed;
+  top:100px;
   width: 100%;
   padding: 10px 0;
   background-image: linear-gradient(to left, $orange-primary 0, $orange-primary 0);
@@ -46,10 +47,14 @@
   @include row;
   width: 100%;
   padding: 10px 0;
+  position: fixed;
+  top: 0;
+  background-color: white;
   background-image: linear-gradient(to left, $pink-primary 0, $pink-primary 0);
   background-size: 100% 2px;
   background-repeat: no-repeat;
   background-position: 40px bottom;
+  z-index: 2;
 }
 
 .createProduct-heading {
@@ -61,7 +66,7 @@
 
 .createProduct-header-buttons {
   width: 100%;
-  z-index: 2;
+  z-index: 3;
   position: absolute;
   display: flex;
   justify-content: flex-end;

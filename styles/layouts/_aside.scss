@@ -35,12 +35,16 @@
 
 .title-product {
   @include title;
+  justify-content: space-around;
+  align-items: center;
   color: $pink-primary;
   background-color: $pink-secondary;
 }
 
 .title-gestion {
   @include title;
+  justify-content: space-around;
+  align-items: center;
   color: $orange-primary;
   background-color: $orange-secondary;
 }
@@ -48,11 +52,14 @@
 .title-page {
   @include title;
   color: $purple-primary;
+  align-items: center;
   background-color: $purple-secondary;
+  justify-content: center;
 }
 
 .title-header-traductor {
   color: $purple-primary;
+
 }
 
 /* Botones producto */

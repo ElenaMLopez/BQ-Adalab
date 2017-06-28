@@ -22,9 +22,18 @@
   justify-content: center;
  }
 
+//IMAGES apps
+.icon-apps{
+  margin-bottom: 15px;
+}
+
+.img-app {
+  color:$orange-primary;
+}
+
 //IMAGES Logo Aside
 @mixin logo-svg {
-  width: 40px;
+  width: 25px;
   fill: none;
   stroke-width: 2px;
 }

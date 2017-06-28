@@ -9,15 +9,13 @@
   padding-top: 100px;
 }
 
-.img-app {
-  width: 64px;
-  height: 80px;
-}
-
 .btn-content {
-  width: 50%;
+  width: 35%;
   margin-top: 25px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+.orange{
+  color:$orange-primary;
 }

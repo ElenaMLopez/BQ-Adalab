@@ -58,6 +58,48 @@ button {
   background-color: $purple-primary;
 }
 
+// Botones de la Apps
+@mixin btn-app {
+  width: 130px;
+  height: 130px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $color-ligth;
+}
+
+.btn-productapp {
+  @include btn-app;
+  border: $border-xlarge $pink-primary;
+  color: $pink-primary;
+  &:hover {
+    background-color: $pink-primary;
+    color: $color-ligth;
+  }
+}
+
+.btn-userapp {
+  @include btn-app;
+  border: $border-xlarge $orange-primary;
+  color: $orange-primary;
+  &:hover{
+    color: $color-ligth;
+    background-color: $orange-primary;
+  }
+}
+
+.btn-traductorapp {
+  @include btn-app;
+  border: $border-xlarge $purple-primary;
+  color: $purple-primary;
+  &:hover {
+    background-color: $purple-primary;
+    color: $color-ligth;
+  }
+}
+
 /* Botones power */
 
 .btn-off {
@@ -193,6 +235,8 @@ button {
   font-size: $Text-normal;
   background-color: $color-ligth;
   transition: 0.3s;
+  display: flex;
+  justify-content: space-around;
 }
 
 @mixin modal-btn-cancel-active {
@@ -203,6 +247,8 @@ button {
   font-size: $Text-normal;
   background-color: $color-ligth;
   transition: 0.3s;
+  display: flex;
+  justify-content: space-around;
 }
 
 @mixin modal-btn-accept-active {
@@ -211,6 +257,8 @@ button {
   color: "";
   border: $border-normal "";
   font-size: $Text-normal;
+  display: flex;
+  justify-content: space-around;
   background-color: $color-ligth;
   transition: 0.3s;
 }
@@ -221,6 +269,8 @@ button {
   color: $grey-primary;
   border: $border-normal $grey-primary;
   font-size: $Text-normal;
+  display: flex;
+  justify-content: space-around;
   background-color: $color-ligth;
   transition: 0.3s;
 }
@@ -269,65 +319,4 @@ button {
   color: $pink-primary;
   // background-image: url(../images/check-icon-pink-m.png);
   border: $border-normal $pink-primary;
-}
-
-// Botones de la Apps
-@mixin btn-app {
-  width: 130px;
-  height: 130px;
-  border-radius: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: $color-ligth;
-  background-repeat: no-repeat;
-  background-position-y: 20px;
-  background-position-x: $align-center;
-  padding-top: 60px;
-  font-family: $font;
-}
-
-.btn-productapp {
-  @include btn-app;
-  border: $border-xlarge $pink-primary;
-  background-image: url(../images/appleIconPink.png);
-  color: $pink-primary;
-}
-
-.btn-productapp:hover {
-  border: $border-xlarge $pink-primary;
-  background-image: url(../images/appleIcon.png);
-  background-color: $pink-primary;
-  color: $color-ligth;
-}
-
-.btn-userapp {
-  @include btn-app;
-  border: $border-xlarge $orange-primary;
-  background-image: url(../images/userOrange.png);
-  background-size: 50px;
-  color: $orange-primary;
-}
-
-.btn-userapp:hover {
-  border: $border-xlarge $orange-primary;
-  background-image: url(../images/user.png);
-  background-color: $orange-primary;
-  color: $color-ligth;
-}
-
-.btn-traductorapp {
-  @include btn-app;
-  border: $border-xlarge $purple-primary;
-  background-image: url(../images/internetPurple.png);
-  background-size: 50px;
-  color: $purple-primary;
-}
-
-.btn-traductorapp:hover {
-  border: $border-xlarge $purple-primary;
-  background-image: url(../images/internet.png);
-  background-color: $purple-primary;
-  color: $color-ligth;
 }

@@ -27,7 +27,8 @@ legend {
 
 h1 {
   font-size: 48px;
-  margin: 10px; }
+  margin: 10px;
+  font-weight: 300; }
 
 h2 {
   font-size: 28px;
@@ -40,7 +41,7 @@ h3 {
 h4 {
   font-size: 20px;
   margin: 0;
-  padding: 15px;
+  padding: 15px 0;
   font-weight: 300; }
 
 h5 {
@@ -48,8 +49,13 @@ h5 {
   font-weight: 400;
   margin: 0; }
 
+.text-button {
+  font-size: 20px;
+  font-weight: 300; }
+
 .newuser-header {
-  position: relative;
+  position: fixed;
+  top: 100px;
   width: 100%;
   padding: 10px 0;
   background-image: -webkit-gradient(linear, right top, left top, color-stop(0, #ff5000), color-stop(0, #ff5000));
@@ -86,11 +92,15 @@ h5 {
           align-items: center;
   width: 100%;
   padding: 10px 0;
+  position: fixed;
+  top: 0;
+  background-color: white;
   background-image: -webkit-gradient(linear, right top, left top, color-stop(0, #d60056), color-stop(0, #d60056));
   background-image: linear-gradient(to left, #d60056 0, #d60056 0);
   background-size: 100% 2px;
   background-repeat: no-repeat;
-  background-position: 40px bottom; }
+  background-position: 40px bottom;
+  z-index: 2; }
 
 .createProduct-heading {
   width: 800px;
@@ -100,7 +110,7 @@ h5 {
 
 .createProduct-header-buttons {
   width: 100%;
-  z-index: 2;
+  z-index: 3;
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -176,8 +186,8 @@ h5 {
   border-bottom: solid 2px #892d87; }
 
 .modal-svg {
-  width: 20px;
-  height: 20px; }
+  width: 22px;
+  height: 22px; }
 
 .modal-container {
   background: rgba(40, 40, 40, 0.53);
@@ -326,6 +336,11 @@ h5 {
   width: 200px;
   height: 50px;
   text-align: left;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #d60056;
   background-color: #f1a6c4; }
 
@@ -340,6 +355,11 @@ h5 {
   width: 200px;
   height: 50px;
   text-align: left;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #ff5000;
   background-color: #ffc2a6; }
 
@@ -355,7 +375,13 @@ h5 {
   height: 50px;
   text-align: left;
   color: #892d87;
-  background-color: #d4a5d3; }
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #d4a5d3;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
 
 .title-header-traductor {
   color: #892d87; }
@@ -409,6 +435,7 @@ h5 {
 
 .newuser-form {
   width: 50%;
+  margin-top: 100px;
   margin-left: auto;
   margin-right: auto; }
 
@@ -444,9 +471,10 @@ h5 {
           flex-direction: column; }
 
 .newuser-box-dats {
+  height: 40px;
   margin-top: 5px;
   margin-bottom: 15px;
-  padding-left: 5px; }
+  padding-left: 13px; }
 
 .newuser-active {
   display: -webkit-box;
@@ -518,10 +546,8 @@ h5 {
 
 .custom-select {
   -webkit-appearance: none;
-  -moz-appearance: none;
-  -o-appearance: none;
-  -ms-appearance: none;
-  appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   padding: 2.4px 0;
   padding-left: 5px;
   background: no-repeat;
@@ -531,33 +557,112 @@ h5 {
   border: solid 1px #a9a9a9; }
 
 /************************** Create Product Form*******************************/
-.product-type input[type="radio"] {
-  display: none; }
+.product-type {
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
 
-.product-type input[type="radio"] + label {
+.sr-only input[type="radio"] {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  border: 0; }
+
+.product-type input[type="radio"] {
+  outline: none;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  width: 100px;
+  height: 100px; }
+
+.product-type label {
+  border-radius: 60px;
+  width: 100px;
+  height: 100px;
   cursor: pointer;
-  background-size: contain;
-  background-repeat: no-repeat;
-  display: inline-block;
-  width: 62px;
-  height: 62px; }
+  background-size: auto;
+  background-repeat: no-repeat; }
 
 .label-1 {
-  background-image: url("../images/grapes.svg"); }
+  background-image: url("../images/grapes.svg");
+  background-position: 19px 20px;
+  border: solid 1px #b82bb5; }
+
+.label-1:hover {
+  background-color: #b82bb5;
+  background-image: url("../images/grapes-white.svg");
+  -webkit-filter: brightness(1.1);
+          filter: brightness(1.1);
+  -webkit-transition: 250ms;
+  transition: 250ms; }
+
+.input-product1[type="radio"]:checked + label {
+  background-color: #b82bb5;
+  background-image: url("../images/grapes-white.svg"); }
 
 .label-2 {
-  background-image: url("../images/apple.svg"); }
+  background-image: url("../images/apple.svg");
+  background-position: 20px 20px;
+  border: solid 1px #40ba40; }
+
+.label-2:hover {
+  background-color: #40ba40;
+  background-image: url("../images/apple-white.svg");
+  -webkit-filter: brightness(1.1);
+          filter: brightness(1.1);
+  -webkit-transition: 250ms;
+  transition: 250ms; }
+
+.input-product2[type="radio"]:checked + label {
+  background-color: #40ba40;
+  background-image: url("../images/apple-white.svg"); }
 
 .label-3 {
-  background-image: url("../images/orange.svg"); }
+  background-image: url("../images/orange.svg");
+  background-position: 18px 25px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  border: solid 1px #ff5000;
+  -webkit-transition: 250ms;
+  transition: 250ms; }
+
+.label-3:hover {
+  background-color: #ff5000;
+  background-image: url("../images/orange-white.svg");
+  -webkit-filter: brightness(1.1);
+          filter: brightness(1.1); }
+
+.input-product3[type="radio"]:checked + label {
+  background-color: #ff5000;
+  background-image: url("../images/orange-white.svg"); }
 
 .label-4 {
-  background-image: url("../images/cherries.svg"); }
+  background-image: url("../images/cherries.svg");
+  background-position: 21px 20px;
+  border: solid 1px #d60056;
+  -webkit-transition: 250ms;
+  transition: 250ms; }
+
+.label-4:hover {
+  background-color: #d60056;
+  background-image: url("../images/cherries-white.svg");
+  -webkit-filter: brightness(1.1);
+          filter: brightness(1.1); }
+
+.input-product4[type="radio"]:checked + label {
+  background-color: #d60056;
+  background-image: url("../images/cherries-white.svg"); }
 
 .createProduct-form {
   max-width: 50%;
   margin: auto;
-  margin-top: 60px; }
+  margin-top: 100px; }
 
 .fieldset-product {
   border-style: none;
@@ -640,6 +745,78 @@ button {
 .btn-login-purple:hover {
   color: white;
   background-color: #892d87; }
+
+.btn-productapp {
+  width: 130px;
+  height: 130px;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  border: solid 3px #d60056;
+  color: #d60056; }
+  .btn-productapp:hover {
+    background-color: #d60056;
+    color: white; }
+
+.btn-userapp {
+  width: 130px;
+  height: 130px;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  border: solid 3px #ff5000;
+  color: #ff5000; }
+  .btn-userapp:hover {
+    color: white;
+    background-color: #ff5000; }
+
+.btn-traductorapp {
+  width: 130px;
+  height: 130px;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  border: solid 3px #892d87;
+  color: #892d87; }
+  .btn-traductorapp:hover {
+    background-color: #892d87;
+    color: white; }
 
 /* Botones power */
 .btn-off {
@@ -817,7 +994,12 @@ button {
   font-size: 20px;
   background-color: white;
   -webkit-transition: 0.3s;
-  transition: 0.3s; }
+  transition: 0.3s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
 
 .modal-btn-cancel-client:hover {
   width: 162px;
@@ -828,6 +1010,11 @@ button {
   background-color: white;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   color: #ff5000;
   border: solid 1.5px #ff5000; }
 
@@ -837,6 +1024,11 @@ button {
   color: #4d4d4f;
   border: solid 1.5px #4d4d4f;
   font-size: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   background-color: white;
   -webkit-transition: 0.3s;
   transition: 0.3s; }
@@ -847,6 +1039,11 @@ button {
   color: "";
   border: solid 1.5px "";
   font-size: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   background-color: white;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -861,7 +1058,12 @@ button {
   font-size: 20px;
   background-color: white;
   -webkit-transition: 0.3s;
-  transition: 0.3s; }
+  transition: 0.3s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
 
 .modal-btn-cancel-product:hover {
   width: 162px;
@@ -872,6 +1074,11 @@ button {
   background-color: white;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   color: #d60056;
   border: solid 1.5px #d60056; }
 
@@ -881,6 +1088,11 @@ button {
   color: #4d4d4f;
   border: solid 1.5px #4d4d4f;
   font-size: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   background-color: white;
   -webkit-transition: 0.3s;
   transition: 0.3s; }
@@ -891,112 +1103,16 @@ button {
   color: "";
   border: solid 1.5px "";
   font-size: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   background-color: white;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   color: #d60056;
   border: solid 1.5px #d60056; }
-
-.btn-productapp {
-  width: 130px;
-  height: 130px;
-  border-radius: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: white;
-  background-repeat: no-repeat;
-  background-position-y: 20px;
-  background-position-x: center;
-  padding-top: 60px;
-  font-family: "Roboto", sans-serif;
-  border: solid 3px #d60056;
-  background-image: url(../images/appleIconPink.png);
-  color: #d60056; }
-
-.btn-productapp:hover {
-  border: solid 3px #d60056;
-  background-image: url(../images/appleIcon.png);
-  background-color: #d60056;
-  color: white; }
-
-.btn-userapp {
-  width: 130px;
-  height: 130px;
-  border-radius: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: white;
-  background-repeat: no-repeat;
-  background-position-y: 20px;
-  background-position-x: center;
-  padding-top: 60px;
-  font-family: "Roboto", sans-serif;
-  border: solid 3px #ff5000;
-  background-image: url(../images/userOrange.png);
-  background-size: 50px;
-  color: #ff5000; }
-
-.btn-userapp:hover {
-  border: solid 3px #ff5000;
-  background-image: url(../images/user.png);
-  background-color: #ff5000;
-  color: white; }
-
-.btn-traductorapp {
-  width: 130px;
-  height: 130px;
-  border-radius: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: white;
-  background-repeat: no-repeat;
-  background-position-y: 20px;
-  background-position-x: center;
-  padding-top: 60px;
-  font-family: "Roboto", sans-serif;
-  border: solid 3px #892d87;
-  background-image: url(../images/internetPurple.png);
-  background-size: 50px;
-  color: #892d87; }
-
-.btn-traductorapp:hover {
-  border: solid 3px #892d87;
-  background-image: url(../images/internet.png);
-  background-color: #892d87;
-  color: white; }
 
 .dashboard {
   width: 100%;
@@ -1044,6 +1160,9 @@ td {
 .data {
   width: 10%; }
 
+.product {
+  width: 80%; }
+
 .name {
   width: 50%; }
 
@@ -1080,7 +1199,6 @@ td {
   font-size: 18px;
   color: #0c840c; }
 
-.trash,
 .edit {
   width: 6%; }
 
@@ -1104,20 +1222,26 @@ td {
       -ms-flex-pack: center;
           justify-content: center; }
 
+.icon-apps {
+  margin-bottom: 15px; }
+
+.img-app {
+  color: #ff5000; }
+
 .logo-pink {
-  width: 40px;
+  width: 25px;
   fill: none;
   stroke-width: 2px;
   stroke: #d60056; }
 
 .logo-orange {
-  width: 40px;
+  width: 25px;
   fill: none;
   stroke-width: 2px;
   stroke: #ff5000; }
 
 .logo-purple {
-  width: 40px;
+  width: 25px;
   fill: none;
   stroke-width: 2px;
   stroke: #892d87; }
@@ -1149,12 +1273,8 @@ td {
   margin: 0 auto;
   padding-top: 100px; }
 
-.img-app {
-  width: 64px;
-  height: 80px; }
-
 .btn-content {
-  width: 50%;
+  width: 35%;
   margin-top: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1166,6 +1286,9 @@ td {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; }
+
+.orange {
+  color: #ff5000; }
 
 .main {
   margin-top: 8%;
