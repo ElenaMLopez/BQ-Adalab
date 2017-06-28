@@ -1368,9 +1368,13 @@ td {
   border: 2px solid #d4d4d4;
   padding: 15px; }
 
+.select-text:nth-child(even) {
+  background-color: #f2f2f2; }
+
 .traslation-main {
   width: 94%;
   margin: 0 auto;
+  margin-top: 91.5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
