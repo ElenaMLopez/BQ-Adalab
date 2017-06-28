@@ -27,21 +27,23 @@ button {
 @mixin button-img {
   width: 200px;
   height: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
   font-size: $Text-xsmall;
-  background-repeat: no-repeat;
   background-color: $color-ligth;
-  background-position-x: 10px;
-  background-position-y: 4px;
 }
 
 @mixin button-action {
   width: 150px;
   height: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
   font-size: $Text-xsmall;
-  background-repeat: no-repeat;
   background-color: $color-ligth;
-  background-position-x: 15px;
-  background-position-y: 4px;
 }
 
 /* Botón Login */
@@ -59,6 +61,7 @@ button {
 }
 
 // Botones de la Apps
+
 @mixin btn-app {
   width: 130px;
   height: 130px;
@@ -106,11 +109,10 @@ button {
   @include button-off;
   background-color: $grey-secondary;
   text-align: $align-center;
-}
-
-.btn-off:hover {
-  background-color: $grey-primary;
-  background-image: url(../images/power-off-white.png);
+  &:hover {
+    background-color: $grey-primary;
+    background-image: url(../images/power-off-white.png);
+  }
 }
 
 /* Botones Usuario */
@@ -118,12 +120,10 @@ button {
 .btn-user {
   @include button-img;
   color: $orange-primary;
-  background-image: url(../images/user-orange.png);
   border: $border-normal $orange-primary;
-}
-
-.btn-user:hover {
-  background-color: $orange-terciary;
+  &:hover {
+    background-color: $orange-terciary;
+  }
 }
 
 /* Botones roles */
@@ -131,13 +131,11 @@ button {
 .btn-rol {
   @include button-img;
   color: $orange-primary;
-  background-image: url(../images/rol-orange.png);
   border: $border-normal $orange-primary;
   background-size: 25px;
-}
-
-.btn-rol:hover {
-  background-color: $orange-terciary;
+  &:hover {
+    background-color: $orange-terciary;
+  }
 }
 
 /* Botones nuevo producto */
@@ -145,12 +143,10 @@ button {
 .btn-product {
   @include button-img;
   color: $pink-primary;
-  background-image: url(../images/user-pink.png);
   border: $border-normal $pink-primary;
-}
-
-.btn-product:hover {
-  background-color: $pink-terciary;
+  &:hover {
+    background-color: $pink-terciary;
+  }
 }
 
 /* Botones Salir */
@@ -158,13 +154,10 @@ button {
 .btn-exit {
   @include button-action;
   color: $grey-primary;
-  background-image: url(../images/exit.png);
-  background-size: 30px;
   border: $border-normal $grey-primary;
-}
-
-.btn-exit:hover {
-  background-color: $grey-secondary;
+  &:hover {
+    background-color: $grey-secondary;
+  }
 }
 
 /* Botones Crear */
@@ -172,37 +165,32 @@ button {
 .btn-create-pink {
   @include button-action;
   color: $pink-primary;
-  background-image: url(../images/create-pink.png);
   border: $border-normal $pink-primary;
-}
-
-.btn-create-pink:hover {
-  background-color: $orange-terciary;
+  &:hover {
+    background-color: $pink-terciary;
+  }
 }
 
 /* orange */
 .btn-create-orange {
   @include button-action;
   color: $orange-primary;
-  background-image: url(../images/create-orange.png);
   border: $border-normal $orange-primary;
-}
-
-.btn-create-orange:hover {
-  background-color: $orange-terciary;
+  &:hover{
+    background-color: $orange-terciary;
+  }
 }
 
 /* Botón Guardar Purple */
 .btn-save {
   @include button-action;
   color: $purple-primary;
-  background-image: url(../images/save-purple.png);
   border: $border-normal $purple-primary;
+  &:hover {
+    background-color: $purple-terciary;
+  }
 }
 
-.btn-save:hover {
-  background-color: $purple-terciary;
-}
 
 /* Botones añadir imagen y Borrar imagen de crear Producto*/
 
@@ -211,10 +199,9 @@ button {
   border: $border-normal $pink-primary;
   color: $pink-primary;
   margin-top: 30px;
-}
-
-.add-img-btn:hover {
-  background-color: $orange-terciary;
+  &:hover{
+    background-color: $orange-terciary;
+  }
 }
 
 .erase-pic-btn {
@@ -222,6 +209,7 @@ button {
   @include button-img;
   border: none;
   background-image: url(../images/circle-cancel.png);
+  background-repeat: no-repeat;
   margin-top: 15px;
 }
 
@@ -278,45 +266,33 @@ button {
 // Modal buttons for client orange
 .modal-btn-cancel-client {
   @include modal-btn-cancel;
-}
-
-.modal-btn-cancel-client:hover {
-  @include modal-btn-cancel-active;
-  color: $orange-primary;
-  // background-image: url(../images/cancel-icon-orange-m.png);
-  border: $border-normal $orange-primary;
-
+  &:hover {
+    color: $orange-primary;
+    border: $border-normal $orange-primary;
+  }
 }
 
 .modal-btn-accept-client {
   @include modal-btn-accept;
-}
-
-.modal-btn-accept-client:hover {
-  @include modal-btn-accept-active;
-  color: $orange-primary;
-  // background-image: url(../images/check-icon-orange-m.png);
-  border: $border-normal $orange-primary;
+  &:hover {
+    color: $orange-primary;
+    border: $border-normal $orange-primary;
+  }
 }
 
 // Modal buttons for product pink
 .modal-btn-cancel-product {
-  @include modal-btn-cancel
-}
-
-.modal-btn-cancel-product:hover {
-  @include modal-btn-cancel-active;
-  color: $pink-primary;
-  border: $border-normal $pink-primary;
+  @include modal-btn-cancel;
+  &:hover {
+    color: $pink-primary;
+    border: $border-normal $pink-primary;
+  }
 }
 
 .modal-btn-accept-product {
   @include modal-btn-accept;
-}
-
-.modal-btn-accept-product:hover {
-  @include modal-btn-accept-active;
-  color: $pink-primary;
-  // background-image: url(../images/check-icon-pink-m.png);
-  border: $border-normal $pink-primary;
+  &:hover {
+    color: $pink-primary;
+    border: $border-normal $pink-primary;
+  }
 }

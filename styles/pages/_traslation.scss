@@ -1,0 +1,45 @@
+.traslation-description {
+width: 50%;
+}
+
+.traslation-main {
+  width: 94%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.text-traductor {
+  width: 50%;
+}
+
+/* Botones texto */
+
+.select-text input[type="radio"] {
+  display: none;
+}
+
+.select-text label {
+  width: 100%;
+  height: 50px;
+  padding-left: 20px;
+  line-height: 50px;
+  text-align: $align-left;
+  font-size: $Text-xsmall;
+  display: inline-block;
+  cursor: pointer;
+  color: $grey-primary;
+  background-color: $bg-grey;
+}
+
+.traductor label:hover {
+  color: $pink-primary;
+  background-color: $color-ligth;
+}
+
+.traductor input[type="radio"]:checked + label {
+  color: $pink-primary;
+  background-color: $color-ligth;
+  border-left: $border-xlarge $pink-primary;
+}

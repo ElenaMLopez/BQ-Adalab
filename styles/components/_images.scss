@@ -20,7 +20,7 @@
   width: 120px;
   height: 120px;
   justify-content: center;
- }
+}
 
 //IMAGES apps
 .icon-apps{
@@ -35,20 +35,29 @@
 @mixin logo-svg {
   width: 25px;
   fill: none;
-  stroke-width: 2px;
+  margin-right: 15px;
 }
 
 .logo-pink {
   @include logo-svg;
   stroke: #d60056;
+  stroke-width: 2px;
 }
 
 .logo-orange {
   @include logo-svg;
   stroke: #ff5000;
+  stroke-width: 2px;
 }
 
 .logo-purple {
   @include logo-svg;
   stroke: #892d87;
+  stroke-width: 2px;
+}
+
+// ICONS BUTTONS
+
+.icon-buttons {
+  @include logo-svg;
 }

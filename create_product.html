@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <title>Crear producto</title>
   <link rel="stylesheet" href="styles/styles.css">
-  <link rel="icon" type="image/png" href="images/logo_pink.svg" alt="logo pink"/>
+  <link rel="icon" type="image/png" href="images/favicon-product.png" alt="logo rosa"/>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
 </head>
 <body>
@@ -15,8 +15,22 @@
     </div>
 
     <div class="createProduct-header-buttons">
-      <a href="product.html"><button class="btn-create-pink btn-margin-header">Crear</button></a>
-      <a href="product.html"><button class="btn-exit btn-margin-header">Salir</button></a>
+      <a href="product.html">
+        <button class="btn-create-pink btn-margin-header">
+          <svg class="icon-buttons" width="25" height="25" viewBox="0 0 486 486" xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="images/svg-images.svg#icon-save"></use>
+          </svg>
+          <h5>Crear</h5>
+        </button>
+      </a>
+      <a href="product.html">
+        <button class="btn-exit" type="button" name="button">
+          <svg class="icon-buttons" width="20px" height="20px" viewBox="0 0 471.2 471.2" xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="images/svg-images.svg#icon-exit"></use>
+          </svg>
+          <h5>Salir</h5>
+        </button>
+      </a>
     </div>
   </header>
 
@@ -61,12 +75,12 @@
         </div>
       </div>
 
-    <div class="p-column">
-      <label for="product-pic">Imagen del producto</label>
-      <button type="button" name="button" class="add-img-btn">Añadir imagen</button>
-      <input type="img" name="product-pic" value="" class="product-pic">
-      <button type="button" name="erase-pic" class="erase-pic-btn">Borrar imagen</button>
-    </div>
+      <div class="p-column">
+        <label for="product-pic">Imagen del producto</label>
+        <button type="button" name="button" class="add-img-btn">Añadir imagen</button>
+        <input type="img" name="product-pic" value="" class="product-pic">
+        <button type="button" name="erase-pic" class="erase-pic-btn">Borrar imagen</button>
+      </div>
     </fieldset>
   </form>
 
