@@ -14,95 +14,108 @@
       <h2>Crear rol</h2>
     </div>
     <div class="newuser-header-buttons">
-      <a href="gestion.html"><button class="btn-create-orange btn-margin-header" type="button" name="button">Crear</button></a>
-      <a href="gestion.html"><button class="btn-exit" type="button" name="button">Salir</button></a>
-    </div>
-  </header>
+      <a href="gestion.html">
+        <button class="btn-create-orange btn-margin-header" type="button" name="button">
+          <svg class="icon-buttons" width="25" height="25" viewBox="0 0 486 486" xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="images/svg-images.svg#icon-save"></use>
+          </svg>
+          <h5>Crear</h5>
+        </button>
+      </a>
+      <a href="gestion.html"><button class="btn-exit" type="button" name="button">
+        <svg class="icon-buttons" width="20px" height="20px" viewBox="0 0 471.2 471.2" xmlns="http://www.w3.org/2000/svg">
+          <use xlink:href="images/svg-images.svg#icon-exit"></use>
+        </svg>
+        <h5>Salir</h5>
+      </button>
+    </a>
+  </div>
+</header>
 
-  <main class="newuser-form">
-    <form class="" action="index.html" method="post">
+<main class="newuser-form">
+  <form class="" action="index.html" method="post">
+    <fieldset class="fieldset-user">
+      <legend class="legend-user"><h3 class="newuser-legend">Datos del rol</h3></legend>
+      <div class="newuser-datos row-form">
+        <div class="newuser-containers-dats column-form">
+          <label for="name">Nombre del rol</label>
+          <input class="newuser-box-dats" type="text" name="first name" value="" placeholder="Gestor de contenidos" id="name">
+        </div>
+        <div class="newuser-containers-dats column-form">
+          <label for="lastname">Identificador del rol</label>
+          <input class="newuser-box-dats" type="text" name="last name" value="" placeholder="gestor-contenidos" id="lastname">
+        </div>
+        <div class="newuser-containers-dats column-form">
+          <label for="app">¿Para qué aplicación es?</label>
+          <select class="newuser-box-dats custom-select" name="user" value="" id="app">
+            <option value="">Productos</option>
+            <option value="">Ejemplo</option>
+            <option value="">Ejemplo</option>
+          </select>
+        </div>
+
+      </fieldset>
+
       <fieldset class="fieldset-user">
-        <legend class="legend-user"><h3 class="newuser-legend">Datos del rol</h3></legend>
+        <legend class="legend-user"><h3 class="newuser-legend">Permisos</h3></legend>
         <div class="newuser-datos row-form">
-          <div class="newuser-containers-dats column-form">
-            <label for="name">Nombre del rol</label>
-            <input class="newuser-box-dats" type="text" name="first name" value="" placeholder="Gestor de contenidos" id="name">
+          <div class="newuser-check column-form">
+            <input class="custom-checkbox" type="checkbox" name="" value="" id="accessworkmodule">
+            <label for="accessworkmodule">Acceso al módulo de catálogo</label>
           </div>
-          <div class="newuser-containers-dats column-form">
-            <label for="lastname">Identificador del rol</label>
-            <input class="newuser-box-dats" type="text" name="last name" value="" placeholder="gestor-contenidos" id="lastname">
+          <div class="newuser-check column-form">
+            <input class="custom-checkbox" type="checkbox" name="" value="" id="accesscontentmodule">
+            <label for="accesscontentmodule">Acceso al módulo de contenido</label>
           </div>
-          <div class="newuser-containers-dats column-form">
-            <label for="app">¿Para qué aplicación es?</label>
-            <select class="newuser-box-dats custom-select" name="user" value="" id="app">
-              <option value="">Productos</option>
-              <option value="">Ejemplo</option>
-              <option value="">Ejemplo</option>
-            </select>
+          <div class="newuser-check column-form">
+            <input class="custom-checkbox" type="checkbox" name="" value="" id="createcontent">
+            <label for="createcontent">Crear contenidos</label>
           </div>
-
-        </fieldset>
-
-        <fieldset class="fieldset-user">
-          <legend class="legend-user"><h3 class="newuser-legend">Permisos</h3></legend>
-          <div class="newuser-datos row-form">
-            <div class="newuser-check column-form">
-              <input class="custom-checkbox" type="checkbox" name="" value="" id="accessworkmodule">
-              <label for="accessworkmodule">Acceso al módulo de catálogo</label>
-            </div>
-            <div class="newuser-check column-form">
-              <input class="custom-checkbox" type="checkbox" name="" value="" id="accesscontentmodule">
-              <label for="accesscontentmodule">Acceso al módulo de contenido</label>
-            </div>
-            <div class="newuser-check column-form">
-              <input class="custom-checkbox" type="checkbox" name="" value="" id="createcontent">
-              <label for="createcontent">Crear contenidos</label>
-            </div>
-            <div class="newuser-check column-form">
-              <input class="custom-checkbox" type="checkbox" name="" value="" id="deletecontent">
-              <label for="deletecontent">Eliminar contenidos</label>
-            </div>
-            <div class="newuser-check column-form">
-              <input class="custom-checkbox" type="checkbox" name="" value="" id="deleteowncontent">
-              <label for="deleteowncontent">Eliminar contenidos propios</label>
-            </div>
-            <div class="newuser-check column-form">
-              <input class="custom-checkbox" type="checkbox" name="" value="" id="publishcontent">
-              <label for="publishcontent">Publicar contenidos</label>
-            </div>
-            <div class="newuser-check column-form">
-              <input class="custom-checkbox" type="checkbox" name="" value="" id="publishowncontent">
-              <label for="publishowncontent">Publicar contenidos propios</label>
-            </div>
-            <div class="newuser-check column-form">
-              <input class="custom-checkbox" type="checkbox" name="" value="" id="contenttypemanagement">
-              <label for="contenttypemanagement">Gestión de tipos de contenido</label>
-            </div>
-            <div class="newuser-check column-form">
-              <input class="custom-checkbox" type="checkbox" name="" value="" id="createcontenttypes">
-              <label for="createcontenttypes">Crear tipos de contenido</label>
-            </div>
-            <div class="newuser-check column-form">
-              <input class="custom-checkbox" type="checkbox" name="" value="" id="deletecontenttypes">
-              <label for="deletecontenttypes">Eliminar tipos de contenido</label>
-            </div>
-            <div class="newuser-check column-form">
-              <input class="custom-checkbox" type="checkbox" name="" value="" id="modifycontenttypes">
-              <label for="modifycontenttypes">Modificar tipos de contenido</label>
-            </div>
-            <div class="newuser-check column-form">
-              <input class="custom-checkbox" type="checkbox" name="" value="" id="modifycontent">
-              <label for="modifycontent">Modificar contenidos</label>
-            </div>
-            <div class="newuser-check column-form">
-              <input class="custom-checkbox" type="checkbox" name="" value="" id="modifyowncontent">
-              <label for="modifyowncontent">Modificar contenidos propios</label>
-            </div>
+          <div class="newuser-check column-form">
+            <input class="custom-checkbox" type="checkbox" name="" value="" id="deletecontent">
+            <label for="deletecontent">Eliminar contenidos</label>
           </div>
-        </fieldset>
+          <div class="newuser-check column-form">
+            <input class="custom-checkbox" type="checkbox" name="" value="" id="deleteowncontent">
+            <label for="deleteowncontent">Eliminar contenidos propios</label>
+          </div>
+          <div class="newuser-check column-form">
+            <input class="custom-checkbox" type="checkbox" name="" value="" id="publishcontent">
+            <label for="publishcontent">Publicar contenidos</label>
+          </div>
+          <div class="newuser-check column-form">
+            <input class="custom-checkbox" type="checkbox" name="" value="" id="publishowncontent">
+            <label for="publishowncontent">Publicar contenidos propios</label>
+          </div>
+          <div class="newuser-check column-form">
+            <input class="custom-checkbox" type="checkbox" name="" value="" id="contenttypemanagement">
+            <label for="contenttypemanagement">Gestión de tipos de contenido</label>
+          </div>
+          <div class="newuser-check column-form">
+            <input class="custom-checkbox" type="checkbox" name="" value="" id="createcontenttypes">
+            <label for="createcontenttypes">Crear tipos de contenido</label>
+          </div>
+          <div class="newuser-check column-form">
+            <input class="custom-checkbox" type="checkbox" name="" value="" id="deletecontenttypes">
+            <label for="deletecontenttypes">Eliminar tipos de contenido</label>
+          </div>
+          <div class="newuser-check column-form">
+            <input class="custom-checkbox" type="checkbox" name="" value="" id="modifycontenttypes">
+            <label for="modifycontenttypes">Modificar tipos de contenido</label>
+          </div>
+          <div class="newuser-check column-form">
+            <input class="custom-checkbox" type="checkbox" name="" value="" id="modifycontent">
+            <label for="modifycontent">Modificar contenidos</label>
+          </div>
+          <div class="newuser-check column-form">
+            <input class="custom-checkbox" type="checkbox" name="" value="" id="modifyowncontent">
+            <label for="modifyowncontent">Modificar contenidos propios</label>
+          </div>
+        </div>
+      </fieldset>
 
-      </form>
-    </main>
+    </form>
+  </main>
 
-  </body>
-  </html>
+</body>
+</html>

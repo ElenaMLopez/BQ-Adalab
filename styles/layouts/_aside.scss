@@ -50,15 +50,11 @@
 
 .title-page {
   @include title;
+  align-items: center;
   color: $purple-primary;
   background-color: $purple-secondary;
-  justify-content: center;
 }
 
-.title-header-traductor {
-  color: $purple-primary;
-
-}
 
 /* Botones producto */
 

@@ -389,14 +389,11 @@ h5 {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #892d87;
-  background-color: #d4a5d3;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
-
-.title-header-traductor {
-  color: #892d87; }
+  background-color: #d4a5d3; }
 
 /* Botones producto */
 .select-option input[type="radio"] {
@@ -747,157 +744,231 @@ button {
   background-position: center;
   background-color: #d4d4d4;
   text-align: center; }
-
-.btn-off:hover {
-  background-color: #4d4d4f;
-  background-image: url(../images/power-off-white.png); }
+  .btn-off:hover {
+    background-color: #4d4d4f;
+    background-image: url(../images/power-off-white.png); }
 
 /* Botones Usuario */
 .btn-user {
   width: 200px;
   height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: 16px;
-  background-repeat: no-repeat;
   background-color: white;
-  background-position-x: 10px;
-  background-position-y: 4px;
   color: #ff5000;
-  background-image: url(../images/user-orange.png);
   border: solid 1.5px #ff5000; }
-
-.btn-user:hover {
-  background-color: #ffe5d9; }
+  .btn-user:hover {
+    background-color: #ffe5d9; }
 
 /* Botones roles */
 .btn-rol {
   width: 200px;
   height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: 16px;
-  background-repeat: no-repeat;
   background-color: white;
-  background-position-x: 10px;
-  background-position-y: 4px;
   color: #ff5000;
-  background-image: url(../images/rol-orange.png);
   border: solid 1.5px #ff5000;
   background-size: 25px; }
-
-.btn-rol:hover {
-  background-color: #ffe5d9; }
+  .btn-rol:hover {
+    background-color: #ffe5d9; }
 
 /* Botones nuevo producto */
 .btn-product {
   width: 200px;
   height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: 16px;
-  background-repeat: no-repeat;
   background-color: white;
-  background-position-x: 10px;
-  background-position-y: 4px;
   color: #d60056;
-  background-image: url(../images/user-pink.png);
   border: solid 1.5px #d60056; }
-
-.btn-product:hover {
-  background-color: #f9d9e6; }
+  .btn-product:hover {
+    background-color: #f9d9e6; }
 
 /* Botones Salir */
 .btn-exit {
   width: 150px;
   height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: 16px;
-  background-repeat: no-repeat;
   background-color: white;
-  background-position-x: 15px;
-  background-position-y: 4px;
   color: #4d4d4f;
-  background-image: url(../images/exit.png);
-  background-size: 30px;
   border: solid 1.5px #4d4d4f; }
-
-.btn-exit:hover {
-  background-color: #d4d4d4; }
+  .btn-exit:hover {
+    background-color: #d4d4d4; }
 
 /* Botones Crear */
 /* Pink */
 .btn-create-pink {
   width: 150px;
   height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: 16px;
-  background-repeat: no-repeat;
   background-color: white;
-  background-position-x: 15px;
-  background-position-y: 4px;
   color: #d60056;
-  background-image: url(../images/create-pink.png);
   border: solid 1.5px #d60056; }
-
-.btn-create-pink:hover {
-  background-color: #ffe5d9; }
+  .btn-create-pink:hover {
+    background-color: #f9d9e6; }
 
 /* orange */
 .btn-create-orange {
   width: 150px;
   height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: 16px;
-  background-repeat: no-repeat;
   background-color: white;
-  background-position-x: 15px;
-  background-position-y: 4px;
   color: #ff5000;
-  background-image: url(../images/create-orange.png);
   border: solid 1.5px #ff5000; }
-
-.btn-create-orange:hover {
-  background-color: #ffe5d9; }
+  .btn-create-orange:hover {
+    background-color: #ffe5d9; }
 
 /* Botón Guardar Purple */
 .btn-save {
   width: 150px;
   height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: 16px;
-  background-repeat: no-repeat;
   background-color: white;
-  background-position-x: 15px;
-  background-position-y: 4px;
   color: #892d87;
-  background-image: url(../images/save-purple.png);
   border: solid 1.5px #892d87; }
-
-.btn-save:hover {
-  background-color: #f9e9f9; }
+  .btn-save:hover {
+    background-color: #f9e9f9; }
 
 /* Botones añadir imagen y Borrar imagen de crear Producto*/
 .add-img-btn {
   width: 150px;
   height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: 16px;
-  background-repeat: no-repeat;
   background-color: white;
-  background-position-x: 15px;
-  background-position-y: 4px;
   border: solid 1.5px #d60056;
   color: #d60056;
   margin-top: 30px; }
-
-.add-img-btn:hover {
-  background-color: #ffe5d9; }
+  .add-img-btn:hover {
+    background-color: #ffe5d9; }
 
 .erase-pic-btn {
   width: 150px;
   height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: 16px;
-  background-repeat: no-repeat;
   background-color: white;
-  background-position-x: 15px;
-  background-position-y: 4px;
   width: 200px;
   height: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
   font-size: 16px;
-  background-repeat: no-repeat;
   background-color: white;
-  background-position-x: 10px;
-  background-position-y: 4px;
   border: none;
   background-image: url(../images/circle-cancel.png);
   margin-top: 15px; }
@@ -917,23 +988,9 @@ button {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around; }
-
-.modal-btn-cancel-client:hover {
-  width: 162px;
-  height: 40px;
-  color: "";
-  border: "";
-  font-size: 20px;
-  background-color: white;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  color: #ff5000;
-  border: solid 1.5px #ff5000; }
+  .modal-btn-cancel-client:hover {
+    color: #ff5000;
+    border: solid 1.5px #ff5000; }
 
 .modal-btn-accept-client {
   width: 162px;
@@ -949,23 +1006,9 @@ button {
   background-color: white;
   -webkit-transition: 0.3s;
   transition: 0.3s; }
-
-.modal-btn-accept-client:hover {
-  width: 162px;
-  height: 40px;
-  color: "";
-  border: solid 1.5px "";
-  font-size: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  background-color: white;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  color: #ff5000;
-  border: solid 1.5px #ff5000; }
+  .modal-btn-accept-client:hover {
+    color: #ff5000;
+    border: solid 1.5px #ff5000; }
 
 .modal-btn-cancel-product {
   width: 162px;
@@ -981,23 +1024,9 @@ button {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around; }
-
-.modal-btn-cancel-product:hover {
-  width: 162px;
-  height: 40px;
-  color: "";
-  border: "";
-  font-size: 20px;
-  background-color: white;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  color: #d60056;
-  border: solid 1.5px #d60056; }
+  .modal-btn-cancel-product:hover {
+    color: #d60056;
+    border: solid 1.5px #d60056; }
 
 .modal-btn-accept-product {
   width: 162px;
@@ -1013,23 +1042,9 @@ button {
   background-color: white;
   -webkit-transition: 0.3s;
   transition: 0.3s; }
-
-.modal-btn-accept-product:hover {
-  width: 162px;
-  height: 40px;
-  color: "";
-  border: solid 1.5px "";
-  font-size: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  background-color: white;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  color: #d60056;
-  border: solid 1.5px #d60056; }
+  .modal-btn-accept-product:hover {
+    color: #d60056;
+    border: solid 1.5px #d60056; }
 
 .dashboard {
   width: 100%;
@@ -1149,22 +1164,27 @@ td {
   width: 25px;
   fill: none;
   margin-right: 15px;
-  stroke-width: 2px;
-  stroke: #d60056; }
+  stroke: #d60056;
+  stroke-width: 2px; }
 
 .logo-orange {
   width: 25px;
   fill: none;
   margin-right: 15px;
-  stroke-width: 2px;
-  stroke: #ff5000; }
+  stroke: #ff5000;
+  stroke-width: 2px; }
 
 .logo-purple {
   width: 25px;
   fill: none;
   margin-right: 15px;
-  stroke-width: 2px;
-  stroke: #892d87; }
+  stroke: #892d87;
+  stroke-width: 2px; }
+
+.icon-buttons {
+  width: 25px;
+  fill: none;
+  margin-right: 15px; }
 
 .box-map {
   display: -webkit-box;
