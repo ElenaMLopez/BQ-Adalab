@@ -103,8 +103,10 @@ h5 {
   background-repeat: no-repeat;
   background-position: 40px bottom;
   background-color: white;
+  background-color: white;
   background-image: -webkit-gradient(linear, right top, left top, color-stop(0, #d60056), color-stop(0, #d60056));
-  background-image: linear-gradient(to left, #d60056 0, #d60056 0); }
+  background-image: linear-gradient(to left, #d60056 0, #d60056 0);
+  z-index: 2; }
 
 .traslation-header {
   display: -webkit-box;
@@ -141,8 +143,7 @@ h5 {
 .newuser-header-buttons,
 .createProduct-header-buttons {
   width: 100%;
-  z-index: 2;
-  right: 57px;
+  z-index: 3;
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -592,12 +593,107 @@ h5 {
   border: solid 1px #a9a9a9; }
 
 /************************** Create Product Form*******************************/
-.input-product[type="radio"] {
-  display: none; }
+.product-type {
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
 
-#grapes {
-  height: 62px;
-  width: 62px; }
+.sr-only input[type="radio"] {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  border: 0; }
+
+.product-type input[type="radio"] {
+  outline: none;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  width: 100px;
+  height: 100px; }
+
+.product-type label {
+  border-radius: 60px;
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  background-size: auto;
+  background-repeat: no-repeat; }
+
+.label-1 {
+  background-image: url("../images/grapes.svg");
+  background-position: 19px 20px;
+  border: solid 1px #b82bb5; }
+
+.label-1:hover {
+  background-color: #b82bb5;
+  background-image: url("../images/grapes-white.svg");
+  -webkit-filter: brightness(1.1);
+          filter: brightness(1.1);
+  -webkit-transition: 250ms;
+  transition: 250ms; }
+
+.input-product1[type="radio"]:checked + label {
+  background-color: #b82bb5;
+  background-image: url("../images/grapes-white.svg"); }
+
+.label-2 {
+  background-image: url("../images/apple.svg");
+  background-position: 20px 20px;
+  border: solid 1px #40ba40; }
+
+.label-2:hover {
+  background-color: #40ba40;
+  background-image: url("../images/apple-white.svg");
+  -webkit-filter: brightness(1.1);
+          filter: brightness(1.1);
+  -webkit-transition: 250ms;
+  transition: 250ms; }
+
+.input-product2[type="radio"]:checked + label {
+  background-color: #40ba40;
+  background-image: url("../images/apple-white.svg"); }
+
+.label-3 {
+  background-image: url("../images/orange.svg");
+  background-position: 18px 25px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  border: solid 1px #ff5000;
+  -webkit-transition: 250ms;
+  transition: 250ms; }
+
+.label-3:hover {
+  background-color: #ff5000;
+  background-image: url("../images/orange-white.svg");
+  -webkit-filter: brightness(1.1);
+          filter: brightness(1.1); }
+
+.input-product3[type="radio"]:checked + label {
+  background-color: #ff5000;
+  background-image: url("../images/orange-white.svg"); }
+
+.label-4 {
+  background-image: url("../images/cherries.svg");
+  background-position: 21px 20px;
+  border: solid 1px #d60056;
+  -webkit-transition: 250ms;
+  transition: 250ms; }
+
+.label-4:hover {
+  background-color: #d60056;
+  background-image: url("../images/cherries-white.svg");
+  -webkit-filter: brightness(1.1);
+          filter: brightness(1.1); }
+
+.input-product4[type="radio"]:checked + label {
+  background-color: #d60056;
+  background-image: url("../images/cherries-white.svg"); }
 
 .createProduct-form {
   max-width: 50%;
@@ -1009,6 +1105,7 @@ button {
   background-color: white;
   border: none;
   background-image: url(../images/circle-cancel.png);
+  background-repeat: no-repeat;
   margin-top: 15px; }
 
 /* Botones Modal */
@@ -1416,6 +1513,19 @@ td {
   color: #d60056;
   background-color: white;
   border-left: solid 3px #d60056; }
+
+.spanish-text {
+  background-color: #f2f2f2;
+  padding: 87px 30px 37px 30px; }
+
+.spanish-text:after {
+  width: 70px;
+  height: 48px;
+  border-top: 24px solid #f2f2f2;
+  border-right: 24px solid transparent;
+  border-bottom: 24px solid transparent;
+  border-left: 24px solid transparent;
+  margin-top: 0; }
 
 .hidden {
   display: none; }

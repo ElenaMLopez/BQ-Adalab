@@ -65,3 +65,17 @@ width: 50%;
   background-color: $color-ligth;
   border-left: $border-xlarge $pink-primary;
 }
+
+.spanish-text{
+  background-color: $bg-grey;
+  padding:80px 30px 37px 30px;
+}
+.spanish-text:after{
+  width: 70px;
+  height: 48px;
+  border-top: 24px solid $bg-grey;
+  border-right: 24px solid transparent;
+  border-bottom: 24px solid transparent;
+  border-left: 24px solid transparent;
+  margin-top: 0;
+}

@@ -36,7 +36,9 @@
 
 .createProduct-header {
   @include header-new;
+  background-color: white;
   background-image: linear-gradient(to left, $pink-primary 0, $pink-primary 0);
+  z-index: 2;
 }
 
 .traslation-header {
@@ -54,8 +56,7 @@
 .newuser-header-buttons,
 .createProduct-header-buttons {
   width: 100%;
-  z-index: 2;
-  right: 57px;
+  z-index: 3;
   position: absolute;
   display: flex;
   justify-content: flex-end;
