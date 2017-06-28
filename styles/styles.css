@@ -1448,9 +1448,13 @@ td {
   border: 2px solid #d4d4d4;
   padding: 15px; }
 
+.select-text:nth-child(even) {
+  background-color: #f2f2f2; }
+
 .traslation-main {
   width: 94%;
   margin: 0 auto;
+  margin-top: 91.5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1492,6 +1496,19 @@ td {
   color: #d60056;
   background-color: white;
   border-left: solid 3px #d60056; }
+
+.spanish-text {
+  background-color: #f2f2f2;
+  padding: 80px 30px 37px 30px; }
+
+.spanish-text:after {
+  width: 70px;
+  height: 48px;
+  border-top: 24px solid #f2f2f2;
+  border-right: 24px solid transparent;
+  border-bottom: 24px solid transparent;
+  border-left: 24px solid transparent;
+  margin-top: 0; }
 
 .hidden {
   display: none; }
