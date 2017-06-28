@@ -191,7 +191,6 @@ button {
   }
 }
 
-
 /* Botones añadir imagen y Borrar imagen de crear Producto*/
 
 .add-img-btn {
@@ -209,6 +208,7 @@ button {
   @include button-img;
   border: none;
   background-image: url(../images/circle-cancel.png);
+  background-repeat: no-repeat;
   margin-top: 15px;
 }
 

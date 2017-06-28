@@ -12,6 +12,7 @@ width: 50%;
 
 .text-traductor {
   width: 50%;
+  overflow: visible;
 }
 
 /* Botones texto */
@@ -33,13 +34,13 @@ width: 50%;
   background-color: $bg-grey;
 }
 
-.traductor label:hover {
-  color: $pink-primary;
-  background-color: $color-ligth;
+.text-traductor label:hover {
+  color: $purple-primary;
+  background-color: $purple-terciary;
 }
 
-.traductor input[type="radio"]:checked + label {
-  color: $pink-primary;
+.text-traductor input[type="radio"]:checked + label {
+  color: $purple-primary;
   background-color: $color-ligth;
-  border-left: $border-xlarge $pink-primary;
+  border-left: $border-xlarge $purple-primary;
 }

@@ -1009,6 +1009,7 @@ button {
   background-color: white;
   border: none;
   background-image: url(../images/circle-cancel.png);
+  background-repeat: no-repeat;
   margin-top: 15px; }
 
 /* Botones Modal */
@@ -1369,6 +1370,10 @@ td {
       -ms-flex-pack: center;
           justify-content: center; }
 
+.text-traductor {
+  width: 50%;
+  overflow: visible; }
+
 /* Botones texto */
 .select-text input[type="radio"] {
   display: none; }
@@ -1385,14 +1390,14 @@ td {
   color: #4d4d4f;
   background-color: #f2f2f2; }
 
-.traslation-table label:hover {
-  color: #d60056;
-  background-color: white; }
+.text-traductor label:hover {
+  color: #892d87;
+  background-color: #f9e9f9; }
 
-.traslation-table input[type="radio"]:checked + label {
-  color: #d60056;
+.text-traductor input[type="radio"]:checked + label {
+  color: #892d87;
   background-color: white;
-  border-left: solid 3px #d60056; }
+  border-left: solid 3px #892d87; }
 
 .hidden {
   display: none; }
