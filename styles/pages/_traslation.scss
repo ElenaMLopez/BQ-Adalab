@@ -1,17 +1,33 @@
 .traslation-description {
 width: 50%;
 }
+.select-text h4{
+  text-transform: uppercase;
+  margin-left: 10px;
+}
+.traslation-description h4{
+  text-transform: uppercase;
+}
+.traslation-description{
+  overflow-y: scroll;
+  height: 809px;
+  border: 2px solid $grey-secondary;
+  padding: 15px;
+}
 
 .traslation-main {
   width: 94%;
   margin: 0 auto;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 .text-traductor {
   width: 50%;
+  overflow-y: scroll;
+  height: 809px;
+  border: 2px solid $grey-secondary;
 }
 
 /* Botones texto */
@@ -20,7 +36,7 @@ width: 50%;
   display: none;
 }
 
-.select-text label {
+.traduction-label {
   width: 100%;
   height: 50px;
   padding-left: 20px;
@@ -33,12 +49,13 @@ width: 50%;
   background-color: $bg-grey;
 }
 
-.traductor label:hover {
+.traduction-label:hover {
   color: $pink-primary;
   background-color: $color-ligth;
+  border-left: 5px solid $pink-primary;
 }
 
-.traductor input[type="radio"]:checked + label {
+.text-traductor input[type="radio"]:checked + label {
   color: $pink-primary;
   background-color: $color-ligth;
   border-left: $border-xlarge $pink-primary;
