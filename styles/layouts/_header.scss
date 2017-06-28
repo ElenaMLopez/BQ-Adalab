@@ -39,6 +39,11 @@
   background-image: linear-gradient(to left, $pink-primary 0, $pink-primary 0);
 }
 
+.traslation-header {
+  @include header-new;
+  background-image: linear-gradient(to left, $purple-primary 0, $purple-primary 0);
+}
+
 .newuser-header-title,
 .createProduct-heading {
   width: 800px;
