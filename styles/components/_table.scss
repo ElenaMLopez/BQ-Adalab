@@ -43,16 +43,11 @@ td {
   padding: 20px;
 }
 
-.list-grey {
+tr:nth-last-child(2n) {
   background-color: $bg-grey;
 }
 
-.line {
-  background-color: $color-ligth;
-}
-
-.line:hover,
-.list-grey:hover {
+.line:hover {
   background-color: $pink-terciary;
 }
 
