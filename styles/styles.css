@@ -1260,11 +1260,11 @@ tr:nth-last-child(2n) {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 860px;
-  height: 518px;
+  width: 1027px;
+  height: 768px;
   max-height: 597px;
   max-width: 1277px;
-  margin: 150px; }
+  margin: 10%; }
 
 .appContent {
   width: 100%;
