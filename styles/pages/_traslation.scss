@@ -1,19 +1,16 @@
 .traslation-description {
 width: 50%;
 }
-.select-text h4{
-  text-transform: uppercase;
-  margin-left: 10px;
-
-}
+.select-text h4,
 .traslation-description h4{
   text-transform: uppercase;
+  text-align: center;
 }
+
 .traslation-description{
   overflow-y: scroll;
   height: 809px;
   border: 2px solid $grey-secondary;
-  padding: 15px;
 }
 .select-text:nth-child(even){
   background-color: $bg-grey;
@@ -43,7 +40,8 @@ width: 50%;
 
 .traduction-label {
   width: 100%;
-  height: 50px;
+  padding: 0 25px 0 25px;
+  white-space: nowrap;
   padding-left: 20px;
   line-height: 50px;
   text-align: $align-left;
@@ -51,31 +49,50 @@ width: 50%;
   display: inline-block;
   cursor: pointer;
   color: $grey-primary;
-  background-color: $bg-grey;
+}
+.text-traductor li{
+  list-style-type: none;
+  &:nth-child(2n){
+    background-color: $bg-grey;
+  }
+}
+.text-traductor ul{
+  padding-left: 0;
 }
 
 .traduction-label:hover {
-  color: $pink-primary;
-  background-color: $color-ligth;
-  border-left: 5px solid $pink-primary;
+  color: $purple-primary;
+  background-color: $purple-terciary;
+}
+.traduction-label:active {
+  border-left: 5px solid $purple-primary;
 }
 
 .text-traductor input[type="radio"]:checked + label {
-  color: $pink-primary;
+  color: $purple-primary;
   background-color: $color-ligth;
-  border-left: $border-xlarge $pink-primary;
+  border-left: $border-xlarge $purple-primary;
 }
 
 .spanish-text{
+  width: 100%;
   background-color: $bg-grey;
   padding:80px 30px 37px 30px;
 }
-.spanish-text:after{
-  width: 70px;
-  height: 48px;
-  border-top: 24px solid $bg-grey;
-  border-right: 24px solid transparent;
-  border-bottom: 24px solid transparent;
-  border-left: 24px solid transparent;
+.english-text{
   margin-top: 0;
+  padding-left: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.english-text::before {
+  content:"";
+  width: 0;
+  height: 0;
+  border-top: 24px solid $bg-grey;
+  border-right: 35px solid transparent;
+  border-bottom: 24px solid transparent;
+  border-left: 35px solid transparent;
+  margin: 0 auto;
 }

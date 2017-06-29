@@ -155,6 +155,7 @@ button {
   @include button-action;
   color: $grey-primary;
   border: $border-normal $grey-primary;
+  margin-right: 57px;
   &:hover {
     background-color: $grey-secondary;
   }

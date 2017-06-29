@@ -975,7 +975,8 @@ button {
   font-size: 16px;
   background-color: white;
   color: #4d4d4f;
-  border: solid 1.5px #4d4d4f; }
+  border: solid 1.5px #4d4d4f;
+  margin-right: 57px; }
   .btn-exit:hover {
     background-color: #d4d4d4; }
 
@@ -1435,18 +1436,15 @@ td {
 .traslation-description {
   width: 50%; }
 
-.select-text h4 {
-  text-transform: uppercase;
-  margin-left: 10px; }
-
+.select-text h4,
 .traslation-description h4 {
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  text-align: center; }
 
 .traslation-description {
   overflow-y: scroll;
   height: 809px;
-  border: 2px solid #d4d4d4;
-  padding: 15px; }
+  border: 2px solid #d4d4d4; }
 
 .select-text:nth-child(even) {
   background-color: #f2f2f2; }
@@ -1477,38 +1475,64 @@ td {
 
 .traduction-label {
   width: 100%;
-  height: 50px;
+  padding: 0 25px 0 25px;
+  white-space: nowrap;
   padding-left: 20px;
   line-height: 50px;
   text-align: left;
   font-size: 16px;
   display: inline-block;
   cursor: pointer;
-  color: #4d4d4f;
-  background-color: #f2f2f2; }
+  color: #4d4d4f; }
+
+.text-traductor li {
+  list-style-type: none; }
+  .text-traductor li:nth-child(2n) {
+    background-color: #f2f2f2; }
+
+.text-traductor ul {
+  padding-left: 0; }
 
 .traduction-label:hover {
-  color: #d60056;
-  background-color: white;
-  border-left: 5px solid #d60056; }
+  color: #892d87;
+  background-color: #f9e9f9; }
+
+.traduction-label:active {
+  border-left: 5px solid #892d87; }
 
 .text-traductor input[type="radio"]:checked + label {
-  color: #d60056;
+  color: #892d87;
   background-color: white;
-  border-left: solid 3px #d60056; }
+  border-left: solid 3px #892d87; }
 
 .spanish-text {
+  width: 100%;
   background-color: #f2f2f2;
   padding: 80px 30px 37px 30px; }
 
-.spanish-text:after {
-  width: 70px;
-  height: 48px;
+.english-text {
+  margin-top: 0;
+  padding-left: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.english-text::before {
+  content: "";
+  width: 0;
+  height: 0;
   border-top: 24px solid #f2f2f2;
-  border-right: 24px solid transparent;
+  border-right: 35px solid transparent;
   border-bottom: 24px solid transparent;
-  border-left: 24px solid transparent;
-  margin-top: 0; }
+  border-left: 35px solid transparent;
+  margin: 0 auto; }
 
 .hidden {
   display: none; }
