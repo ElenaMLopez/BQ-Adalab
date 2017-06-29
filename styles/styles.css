@@ -1253,6 +1253,9 @@ tr:nth-last-child(2n) {
   fill: none;
   margin-right: 15px; }
 
+.translation-icon-pencil {
+  cursor: pointer; }
+
 .box-map {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1432,7 +1435,7 @@ tr:nth-last-child(2n) {
 
 .text-traductor li {
   list-style-type: none; }
-  .text-traductor li:nth-child(2n) {
+  .text-traductor li:nth-child(odd) {
     background-color: #f2f2f2; }
 
 .text-traductor ul {

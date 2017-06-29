@@ -51,7 +51,7 @@ width: 50%;
 
 .text-traductor li {
   list-style-type: none;
-  &:nth-child(2n){
+  &:nth-child(odd){
     background-color: $bg-grey;
   }
 }
