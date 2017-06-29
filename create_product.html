@@ -38,48 +38,53 @@
 
     <fieldset class="fieldset-product">
       <legend class="product-legend">Tipo de producto</legend>
-      <h4>¿Qué tipo de producto es?</h4>
+      <h5>¿Qué tipo de producto es?</h5>
 
-      <div class="product-type p-row sr-only">
+      <div class="product-type p-row m-top-30">
 
-        <input class="input-product1" type="radio" name="product" value="" id="Type1">
+        <input class="input-product1 sr-only" type="radio" name="product" value="" id="Type1">
         <label class="label-1" for="Type1">
         </label>
 
-        <input class="input-product2" type="radio" name="product" value="" id="Type2">
+        <input class="input-product2 sr-only" type="radio" name="product" value="" id="Type2">
         <label class="label-2" for="Type2">
         </label>
 
-        <input class="input-product3" type="radio" name="product" value="" id="Type3">
+        <input class="input-product3 sr-only" type="radio" name="product" value="" id="Type3">
         <label class="label-3" for="Type3">
         </label>
 
-        <input class="input-product4" type="radio" name="product" value="" id="Type4">
+        <input class="input-product4 sr-only" type="radio" name="product" value="" id="Type4">
         <label class="label-4" for="Type4">
         </label>
 
       </div>
     </fieldset>
 
-    <fieldset class="fieldset-product">
+    <fieldset class="fieldset-product m-top-30">
       <legend class="product-legend">Datos del producto</legend>
       <div class="p-row">
         <div class="p-column">
-          <label class="label" for="product-name">Nombre del producto</label>
-          <input class="input-product input-name" type="text" name="product-name" placeholder="Producto 1">
+          <label class="m-top-30" for="product-name"><h5>Nombre del producto</h5></label>
+          <input class="input-product m-right-20" type="text" name="product-name" placeholder="Producto 1">
         </div>
 
         <div class="p-column">
-          <label class="label" for="price">Precio</label>
-          <input class="input-product input-price" type="text" name="price" placeholder="0,45€">
+          <label class="m-top-30 m-left-20" for="price">Precio</label>
+          <input class="input-product m-left-20" type="text" name="price" placeholder="0,45€">
         </div>
       </div>
 
       <div class="p-column">
-        <label for="product-pic">Imagen del producto</label>
-        <button type="button" name="button" class="add-img-btn">Añadir imagen</button>
-        <input type="img" name="product-pic" value="" class="product-pic">
-        <button type="button" name="erase-pic" class="erase-pic-btn">Borrar imagen</button>
+        <h5 class="m-top-30">Imagen del producto</h5>
+        <label class="add-img-btn" for="product-pic">Añadir imagen</label>
+        <input change="" type="file" accept="image/*" name="product-pic" class="sr-only" id="product-pic"></input>
+        <div class="m-top-30" id="preview">
+		      <img class="product-pic" src="" id="output">
+	        </div>
+
+        <button type="button" name="erase-pic" class="erase-pic-btn" id="erase-pic">Borrar imagen</button>
+
       </div>
     </fieldset>
   </form>

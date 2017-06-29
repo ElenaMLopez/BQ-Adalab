@@ -598,18 +598,6 @@ h5 {
   -ms-flex-pack: distribute;
       justify-content: space-around; }
 
-.sr-only input[type="radio"] {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  -webkit-clip-path: inset(50%);
-          clip-path: inset(50%);
-  border: 0; }
-
 .product-type input[type="radio"] {
   outline: none;
   position: absolute;
@@ -700,7 +688,7 @@ h5 {
 
 .fieldset-product {
   border-style: none;
-  margin-top: 20px;
+  margin-top: 30px;
   padding: 0; }
 
 .product-legend {
@@ -710,42 +698,13 @@ h5 {
   margin-bottom: 20px; }
 
 .input-product {
-  height: 2em;
-  margin: 20px 0px; }
-
-.input-price {
-  margin-left: 20px;
+  height: 40px;
+  margin: 30px 0px;
   padding-left: 5%; }
-
-.label {
-  margin-top: 30px; }
-
-.input-name {
-  margin-right: 20px;
-  padding-left: 5%; }
-
-.p-column {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 50%; }
-
-.p-row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row; }
 
 .product-pic {
-  height: 162px;
-  margin-right: 20px;
+  height: 160px;
+  width: 280px;
   margin-top: 30px; }
 
 .line-orange {
@@ -1060,7 +1019,16 @@ button {
   font-size: 20px;
   border: solid 1.5px #d60056;
   color: #d60056;
-  margin-top: 30px; }
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
   .add-img-btn:hover {
     background-color: #f9d9e6; }
 
@@ -1512,5 +1480,46 @@ td {
 
 .hidden {
   display: none; }
+
+.p-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+
+.p-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50%; }
+
+.m-left-20 {
+  margin-left: 5%; }
+
+.m-top-30 {
+  margin-top: 30px; }
+
+.m-right-20 {
+  margin-right: 5%; }
+
+.sr-only {
+  /***Hide predetermined inputs***/
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  border: 0; }
 
 /*# sourceMappingURL=styles.css.map */

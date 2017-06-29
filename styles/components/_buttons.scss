@@ -195,7 +195,6 @@ button {
 /* Botones añadir imagen y Borrar imagen de crear Producto*/
 
 .add-img-btn {
-  // @include button-action;
   width: 200px;
   height: 40px;
   background-color: $color-ligth;
@@ -203,9 +202,12 @@ button {
   border: $border-normal $pink-primary;
   color: $pink-primary;
   margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   &:hover{
-  background-color: $pink-terciary;
-}
+    background-color: $pink-terciary;
+  }
 }
 
 .erase-pic-btn {

@@ -139,18 +139,6 @@
   justify-content: space-around;
 }
 
-.sr-only input[type="radio"] {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  overflow: hidden;
-  clip: rect(0,0,0,0);
-  white-space: nowrap;
-  clip-path: inset(50%);
-  border: 0;
-}
-
 .product-type input[type="radio"] {
   outline: none;
   position: absolute;
@@ -245,7 +233,7 @@
 
 .fieldset-product {
   border-style: none;
-  margin-top: 20px;
+  margin-top: 30px;
   padding: 0;
 }
 
@@ -257,37 +245,13 @@
 }
 
 .input-product {
-  height: 2em;
-  margin: 20px 0px;
-}
-
-.input-price {
-  margin-left: 20px;
+  height: 40px;
+  margin: 30px 0px;
   padding-left: 5%;
-}
-
-.label {
-  margin-top: 30px;
-}
-
-.input-name {
-  margin-right: 20px;
-  padding-left: 5%;
-}
-
-.p-column {
-  display: flex;
-  flex-direction:column;
-  width: 50%;
-}
-
-.p-row {
-  display: flex;
-  flex-direction: row;
 }
 
 .product-pic {
-  height: 162px;
-  margin-right: 20px;
+  height: 160px;
+  width: 280px;
   margin-top: 30px;
 }
