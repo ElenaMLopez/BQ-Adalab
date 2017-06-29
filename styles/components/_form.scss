@@ -125,8 +125,15 @@
   border: $border-small $form-grey;
 }
 
+
 /************************** Create Product Form*******************************/
 
+/***Cool radio buttons***/
+
+@mixin transition {
+  filter:brightness(1.1);
+  transition: 250ms;
+}
 
 .product-type {
   justify-content: space-around;
@@ -165,36 +172,32 @@
 .label-1 {
   background-image: url("../images/grapes.svg");
   background-position: 19px 20px;
-  border: solid 1px #b82bb5;
-}
-
-.label-1:hover {
-  background-color: #b82bb5;
-  background-image: url("../images/grapes-white.svg");
-  filter:brightness(1.1);
-  transition: 250ms;
+  border: solid 1px $purple;
+  &:hover {
+    background-color: $purple;
+    background-image: url("../images/grapes-white.svg");
+    @include transition;
+    }
 }
 
 .input-product1[type="radio"]:checked + label {
-  background-color: #b82bb5;
+  background-color: $purple;
   background-image: url("../images/grapes-white.svg");
 }
 
 .label-2 {
   background-image: url("../images/apple.svg");
   background-position: 20px 20px;
-  border: solid 1px #40ba40;
-}
-
-.label-2:hover {
-  background-color: #40ba40;
-  background-image: url("../images/apple-white.svg");
-  filter:brightness(1.1);
-  transition: 250ms;
+  border: solid 1px $green-secondary;
+  &:hover {
+    background-color: $green-secondary;
+    background-image: url("../images/apple-white.svg");
+    @include transition;
+  }
 }
 
 .input-product2[type="radio"]:checked + label {
-  background-color: #40ba40;
+  background-color: $green-secondary;
   background-image: url("../images/apple-white.svg");
 }
 
@@ -202,38 +205,37 @@
   background-image: url("../images/orange.svg");
   background-position: 18px 25px;
   transform: rotate(45deg);
-  border: solid 1px #ff5000;
-  transition: 250ms;
-}
-
-.label-3:hover {
-  background-color: #ff5000;
-  background-image: url("../images/orange-white.svg");
-  filter:brightness(1.1);
+  border: solid 1px $orange-primary;
+  &:hover {
+    background-color: $orange-primary;
+    background-image: url("../images/orange-white.svg");
+    @include transition;
+  }
 }
 
 .input-product3[type="radio"]:checked + label {
-  background-color: #ff5000;
+  background-color: $orange-primary;
   background-image: url("../images/orange-white.svg");
 }
 
 .label-4 {
   background-image: url("../images/cherries.svg");
   background-position: 21px 20px;
-  border: solid 1px #d60056;
-  transition: 250ms;
-}
-
-.label-4:hover {
-  background-color: #d60056;
-  background-image: url("../images/cherries-white.svg");
-  filter:brightness(1.1);
+  border: solid 1px $pink-primary;
+  &:hover {
+    background-color: $pink-primary;
+    background-image: url("../images/cherries-white.svg");
+    @include transition;
+  }
 }
 
 .input-product4[type="radio"]:checked + label {
-  background-color: #d60056;
+  background-color: $pink-primary;
   background-image: url("../images/cherries-white.svg");
 }
+
+
+/***Product Data***/
 
 .createProduct-form {
   max-width: 50%;
@@ -261,6 +263,7 @@
 
 .input-price {
   margin-left: 20px;
+  padding-left: 5%;
 }
 
 .label {
@@ -269,6 +272,7 @@
 
 .input-name {
   margin-right: 20px;
+  padding-left: 5%;
 }
 
 .p-column {

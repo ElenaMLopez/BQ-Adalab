@@ -6,6 +6,7 @@ width: 50%;
 .select-text h4{
   text-transform: uppercase;
   margin-left: 10px;
+
 }
 
 .traslation-description h4{
@@ -18,10 +19,14 @@ width: 50%;
   border: 2px solid $grey-secondary;
   padding: 15px;
 }
+.select-text:nth-child(even){
+  background-color: $bg-grey;
+}
 
 .traslation-main {
   width: 94%;
   margin: 0 auto;
+  margin-top: 91.5px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -29,14 +34,17 @@ width: 50%;
 
 .text-traductor {
   width: 50%;
-  overflow-y: scroll;
+  overflow: auto;
   height: 809px;
   border: 2px solid $grey-secondary;
 }
 
 /* Botones texto */
+label:nth-child(odd){
+  background-color: $bg-grey;
+}
 
-.select-text input[type="radio"] {
+.text-traductor[type="radio"] {
   display: none;
 }
 
@@ -45,12 +53,9 @@ width: 50%;
   height: 50px;
   padding-left: 20px;
   line-height: 50px;
-  text-align: $align-left;
   font-size: $Text-xsmall;
-  display: inline-block;
   cursor: pointer;
   color: $grey-primary;
-  background-color: $bg-grey;
 }
 
 .text-traductor label:hover {
@@ -62,4 +67,18 @@ width: 50%;
   color: $purple-primary;
   background-color: $color-ligth;
   border-left: $border-xlarge $purple-primary;
+}
+
+.spanish-text{
+  background-color: $bg-grey;
+  padding:80px 30px 37px 30px;
+}
+.spanish-text:after{
+  width: 70px;
+  height: 48px;
+  border-top: 24px solid $bg-grey;
+  border-right: 24px solid transparent;
+  border-bottom: 24px solid transparent;
+  border-left: 24px solid transparent;
+  margin-top: 0;
 }
