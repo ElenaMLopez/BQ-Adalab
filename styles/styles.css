@@ -1394,9 +1394,6 @@ tr:nth-last-child(2n) {
   height: 809px;
   border: 2px solid #d4d4d4; }
 
-.select-text:nth-child(even) {
-  background-color: #f2f2f2; }
-
 .traslation-main {
   width: 94%;
   margin: 0 auto;
