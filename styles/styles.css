@@ -1011,7 +1011,7 @@ button {
   width: 200px;
   height: 40px;
   background-color: white;
-  font-size: 20px;
+  font-size: 16px;
   border: solid 1.5px #d60056;
   color: #d60056;
   margin-top: 30px;
@@ -1535,4 +1535,5 @@ tr:nth-last-child(2n) {
   -webkit-clip-path: inset(50%);
           clip-path: inset(50%);
   border: 0; }
+
 /*# sourceMappingURL=styles.css.map */
