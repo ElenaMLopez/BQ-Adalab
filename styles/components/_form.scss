@@ -1,4 +1,4 @@
-.newuser-form {
+.form-width {
   width: 50%;
   margin-top: 100px;
   margin-left: auto;
@@ -117,7 +117,7 @@
 .custom-select {
   appearance: none;
   padding: 2.4px 0;
-  padding-left: 5px;
+  padding-left: 13px;
   background: no-repeat;
   background-image: url("../images/arrow-down.png");
   background-size: 5%;
@@ -225,17 +225,6 @@
 
 /***Product Data***/
 
-.createProduct-form {
-  max-width: 50%;
-  margin: auto;
-  margin-top: 100px;
-}
-
-.fieldset-product {
-  border-style: none;
-  margin-top: 30px;
-  padding: 0;
-}
 
 .product-legend {
   width: 100%;
@@ -247,7 +236,7 @@
 .input-product {
   height: 40px;
   margin: 30px 0px;
-  padding-left: 5%;
+  padding-left: 13px;
 }
 
 .product-pic {
