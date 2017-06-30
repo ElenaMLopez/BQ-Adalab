@@ -32,16 +32,17 @@ function MarkerShops(){
         map: map,
         icon: myIcon
       });
-      // GEvent.addListener(marker, "click", function (){
-      //   marker.openInfoWindowHtml(htmlVentana);
-      //   return marker;
-      // });
+
+        // GEvent.addListener(marker, "click", function (){
+          //   marker.openInfoWindowHtml(htmlVentana);
+          //   return marker;
+          // });
+        }
+      };
+
+      request.onerror = function() {
+        console.log('Error al tratar de conectarse con el servidor');
+      };
+
+      request.send();
     }
-  };
-
-  request.onerror = function() {
-    console.log('Error al tratar de conectarse con el servidor');
-  };
-
-  request.send();
-}
