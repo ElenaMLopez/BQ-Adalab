@@ -13,7 +13,7 @@ var mapElement = document.querySelector(".box-map");
 // title pages
 var titlePages = document.getElementById("titlePages");
 // Button
-var btnProduct = document.querySelector(".btn-product");
+var btnProduct = document.querySelector(".btn-pink");
 
 function toggleViewProduct() {
   btnProduct.classList.toggle("hidden");

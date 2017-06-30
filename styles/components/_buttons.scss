@@ -53,11 +53,10 @@ button {
   text-align:$align-center;
   border: solid 2px $purple-primary;
   color: $purple-primary;
-}
-
-.btn-login-purple:hover {
-  color: $color-ligth;
-  background-color: $purple-primary;
+  &:hover {
+    color: $color-ligth;
+    background-color: $purple-primary;
+  }
 }
 
 // Botones de la Apps
@@ -115,24 +114,12 @@ button {
   }
 }
 
-/* Botones Usuario */
+/* Botones Usuario -- Botones roles */
 
-.btn-user {
+.btn-orange {
   @include button-img;
   color: $orange-primary;
   border: $border-normal $orange-primary;
-  &:hover {
-    background-color: $orange-terciary;
-  }
-}
-
-/* Botones roles */
-
-.btn-rol {
-  @include button-img;
-  color: $orange-primary;
-  border: $border-normal $orange-primary;
-  background-size: 25px;
   &:hover {
     background-color: $orange-terciary;
   }
@@ -140,7 +127,7 @@ button {
 
 /* Botones nuevo producto */
 
-.btn-product {
+.btn-pink {
   @include button-img;
   color: $pink-primary;
   border: $border-normal $pink-primary;
@@ -195,16 +182,11 @@ button {
 /* Botones añadir imagen y Borrar imagen de crear Producto*/
 
 .add-img-btn {
-  width: 200px;
-  height: 40px;
-  background-color: $color-ligth;
-  font-size: $Text-xsmall;
+  @include button-img;
   border: $border-normal $pink-primary;
   color: $pink-primary;
   margin-top: 30px;
-  display: flex;
   justify-content: center;
-  align-items: center;
   &:hover{
     background-color: $pink-terciary;
   }
@@ -221,66 +203,30 @@ button {
 }
 
 /* Botones Modal */
+@mixin modal {
+  width: 162px;
+  height: 40px;
+  font-size: $Text-normal;
+  background-color: $color-ligth;
+  display: flex;
+  justify-content: space-around;
+}
 
 @mixin modal-btn-cancel {
-  width: 162px;
-  height: 40px;
+  @include modal;
   color: $grey-primary;
   border: $border-normal $grey-primary;
-  font-size: $Text-normal;
-  background-color: $color-ligth;
-  transition: 0.3s;
-  display: flex;
-  justify-content: space-around;
-}
-
-@mixin modal-btn-cancel-active {
-  width: 162px;
-  height: 40px;
-  color: "";
-  border: "";
-  font-size: $Text-normal;
-  background-color: $color-ligth;
-  transition: 0.3s;
-  display: flex;
-  justify-content: space-around;
-}
-
-@mixin modal-btn-accept-active {
-  width: 162px;
-  height: 40px;
-  color: "";
-  border: $border-normal "";
-  font-size: $Text-normal;
-  display: flex;
-  justify-content: space-around;
-  background-color: $color-ligth;
-  transition: 0.3s;
 }
 
 @mixin modal-btn-accept {
-  width: 162px;
-  height: 40px;
+  @include modal;
   color: $grey-primary;
   border: $border-normal $grey-primary;
-  font-size: $Text-normal;
-  display: flex;
-  justify-content: space-around;
-  background-color: $color-ligth;
-  transition: 0.3s;
 }
 
 // Modal buttons for client orange
-.modal-btn-cancel-client {
+.modal-btn-orange {
   @include modal-btn-cancel;
-  &:hover {
-    color: $orange-primary;
-    border: $border-normal $orange-primary;
-  }
-}
-
-.modal-btn-accept-client {
-  @include modal-btn-accept;
   &:hover {
     color: $orange-primary;
     border: $border-normal $orange-primary;
@@ -288,16 +234,8 @@ button {
 }
 
 // Modal buttons for product pink
-.modal-btn-cancel-product {
+.modal-btn-pink {
   @include modal-btn-cancel;
-  &:hover {
-    color: $pink-primary;
-    border: $border-normal $pink-primary;
-  }
-}
-
-.modal-btn-accept-product {
-  @include modal-btn-accept;
   &:hover {
     color: $pink-primary;
     border: $border-normal $pink-primary;

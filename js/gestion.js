@@ -11,7 +11,7 @@ var labelRoles = document.getElementById("loadRoles");
 var rolesElement = document.querySelector(".listRoles");
 var userElement = document.querySelector(".listUser");
 // Button
-var btnUser = document.querySelector(".btn-user");
+var btnUser = document.querySelector("#btn-user");
 var btnRol = document.querySelector(".hidden");
 
 function toggleViewGestion() {

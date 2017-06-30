@@ -732,10 +732,9 @@ button {
   text-align: center;
   border: solid 2px #892d87;
   color: #892d87; }
-
-.btn-login-purple:hover {
-  color: white;
-  background-color: #892d87; }
+  .btn-login-purple:hover {
+    color: white;
+    background-color: #892d87; }
 
 .btn-productapp {
   width: 130px;
@@ -825,8 +824,8 @@ button {
     background-color: #4d4d4f;
     background-image: url(../images/power-off-white.png); }
 
-/* Botones Usuario */
-.btn-user {
+/* Botones Usuario -- Botones roles */
+.btn-orange {
   width: 200px;
   height: 40px;
   display: -webkit-box;
@@ -846,36 +845,11 @@ button {
   background-color: white;
   color: #ff5000;
   border: solid 1.5px #ff5000; }
-  .btn-user:hover {
-    background-color: #ffe5d9; }
-
-/* Botones roles */
-.btn-rol {
-  width: 200px;
-  height: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: 16px;
-  background-color: white;
-  color: #ff5000;
-  border: solid 1.5px #ff5000;
-  background-size: 25px; }
-  .btn-rol:hover {
+  .btn-orange:hover {
     background-color: #ffe5d9; }
 
 /* Botones nuevo producto */
-.btn-product {
+.btn-pink {
   width: 200px;
   height: 40px;
   display: -webkit-box;
@@ -895,7 +869,7 @@ button {
   background-color: white;
   color: #d60056;
   border: solid 1.5px #d60056; }
-  .btn-product:hover {
+  .btn-pink:hover {
     background-color: #f9d9e6; }
 
 /* Botones Salir */
@@ -1000,20 +974,27 @@ button {
 .add-img-btn {
   width: 200px;
   height: 40px;
-  background-color: white;
-  font-size: 16px;
-  border: solid 1.5px #d60056;
-  color: #d60056;
-  margin-top: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  font-size: 16px;
+  background-color: white;
+  border: solid 1.5px #d60056;
+  color: #d60056;
+  margin-top: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
   .add-img-btn:hover {
     background-color: #f9d9e6; }
 
@@ -1045,75 +1026,35 @@ button {
   margin-top: 15px; }
 
 /* Botones Modal */
-.modal-btn-cancel-client {
+.modal-btn-orange {
   width: 162px;
   height: 40px;
-  color: #4d4d4f;
-  border: solid 1.5px #4d4d4f;
   font-size: 20px;
   background-color: white;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around; }
-  .modal-btn-cancel-client:hover {
-    color: #ff5000;
-    border: solid 1.5px #ff5000; }
-
-.modal-btn-accept-client {
-  width: 162px;
-  height: 40px;
-  color: #4d4d4f;
-  border: solid 1.5px #4d4d4f;
-  font-size: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  background-color: white;
-  -webkit-transition: 0.3s;
-  transition: 0.3s; }
-  .modal-btn-accept-client:hover {
+  color: #4d4d4f;
+  border: solid 1.5px #4d4d4f; }
+  .modal-btn-orange:hover {
     color: #ff5000;
     border: solid 1.5px #ff5000; }
 
-.modal-btn-cancel-product {
+.modal-btn-pink {
   width: 162px;
   height: 40px;
-  color: #4d4d4f;
-  border: solid 1.5px #4d4d4f;
   font-size: 20px;
   background-color: white;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around; }
-  .modal-btn-cancel-product:hover {
-    color: #d60056;
-    border: solid 1.5px #d60056; }
-
-.modal-btn-accept-product {
-  width: 162px;
-  height: 40px;
-  color: #4d4d4f;
-  border: solid 1.5px #4d4d4f;
-  font-size: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  background-color: white;
-  -webkit-transition: 0.3s;
-  transition: 0.3s; }
-  .modal-btn-accept-product:hover {
+  color: #4d4d4f;
+  border: solid 1.5px #4d4d4f; }
+  .modal-btn-pink:hover {
     color: #d60056;
     border: solid 1.5px #d60056; }
 
