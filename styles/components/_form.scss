@@ -87,32 +87,30 @@
 
 .custom-checkbox {
   display: none;
+  & + label {
+    position: relative;
+    padding-left: 25px;
+  }
+  &  + label:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    border: $border-small $form-grey;
+    border-radius: 4px;
+  }
+  &:checked + label:before {
+   text-align: $align-center;
+   line-height: 1;
+   color: $color-ligth;
+   content: "✔";
+   border: $border-small $color-blue;
+   background-color: $color-blue;
+  }
 }
 
-.custom-checkbox + label {
-  position: relative;
-  padding-left: 25px;
-}
-
-.custom-checkbox + label:before {
-  content: "";
-  display: block;
-  position: absolute;
-  left: 0;
-  width: 15px;
-  height: 15px;
-  border: $border-small $form-grey;
-  border-radius: 4px;
-}
-
-.custom-checkbox:checked + label:before {
- text-align: $align-center;
- line-height: 1;
- color: $color-ligth;
- content: "✔";
- border: $border-small $color-blue;
- background-color: $color-blue;
-}
 
 .custom-select {
   appearance: none;
@@ -137,24 +135,22 @@
 
 .product-type {
   justify-content: space-around;
-}
-
-.product-type input[type="radio"] {
-  outline: none;
-  position: absolute;
-  margin: 0;
-  padding: 0;
-  width: 100px;
-  height: 100px;
-}
-
-.product-type label {
-  border-radius: 60px;
-  width: 100px;
-  height: 100px;
-  cursor:pointer;
-  background-size: auto;
-  background-repeat:no-repeat;
+  & label {
+    border-radius: 60px;
+    width: 100px;
+    height: 100px;
+    cursor:pointer;
+    background-size: auto;
+    background-repeat:no-repeat;
+  }
+  & input[type="radio"] {
+    outline: none;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 100px;
+    height: 100px;
+  }
 }
 
 .label-1 {
@@ -224,7 +220,6 @@
 
 
 /***Product Data***/
-
 
 .product-legend {
   width: 100%;

@@ -288,6 +288,7 @@ h5 {
 .modal-tirth-title {
   width: 720px;
   height: 24px;
+  margin-top: 45px;
   font-size: 24px;
   font-weight: 300;
   line-height: 1;
@@ -312,19 +313,9 @@ h5 {
   border-radius: 50%;
   border: 2px solid #4d4d4f;
   background-color: white;
+  background-position: center;
   background-image: url(../images/internetPurple.png);
-  background-repeat: no-repeat;
-  background-position: center; }
-
-.modal-tirth-title-product {
-  margin-top: 45px;
-  width: 720px;
-  height: 24px;
-  font-size: 24px;
-  font-weight: 300;
-  line-height: 1;
-  text-align: center;
-  color: #4d4d4f; }
+  background-repeat: no-repeat; }
 
 .icon-modal-circle-user {
   width: 100px;
@@ -332,19 +323,9 @@ h5 {
   border-radius: 50%;
   border: 2px solid #4d4d4f;
   background-color: white;
+  background-position: center;
   background-image: url(../images/user-grey.png);
-  background-repeat: no-repeat;
-  background-position: center; }
-
-.modal-tirth-title-user {
-  margin-top: 45px;
-  width: 720px;
-  height: 24px;
-  font-size: 24px;
-  font-weight: 300;
-  line-height: 1;
-  text-align: center;
-  color: #4d4d4f; }
+  background-repeat: no-repeat; }
 
 .sidebar {
   display: -webkit-box;
@@ -557,28 +538,25 @@ h5 {
 
 .custom-checkbox {
   display: none; }
-
-.custom-checkbox + label {
-  position: relative;
-  padding-left: 25px; }
-
-.custom-checkbox + label:before {
-  content: "";
-  display: block;
-  position: absolute;
-  left: 0;
-  width: 15px;
-  height: 15px;
-  border: solid 1px #a9a9a9;
-  border-radius: 4px; }
-
-.custom-checkbox:checked + label:before {
-  text-align: center;
-  line-height: 1;
-  color: white;
-  content: "✔";
-  border: solid 1px #1f8eff;
-  background-color: #1f8eff; }
+  .custom-checkbox + label {
+    position: relative;
+    padding-left: 25px; }
+  .custom-checkbox + label:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    border: solid 1px #a9a9a9;
+    border-radius: 4px; }
+  .custom-checkbox:checked + label:before {
+    text-align: center;
+    line-height: 1;
+    color: white;
+    content: "✔";
+    border: solid 1px #1f8eff;
+    background-color: #1f8eff; }
 
 .custom-select {
   -webkit-appearance: none;
@@ -597,22 +575,20 @@ h5 {
 .product-type {
   -ms-flex-pack: distribute;
       justify-content: space-around; }
-
-.product-type input[type="radio"] {
-  outline: none;
-  position: absolute;
-  margin: 0;
-  padding: 0;
-  width: 100px;
-  height: 100px; }
-
-.product-type label {
-  border-radius: 60px;
-  width: 100px;
-  height: 100px;
-  cursor: pointer;
-  background-size: auto;
-  background-repeat: no-repeat; }
+  .product-type label {
+    border-radius: 60px;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    background-size: auto;
+    background-repeat: no-repeat; }
+  .product-type input[type="radio"] {
+    outline: none;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 100px;
+    height: 100px; }
 
 .label-1 {
   background-image: url("../images/grapes.svg");
@@ -700,20 +676,20 @@ h5 {
 .line-orange {
   width: 100%;
   height: 2px;
-  background-color: #ff5000;
-  margin-left: 35px; }
+  margin-left: 35px;
+  background-color: #ff5000; }
 
 .line-pink {
   width: 100%;
   height: 2px;
-  background-color: #d60056;
-  margin-left: 35px; }
+  margin-left: 35px;
+  background-color: #d60056; }
 
 .line-purple {
   width: 100%;
   height: 2px;
-  background-color: #892d87;
-  margin-left: 35px; }
+  margin-left: 35px;
+  background-color: #892d87; }
 
 /* Buttons */
 button {
@@ -1075,18 +1051,16 @@ button {
   margin-top: 90px;
   border-spacing: 0;
   border-collapse: collapse; }
-
-.liste th,
-td {
-  padding: 10px 20px; }
+  .liste th,
+  .liste td {
+    padding: 10px 20px; }
 
 .NameOption {
   border-top: solid 1px #d4d4d4;
   border-bottom: solid 1px #d4d4d4; }
-
-.NameOption th {
-  text-align: left;
-  padding: 20px; }
+  .NameOption th {
+    text-align: left;
+    padding: 20px; }
 
 tr:nth-last-child(2n) {
   background-color: #f2f2f2; }
@@ -1094,13 +1068,15 @@ tr:nth-last-child(2n) {
 .line:hover {
   background-color: #f9d9e6; }
 
-.iconProduct {
+.iconProduct,
+.edit {
   width: 5%; }
 
 .data {
   width: 10%; }
 
-.product {
+.product,
+.page {
   width: 80%; }
 
 .name {
@@ -1108,9 +1084,6 @@ tr:nth-last-child(2n) {
 
 .roles {
   width: 85%; }
-
-.page {
-  width: 80%; }
 
 .hour {
   width: 40%; }
@@ -1138,9 +1111,6 @@ tr:nth-last-child(2n) {
 .text-active {
   font-size: 18px;
   color: #0c840c; }
-
-.edit {
-  width: 6%; }
 
 .edit img,
 .trashUser img,
